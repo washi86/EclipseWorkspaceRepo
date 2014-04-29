@@ -9,9 +9,9 @@ public class Division
 		
 		int num1, num2, quotient;
 		
-		System.out.println("Enter the first number ");
+		System.out.println("Enter the first number(Integers Please) ");
 		num1 = input.nextInt();
-		System.out.println("Enter the second number ");
+		System.out.println("Enter the second number(Integers Please) ");
 		num2 = input.nextInt();
 	
 		
