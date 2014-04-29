@@ -4805,3 +4805,24 @@ Binding(ALT+CTRL+H,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.cdt.ui.cViewScope,,,system)
+
+!ENTRY org.eclipse.jface 2 0 2014-04-29 01:26:17.692
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-04-29 01:26:17.692
+!MESSAGE A conflict occurred for ALT+SHIFT+O:
+Binding(ALT+SHIFT+O,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.toggleMarkOccurrences,Toggle Mark Occurrences,
+		Toggles mark occurrences in Java editors,
+		Category(org.eclipse.jdt.ui.category.source,Source,Java Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@49208e78,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.jdt.ui.javaEditorScope,,,system)
+Binding(ALT+SHIFT+O,
+	ParameterizedCommand(Command(com.aptana.editor.common.toggleMarkOccurrences,Mark Occurrences,
+		Toggle mark occurrences,
+		Category(com.aptana.ui.category,Aptana,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@78698dc9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.aptana.editor.context,,,system)
