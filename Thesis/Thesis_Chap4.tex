@@ -1,0 +1,37 @@
+%\documentclass[12pt]{report}
+%\setlength{\parindent}{0mm}
+%\setlength{\parskip}{14pt}
+%\renewcommand{\baselinestretch}{2.0}
+%\setlength{\topmargin}{0pt}
+%\setlength{\headheight}{0pt}
+%\setlength{\headsep}{0pt}
+%\setlength{\footskip}{45pt}
+%\setlength{\textwidth}{465pt}
+%\setlength{\textheight}{660pt}
+%\setlength{\oddsidemargin}{10pt}
+%\newcommand{\RR}{\mathrm{I\!R\!}}
+%\newcommand{\FF}{\mathrm{I\!F\!}}
+%\newcommand{\dt}{\frac{\partial}{\partial t}}
+%\newcommand{\dq}{\frac{\partial}{\partial q }}
+%\newcommand{\dr}{\frac{\partial}{\partial p }}
+%\newtheorem{defi}{Definition}[chapter]
+%\newtheorem{theo}{Theorem}[chapter]
+
+%\begin{document}
+
+\chapter{Visualization Techniques}
+
+Being able to visualize the results obtained from the implemented algorithm discussed in the previous chapter is a very important part of the analysis process. When dealing with fluid flow problems, having visual data can go a long way in interpreting numerical results. In this chapter, we discuss some visualization techniques that can be used when working with the Navier-Stokes equations.
+
+\section{Vector Field Representation}
+
+A 2-D vector field can be used to visualize various flow field problems. It can be visualized as arrows, with a given magnitude and direction, attached to each point in the plane. The vectors are drawn by taking the corresponding vector values for the horizontal velocity u and the vertical velocity v and finding their geometric sum.
+\section{Streamlines}
+
+\begin{defi}
+A \textbf{streamline} is a line whose tangent at each point is in the direction of the velocity vector at that point. These plots appear as contour graphs once visualized. 
+\end{defi}
+
+\section{Conclusion}
+In this chapter, we investigated two ways to visualize the numerical solutions of the Navier-Stokes equations. Open source Matlab programs were used for the visualization. Other commercial as well as non-commercial visualization softwares are availible for use depending on the abilitiy of the user and results desired. In the chapter to follow, we use these visualization techniques to present different fluid flow problems.
+%\end{document}

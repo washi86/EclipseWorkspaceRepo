@@ -1,0 +1,26 @@
+%\documentclass[12pt]{report}
+%\setlength{\parindent}{0mm}
+%\setlength{\parskip}{14pt}
+%\renewcommand{\baselinestretch}{1.5}
+%\setlength{\topmargin}{0pt}
+%\setlength{\headheight}{0pt}
+%\setlength{\headsep}{0pt}
+%\setlength{\footskip}{45pt}
+%\setlength{\textwidth}{465pt}
+%\setlength{\textheight}{660pt}
+%\setlength{\oddsidemargin}{10pt}
+%\newcommand{\RR}{\mathrm{I\!R\!}}
+%\newcommand{\FF}{\mathrm{I\!F\!}}
+%\newcommand{\dt}{\frac{\partial}{\partial t}}
+%\newcommand{\dq}{\frac{\partial}{\partial q }}
+%\newcommand{\dr}{\frac{\partial}{\partial p }}
+%\newtheorem{defi}{Definition}[chapter]
+%\newtheorem{theo}{Theorem}[chapter]
+%
+%\begin{document}
+
+\chapter{Summary}
+
+In this thesis, we discussed numerical solutions of the 2-D Navier-Stokes equation. We began by laying the foundation needed for the presentation of this work. Reynold's Transport Theorem was proven and subsequently used in the derivation of the continuity equation and momentum equation from conservation of mass and linear momentum. From this point, dimensional analysis of the Navier-Stokes equations as well as the different types of boundary conditions needed in order to yeild a well-posed problem are investigated. After the completion of the derivation, we proceed to translating the continuous problem into its discrete form. In order to do this, we first introduce the concept of finite-difference approximations of continous differential operators. The Navier-Stokes equations are then discretized and a technique for handling stability issues, known as the donor-cell scheme, is presented. We also mention that other popular methods for discretizing the Navier-Stokes equations are known. For example, Finite-Volume Method and Finite-Element Method for discretization. Chorin Projection Method is also discussed for the purpose of solving the Poisson Pressure Equation that arises after discretization. In chapter 3, the functions required for implementation of the algorithm for numerically solving Navier-Stokes equations are discussed. In the fourth chapter, visualization techniques are discussed. To this end, the concept of streamlines, streaklines, and velocity profiles are presented. Finally, we present examples of classical flow problems. The problems investigated are flow between two parallel plates, flow in a lid-driven cavity, and flow past a backward facing step. It is worth mentioning that when working with the two-dimensional Navier-Stokes equations, the Stream Function-Vorticity formulation can be used to reduce the number of parameters present by eliminating the presence of the pressure term. However, in the extension to three dimensions, this effect is lost. As was stated earlier, solutions to Navier-Stokes equations are well known in 2-D but there is much left to be done in 3-D. This thesis helps to lay the foundation so the more complicated yet intersting problems can be addressed. 
+
+%\end{document}

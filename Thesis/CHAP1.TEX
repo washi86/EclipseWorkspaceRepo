@@ -1,0 +1,816 @@
+\documentstyle[12pt]{report}
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{14pt}
+\renewcommand{\baselinestretch}{1.5}
+\setlength{\topmargin}{0pt}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\footskip}{45pt}
+\setlength{\footheight}{0pt}
+\setlength{\textwidth}{465pt}
+\setlength{\textheight}{660pt}
+\setlength{\oddsidemargin}{10pt}
+\newcommand{\RR}{\mathrm{I\!R\!}}
+\newcommand{\FF}{\mathrm{I\!F\!}}
+\newcommand{\dt}{\frac{\partial}{\partial t}}
+\newcommand{\dq}{\frac{\partial}{\partial q }}
+\newcommand{\dr}{\frac{\partial}{\partial p }}
+\newtheorem{defi}{Definition}[chapter]
+\newtheorem{theo}{Theorem}[chapter]
+\begin{document}
+
+\chapter{Symmetries of Differential Equations}
+
+This preliminary chapter is concerned with the introduction of basic concepts
+about symmetry of differential equations. The material discussed is designed
+to suit our needs in forthcoming chapters. For an exhaustive treatment of the
+subject the reader is referred to Lie and Scheffers (1891, 1896),
+Lie and Engel (1893), 
+Ovsiannikov (1982), Olver (1986), Bluman and Kumei (1989), Stephani (1989),
+Hill (1992) and recently
+Ibragimov (1999). Also, a large and up to date collection of existing results
+in symmetry analysis is given in the hanbook edited by Ibragimov (1994--1996).
+
+\section{One--parameter group of transformations}
+In what follows here and in the chapters to come, by a transformation it will
+be understood  to mean an invertible transformation,
+i.e. a one--to--one and onto map. Also, functions will be assumed
+sufficiently smooth and summation over repeated indices is adopted when
+necessary.
+
+Now consider a set of transformations $T_a$ of $\RR^{\;n}$  defined by:
+\begin{equation}
+\label{ch1:t1}
+\bar z^i=f^i(z,a),\;\;i=1,\ldots,n,                               
+\end{equation}
+where $z=(z^1,\ldots,z^n)\in \RR^{\;n}$,
+$\bar z=(\bar z^1,\ldots,\bar z^n)\in \RR^{\;n}$
+and $a$ is a real parameter from a
+neighbourhood $U\subset \RR\;$ of $a=0$.
+We impose the condition  that $T_a$ is the identity
+if and only if $a=0 $, i.e.
+\begin{equation}
+\label{ch1:t2}
+ f^i(z,a)=z^i  \mbox{ for all } z\in \RR^{\;n} \mbox{ if and only if } a=0.
+\end{equation}
+This implies in particular that $f^i(z,0)=z^i$.
+\begin{defi}
+\begin{em}
+\label{def1}
+The set $G$ of transformations $T_a$ given by (\ref{ch1:t1}) and
+satisfying Condition (\ref{ch1:t2}) is
+called a {\em (local) continuous one--parameter group} of transformations
+in $\RR^{\;n}$ if
+the function $f=(f^1,\ldots,f^n)$ satisfies the following property:
+for all $a,\;b\in U\subset U' \subset \RR\;$, there exists $c\in U'$ such that
+\begin{equation}
+\label{ch1:t3}
+f(f(z,a),b)=f(z,c),\mbox{ for all $z\in \RR^{\;n} $},
+\end{equation}
+where
+\begin{equation}
+\label{ch1:t4}
+c=\varphi (a,b)
+\end{equation}
+is a smooth function of its arguments such that for all $a\in U$, the equation
+\[ \varphi (a,b)=0\]
+admits a unique solution $b\in U$.
+\end{em}
+\end{defi}
+Condition
+(\ref{ch1:t3}) is sometimes referred to as the {\em group property} and $\varphi$
+is termed the {\em group composition law}. According to Definition \ref{def1},
+a continuous one--parameter group $G$  of transformations $T_a$ contains the
+(unique) identity transformation $Id_{\RR^{\;n}}=T_0$. Furthermore, the group
+property (\ref{ch1:t3}) means that any two transformations $T_a,\;T_b\in G$ carried
+out one after the other results in a transformation which belongs again to $G$
+for any $a,\;b\in U$. The solvability of  $\varphi (a,b)=0$ for all $a\in U$,
+together with the group property (\ref{ch1:t3}), provide the inverse transformation
+$T_a^{-1}\in G$ to $T_a\in G$. Thus $G$ is a group for the usual composition
+of maps. The term continuous group comes from the fact that the parameter
+$a$ varies continuously in $U\subset \RR$ and any transformation $T_a$
+is continuously connected to the identity $T_0$ within $G$.
+
+From now on, by a one--parameter group we will mean  a continuous one--parameter
+group.
+\begin{defi}
+\label{def2}
+\begin{em}
+The group parameter  $a$ is said to be {\em canonical} if the composition law
+(\ref{ch1:t4}) is $\varphi (a,b)=a+b$, i.e. if the group property (\ref{ch1:t3})
+has the form
+\begin{equation}
+\label{ch1:t5}
+f(f(z,a),b)=f(z,a+b) .
+\end{equation}
+\end{em}
+\end{defi}
+The next theorem shows that we can always assume that the parameter of an
+arbitrary one--parameter group is canonical.
+\begin{theo}[Lie--Scheffers 1891]
+\begin{em}
+Given an arbitrary composition law (\ref{ch1:t4}), the canonical parameter $\tilde a$
+is defined by the formula
+\begin{equation}
+\label{ch1:t6}
+\tilde a=\int^a_0 \frac{da}{\omega (a)},
+\end{equation}
+where
+\[\omega (a)=\frac{\partial \varphi (a,b)}{\partial b}|_{b=0}.\]
+\end{em}
+\end{theo}
+{\bf Proof.} See for example Lie and Scheffers (1891), Dickson (1924),
+Eisenhart (1933), Ibragimov (1999).
+
+Henceforth, we shall adopt the canonical parameter when referring to
+one--parameter groups. 
+
+Consider the first--order Taylor expansion of $T_a$ about $a=0$:
+\begin{equation}
+\label{ch1:t7}
+\bar z^i \approx z^i+a\xi^i (z),
+\end{equation}
+where we have used the fact that $ f(z,0)=z$ and
+\begin{equation}
+\label{ch1:t8}
+\xi^i (z)=\frac{\partial f^i (z,a)}{\partial a}|_{a=0},\; \; i=1,\ldots,n.
+\end{equation}
+Note that $\xi=(\xi^1,\ldots,\xi^n)$ is the vector tangent at $z$
+to the orbit defined by Eq. (\ref{ch1:t1}).
+\begin{defi}
+\label{def3}
+\begin{em}
+The first--order linear differential operator
+\begin{equation}
+\label{ch1:t9}
+X=\xi^i (z)\frac{\partial}{\partial z^i}
+\end{equation}
+is known as the {\em symbol} or the {\em generator} of the group $G$.
+\end{em}
+\end{defi}
+ {\bf Example.} Consider the set $\cal{S}$ of transformations
+\[\bar z=(a+1)z\equiv f(z,a),\]
+where $a\in U=\RR-\{-1\}$.
+
+(i) $f(z,a)=z$ for all $z\in \RR^{\;n}$ if and only if $a=0$.
+
+(ii) For $a,\; b\in U$ and $z\in \RR^{\;n}$,
+\[f(f(z,a),b)=f(z,a+b+ab)=f(z,c),\]
+where $c=\varphi (a,b)=a+b+ab$.
+
+(iii) For $a\in U$, $\varphi (a,b)=0$ if and only if $b=-a/(a+1) \in U$.
+
+Hence $\cal{S}$ is a one--parameter group called the {\em scaling group}.
+The group parameter $a$ is not canonical.
+Using the formula (\ref{ch1:t6}), we find that the canonical parameter is
+\[\tilde a=\int^{a}_{0} \frac{d\tau}{1+\tau}=\ln (1+a).\]
+The  symbol of $\cal{S}$ is then given by
+\[X=z^i\frac{\partial}{\partial z^i}\;\cdot \]
+The interesting fact about the symbol of a one--parameter group  is that
+it defines completely the finite transformations of the group as shown
+by Lie's theorem:
+\begin{theo}[Lie--Scheffers 1891]
+\label{lie}
+\begin{em}
+The transformations (\ref{ch1:t1}) of any one parameter group whose
+identity has the parameter $a=0$ are put into one--to--one correspondence,
+by the introduction of the canonical parameter (\ref{ch1:t6}), with the
+transformations (\ref{ch1:t1}) represented with respect to the canonical
+parameter $\tilde a$. Let (\ref{ch1:t1}) be represented in the canonical
+parameter $a$ with infinitesimal transformations (\ref{ch1:t7}), where
+(\ref{ch1:t8}) holds.
+The functions $f^i$ are solutions of the
+initial value problem
+\begin{equation}
+\label{ch1:t10}
+\frac{d\bar z}{da}=\xi (\bar z),\;\; \bar z|_{a=0}=z.
+\end{equation}
+\end{em}
+\end{theo}
+{\bf Proof.} Consult for example  Lie and Scheffers (1891), Dickson (1924),
+Eisenhart (1933), Ibragimov (1999).
+
+The system (\ref{ch1:t10}) is known as Lie's equations. 
+
+{\bf Remark.} The initial value problem (\ref{ch1:t10}) has the formal
+solution ({\em Lie's series})
+\[\bar z=\mbox{e}^{a X}z\equiv \sum_{k=0}^{\infty}
+\frac{a^k}{k!}X^k z,\]
+where $X$ is given by Eq. (\ref{ch1:t9}). 
+
+Theorem \ref{lie} provides a simplification in the investigation of
+continuous
+one--parameter groups: it reduces the study of continuous one--parameter
+groups to that of infinitesimal transformations (\ref{ch1:t7}). Thus it offers a
+`linearization' to  continuous one--parameter groups. This fact will
+be crucial in the calculation of symmetries of differential equations.
+
+{\bf Example.} Consider the one--parameter group whose generator is
+\[X=-y\frac{\partial}{\partial x}+ x \frac{\partial}{\partial y}\;\cdot\]
+According to Lie's theorem, its transformations are solutions of the initial
+value problem
+\[ \frac{d\bar x}{da}=-\bar y,\;\; \frac{d\bar y}{da}=\bar x,\;\bar x|_{a=0}=x,\;
+\bar y|_{a=0}=y,\]
+which are
+\[ \bar x=x\cos a-y\sin a,\;\; \bar y= x\sin a+ y\cos a .\]
+
+\begin{defi}
+\begin{em}
+A function $F(z)$ is invariant under the group of transformations
+(\ref{ch1:t1})
+if
+\[F(z)=F(\bar z) \mbox{ for all $z\in \RR^{\;n}$} \mbox{ and } a\in U.\]
+\end{em}
+\end{defi}
+The following theorem provides an infinitesimal criterion for invariance.
+\begin{theo}
+\begin{em}
+A function $F(z)$ is invariant under the group of transformations (\ref{ch1:t1})
+if and only if
+\[XF=0,\]
+where  $X$ is the generator of the group.
+\end{em}
+\end{theo}
+{\bf Proof.} See for example Ovsiannikov (1982).
+\begin{theo}
+\label{canv}
+\begin{em}
+Every continuous one--parameter group of transformations whose transformations
+are given by (\ref{ch1:t1}), reduces to the group of translations
+\begin{equation}
+\label{ch1:t11}
+\bar y^1=y^1+a,\;\;\bar y^i=y^i,\;\; i=2,\ldots,n,
+\end{equation}
+under a suitable change of variables
+\begin{equation}
+\label{ch1:t12}
+y^i=y^i (z),\;\; i=1,\ldots,n.
+\end{equation}
+The new variables $y^i$ are called {\em canonical variables}. They are
+singular
+for values of $z$ such that $\xi (z)=0$ (invariant points).
+\end{em}
+\end{theo}
+{\bf Proof.} Using the chain rule, we find that under the change of variables
+(\ref{ch1:t12}), the differential
+operator (\ref{ch1:t9}) transforms according to the formula
+\[X=X(y^i)\frac{\partial}{\partial y^i}\; \cdot\]
+Therefore canonical variables are found from the system of linear partial
+differential equations
+\[X(y^1)=1,\;\; X(y^2)=0,\ldots,X(y^n)=0.\]
+{\bf Example.}  Consider the one--parameter group with symbol
+\[X=-y\frac{\partial}{\partial x}+ x \frac{\partial}{\partial y}\; \cdot\]
+The canonical variables $(\theta, r)$ are solutions of the system
+\[X\theta =1,\;Xr=0\]
+i.e.
+\[\frac{dx}{-y}=\frac{dy}{x}=\frac{d\theta}{1},\;\;
+  \frac{dx}{-y}=\frac{dy}{x}=\frac{dr}{0},\]
+i.e.
+\[\theta =\arctan (y/x)+F(x^2+y^2),\;\; r=G(x^2+y^2),\]
+where $F$ and $G$ are arbitrary functions. We can choose 
+\[\theta=\arctan (y/x),\;\;r=\sqrt{x^2+y^2},\]
+which are the usual polar coordinates.
+
+\section{Extension of one--parameter groups: prolongation formulas}
+Consider a one--parameter group $G$ of point transformations
+\begin{eqnarray}
+\bar t = f(t,q,a),  & & f(t,q,0)=t, \label{ch1:t13}\\
+\bar q_i =\varphi_i (t,q,a), & & \varphi_i (t,q,0)=q_i,\;\; i=1,\ldots,n,
+\label{ch1:t14}
+\end{eqnarray}
+where $t$ is the independent variable and the $q_i$s in
+$q=(q_1,\dots, q_n)$ are the dependent
+variables. Let the generator of $G$ be
+\begin{equation}
+\label{ch1:t15}
+X=\xi (t,q)\frac{\partial}{\partial t}+
+\eta_i (t,q)\frac{\partial}{\partial q_i}\; \cdot
+\end{equation}
+We wish to extend the action of the group $G$ to the space of
+extended variables 
+$(t,q, \dot q,\ldots, q^{(k)})$, $k\ge 1$, where the
+overdot stands for differentiation with respect to $t$ and
+\begin{equation}
+\label{ch1:t16}
+q^{(k)}=\left (\frac{d^k q_1}{dt^k},\ldots,\frac{d^k q_n}{dt^k}\right).
+\end{equation}
+Let us denote the operator of total differentiation with respect to $t$ by
+$D$, i.e.
+\begin{equation}
+\label{ch1:t17}
+D = \frac{\partial}{\partial t}+q_i\frac{\partial}{\partial \dot q_i}
+      + \dot q_i\frac{\partial}{\partial \ddot q_i}+\cdots
+\end{equation}
+and by $\bar D$ the operator of total differentiation with respect
+to $\bar t$. An application of the chain rule gives
+\begin{equation}
+\label{ch1:t18}
+D=D(f)\bar D.
+\end{equation}
+Now
+\begin{equation}
+\label{ch1:t19}
+D \varphi_j =D(f)\bar D\bar q_j, \;\; j=1,\ldots ,n
+\end{equation}
+and  we obtain
+\begin{equation}
+\label{ch1:t20}
+D\varphi_j  = \bar{\dot q_j} D(f),
+\end{equation}
+where $\bar{\dot q_j}= d\bar q_j/d\bar t$. Next, the expansion of
+Eq. (\ref{ch1:t20}) yields
+\begin{equation}
+\label{ch1:t21}
+\left (\frac{\partial f}{\partial t}+\dot q_i \frac{\partial f}{\partial q_i}
+\right )\bar{\dot q_j}= \frac{\partial \varphi_j}{\partial t} +
+\dot q_i \frac{\partial \varphi_j}{\partial q_i}\; \cdot
+\end{equation}
+Eq. (\ref{ch1:t20}) defines the extension of the group actions
+(\ref{ch1:t13})--(\ref{ch1:t14}) to the first derivatives $\dot q_i$.
+Transformations in the $(t,q,\dot q)$--space,
+given by Eqs. (\ref{ch1:t13}), (\ref{ch1:t14}) and
+(\ref{ch1:t20}),
+determine a one--parameter group (Lie and Scheffers 1891) called
+the {\em first prolongation} of the group $G$ denoted by $G^{[1]}$.
+Higher--order  extensions of the point transformations are obtained by
+successive differentiation of Eq. (\ref{ch1:t20}) taking into account
+Eq. (\ref{ch1:t18}).
+
+We now invoke Eq. (\ref{ch1:t20}) for the infinitesimal transformations
+corresponding to
+(\ref{ch1:t13}) and (\ref{ch1:t14}), i.e., for $f=t+a\xi$ and $\varphi_i=q_i+a\eta_i$.
+If we set $\bar{\dot q_i} =\dot q_i+a\eta_i^{[1]}$ for the infinitesimal
+transfomations of the first derivatives, simple calculations show, from Eq.
+(\ref{ch1:t20}), that
+\begin{equation}
+\label{ch1:t22}
+\eta_i^{[1]}=D(\eta_i)-\dot q_i D(\xi).
+\end{equation}
+Thus, given a group $G$ with the symbol (\ref{ch1:t15}), its first
+prolongation $G^{[1]}$ has the generator
+\begin{equation}
+\label{ch1:t23}
+X^{[1]}=X+\eta_i^{[1]}\frac{\partial}{\partial \dot q_i}\; \cdot
+\end{equation}
+The higher--order prolongation $G^{[k]}$, $k\ge 2$, has its generator
+defined recursively as 
+\begin{equation}
+\label{ch1:t24}
+X^{[k]}=X^{[k-1]}+\eta_i^{[k]}\frac{\partial}{\partial  q_i^{(k)}},
+\end{equation}
+where
+\begin{equation}
+\label{ch1:t25}
+\eta_i^{[k]}=D(\eta_i^{[k-1]})- q_i^{(k)}D(\xi).
+\end{equation}
+Eqs. (\ref{ch1:t22}) and (\ref{ch1:t25}) are known as
+{\em prolongation formulas}.
+\begin{defi}
+\begin{em}
+A function $I(t,q,\ldots, q^{(k)})$ with $k \ge 1$, is a differential
+invariant of order $k$ of a group $G$ of transformations (\ref{ch1:t13}) and
+(\ref{ch1:t14}) if
+\[ I(t,q,\ldots, q^{(k)})=I(\bar t,\bar q,\ldots, \overline{q^{(k)}})\]
+for all $(t,q)\in \RR^{\; n+1}$ and $a\in U\subset \RR$, i.e. if $I$ is
+invariant under the prolonged group $G^{[k]}$.
+\end{em}
+\end{defi}
+\begin{theo}
+\begin{em}
+A  function $I(t,q,\ldots,q^{(k)})$  is invariant under the prolonged group
+$G^{[k]},\;k\ge 1$
+if and only if
+\[X^{[k]}I=0,\]
+where $X^{[k]}$ is the generator of $G^{[k]}$. 
+\end{em}
+\end{theo}
+{\bf Proof. } See for instance Ovsiannikov (1982).
+\section{Point symmetries of differential equations: Lie's algorithm}
+Basically there are two ways of interpreting a differential equation (de).
+Firstly, it can be seen as a relation between  unknown
+functions and their derivatives. Secondly it may be seen as defining a manifold
+in the space of extended variables. The second approach has the advantage of
+not requiring the explicit form of solutions in order to describe their
+symmetry properties. This is actually how Lie interpreted des in his study of their
+symmetries.
+
+Loosely, a {\em point symmetry} (or simply {\em symmetry} when there is no
+ambiguity) of a de is an invertible
+transformation (of independent and dependent variables)
+which leaves it unchanged or invariant. But this definition has the drawback
+of being too general and it does not provide an efficient way of obtaining
+the symmetries. By considering only symmetries which form
+continuous one--parameter groups of
+transformations, Lie was able to derive an algorithm for
+the calculation of symmetries. These kind of symmetries are known as {\em
+continuous symmetries}. Henceforth, by symmetry, it should be understood
+as continuous symmetry.
+
+Since we have seen that a continuous one--parameter
+group of transformations can equivalently be described by its generator, the
+generator of a continuous symmetry will also be called a symmetry.
+
+Consider a system of ordinary differential equations (odes)
+\begin{equation}
+\label{ch1:s1}
+q_i^{(n)}=\omega_i (t,q,\dot q,\ldots,q^{(n-1)}),
+\;\;i=1,\ldots,k,\;\;k,\;n \ge 1.
+\end{equation}
+Assume that a symmetry of Eqs. (\ref{ch1:s1}) is a one--parameter group of
+transformations whose infinitesimal transformations are
+\begin{eqnarray}
+\bar t &\approx & t+a\xi (t,q), \label{ch1:s2}\\
+\bar q_i &\approx & q_i+a\eta_i (t,q),\;\;i=1,\ldots,k \label{ch1:s3}
+\end{eqnarray}
+or equivalently whose generator is
+\begin{equation}
+\label{ch1:s4}
+X=\xi (t,q)\frac{\partial}{\partial t}
++\eta_i (t,q)\frac{\partial}{\partial q_i}\; \cdot
+\end{equation}
+By definition of a symmetry, we must have
+\begin{equation}
+\label{ch1:s5}
+\overline{q_i^{(n)}}=\omega_i (\bar t,\bar q,\bar{\dot q},\ldots,\overline{q^{(n-1)}}),
+\;\;i=1,\ldots,k,\;\;k,\;n \ge 1.
+\end{equation}
+Now, differentiate Eqs. (\ref{ch1:s5}) with respect to the
+group parameter $a$:
+\begin{equation}
+\label{ch1:s6}
+\frac{d \overline{q_i^{(n)}}}{da}=
+\frac{\partial \omega_i}{\partial \bar t}
+\frac{d \bar t }{d a}+
+\frac{\partial \omega_i}{\partial \bar{q_j}}
+\frac{d \bar{q_j}}{d a}+\cdots +
+\frac{\partial \omega_i}{\partial \overline{q_j^{(n-1)}}}
+\frac{d \overline{q_j^{(n-1)}}}{d a}\; \cdot
+\end{equation}
+Setting $a=0$ in Eq. (\ref{ch1:s6}) and  using the prolongation formulas, we
+obtain
+\begin{equation}
+\label{ch1:s7}
+X^{[n]} (q_i^{(n)}-\omega_i)=0,\;\; i=1,\ldots,k,
+\end{equation}
+provided Eqs. (\ref{ch1:s1}) are satisfied.  Conversely suppose that
+Eqs. (\ref{ch1:s7})
+hold. Using canonical variables, we can assume without lost of generality
+that $X=\partial /\partial t$. Hence Eqs. (\ref{ch1:s7}) read
+\begin{equation}
+\label{ch1:s8}
+ \frac{\partial \omega_i}{\partial t}=0,\;\; i=1,\ldots,k,
+\end{equation}
+whenever Eqs. (\ref{ch1:s1}) hold. Since Eqs. (\ref{ch1:s1}) define a manifold in the
+space of extended variables and the manifold is connected\footnote{i.e.
+it cannot be partitioned into two non--empty open subsets
+each of which has no points in common with the closure of the other.},
+Eqs. (\ref{ch1:s8})
+imply that the $\omega_i$s are independent of $t$. Thus the one--parameter
+group of translations
+\[ \bar t=t+a,\;\; \bar{q_i}=q_i,\;\;i=1,\dots, k,\]
+leaves Eqs. (\ref{ch1:s1}) unchanged, i.e. $X$ is their symmetry. In essence
+we have proved the following:
+\begin{theo}[Infinitesimal criteria of invariance]
+\label{inv}
+\begin{em}
+The operator $X$ defines a symmetry of Eqs. (\ref{ch1:s1}) if and only if
+\begin{equation}
+\label{ch1:s9}
+X^{[n]} (q_i^{(n)}-\omega_i)|_{(\ref{ch1:s1})}=0,\;\; i=1,\ldots,k,
+\end{equation}
+where $|_{(\ref{ch1:s1})}$ means evaluated on the manifold
+defined by (\ref{ch1:s1}).
+\end{em}
+\end{theo}
+{\bf Remark.} Eqs. (\ref{ch1:s9}) are known as the {\em defining} or the
+{\em determining} equations for the symmetries of Eqs. (\ref{ch1:s1})
+as their solutions
+lead to the full set of symmetries. For $n \ge 2$, the determining equations
+are in general an overdetermined system of linear partial differential
+equations which are much easier to solve than the initial
+equations (\ref{ch1:s1}). This is
+where the strength of Lie's method resides.
+
+The infinitesimal criteria of invariance apply to all types of
+locally solvable differential equations (see Ovsiannikov 1982).
+The restriction to odes made here is designed to suit our needs.
+\begin{defi}
+\label{al}
+\begin{em}
+A {\em Lie algebra} consists of a vector space $L$ over a field $\FF$
+together with a binary operation $[\;\;,\;\;]$, called {\em Lie bracket} or
+{\em commutator}, defined on $L$ such that the following axioms are
+satisfied:
+
+(a) Bilinearity: for any $X,\;Y,\;Z\in L$ and $a,\;b\in \FF$,
+\[ [aX+bY,Z]=a[X,Z]+b[Y,Z],\]
+\[ [X,aY+bZ]=a[X,Y]+b[X,Z];\]
+(b) Skew-symmetry: for any $X,\;Y\in L$,
+\[ [X,Y]=-[Y,X];\]
+(c) Jacobi identity: for any $X,\;Y,\;Z \in L$,
+\[ [\;[X,Y],Z]+[\;[Y,Z],X]+[\;[Z,X],Y]=0.\]
+\end{em}
+\end{defi}
+We shall take $\FF$  to be the field of real numbers $\RR\;$  or complex numbers
+$\mathbf{C}$ (Chapter 2 only). We define the Lie bracket $[\;\;,\;\;]$ on the set of
+vector fields $\vartheta$ (first--order linear differential operators) as
+\begin{equation}
+\label{ch1:s10}
+[X,Y]=XY-YX   \mbox{  for any $X,\;Y\in \vartheta .$}
+\end{equation}
+Definition (\ref{ch1:s10}) introduces a binary operation in the space of vector
+fields $\vartheta$ which makes it into a Lie algebra, i.e., axioms (a), (b) and
+(c) of Definition \ref{al} hold (Ovsiannikov 1982).
+\begin{defi}
+\label{ch1:sub}
+\begin{em}
+A subalgebra of a Lie algebra $L$ is a subspace of $L$ which contains the
+commutator of any two of its elements. 
+\end{em}
+\end{defi}
+{\bf Remark.} It can be verified that a subalgebra of a Lie algebra is also
+a Lie algebra.
+\begin{defi}
+\label{id}
+\begin{em}
+An ideal of a Lie algebra $L$ is a subspace $I$ of $L$  such that
+$[X,Y]\in I$ for all $X\in I$ and $Y\in L$.
+\end{em}
+\end{defi}
+{\bf Remark.} An ideal of $L$ is also a subalgebra of $L$.
+\begin{defi}
+\label{ch1:sol}
+\begin{em}
+An $n$--dimensional Lie algebra $L_n$ is solvable if there exist
+$r$--dimensional subalgebras
+$L_r,\; r=1,\ldots,n$, such that $L_r$ is an ideal of $L_{r+1}$.
+\end{em}
+\end{defi}
+\begin{theo}
+\begin{em}
+A Lie algebra $L_n$ is solvable if and only if there is an integer $p$ such
+that  $L_n ^{(p)}=\{0\}$, where $L_n^{(p)}$ is the $p$th derived algebra
+defined by $L_n^{(1)}=[L_n,L_n]$,\ldots, $L_n^{(p)}=[L_n^{(p-1)},L_n^{(p-1)}].$
+\end{em}
+\end{theo}
+{\bf Proof.} See for example Jacobson (1955).
+
+In the chapters to come, we will be dealing mainly with finite--dimensional Lie
+algebras. These algebras are completely described when a basis is specified
+together with the commutators of its elements (Jacobson  1955).
+\begin{theo}
+\begin{em}
+The set of all symmetries of a given differential equation form a Lie algebra
+called the {\em symmetry Lie algebra} of the underlying equation.
+\end{em}
+\end{theo}
+{\bf Proof.} See for instance Lie and Scheffers (1891), Ovsiannikov (1982).
+
+So far, we have treated only point symmetries, i.e. symmetries whose generators
+are independent of derivatives. The next section deals with symmetries
+depending on first derivatives.
+\section{Contact symmetries}
+Here, we restrict ourselves to contact transformations of the plane. For a more
+general treatment of the subject, the reader is referred to
+Lie and Engel (1890), Lie and Scheffers (1896), Anderson and Ibragimov (1979).
+
+Consider the one--parameter group $G$ of transformations
+\begin{equation}
+\label{ch1:s11}
+\left \{ \begin{array}{lll}
+\bar t & = & f(t,q,\dot q,a),\\
+\bar q & = & g(t,q,\dot q,a),\\
+\bar{\dot q} & = & h(t,q,\dot q,a),
+\end{array}
+\right.
+\end{equation}
+
+where $a$ is the group parameter and  $a=0$ corresponds to the identity
+transformation. This group can be extented to the
+``variables'' $dt,\; dq,\;d\dot q$ by means of the formulas
+\begin{equation}
+\label{ch1:s12}
+\left \{ \begin{array}{lll}
+d\bar t & = & f_tdt+f_qdq+f_{\dot q} d\dot q,\\
+d\bar q & = & g_tdt+g_qdq+g_{\dot q} d\dot q,\\
+d\bar{\dot q} &= & h_tdt+h_qdq+h_{\dot q} d\dot q,
+\end{array}
+\right.
+\end{equation}
+where the suffices stand for partial differentiations.
+It can be verified that
+Eqs. (\ref{ch1:s11})--(\ref{ch1:s12}) define a one--parameter group
+$\tilde G $ of transformations  in the extended space
+$(t,\;q,\;\dot q,\;dt,\;dq,\;d\dot q)$.
+\begin{defi}
+\begin{em}
+The set $G$ is a group  of contact transformations if the equation
+\begin{equation}
+\label{ch1:s13}
+dq-\dot q dt =0
+\end{equation}
+is invariant with respect to $\tilde G$.
+\end{em}
+\end{defi}
+Eq. (\ref{ch1:s13}) is sometimes called the {\em contact condition}.
+We have seen that a one--parameter group of transformations is equivalently
+defined by the vector tangent to its orbit, i.e. the generator of the group.
+So, let
+\begin{equation}
+\label{ch1:s14}
+X=\xi (t,q,p)\dt+\eta (t,q,p)\dq+\eta^{[1]} (t,q,p)\dr,
+\end{equation}
+where
+\[\dot q=p,\;\xi=\frac{\partial f}{\partial a}|_{a=0}
+,\; \eta=\frac{\partial g}{\partial a}|_{a=0},
+\;\eta^{[1]}=\frac{\partial h}{\partial a}|_{a=0}, \]
+be the generator of $G$. Obviously, the generator of $\tilde G$ is
+\begin{equation}
+\label{ch1:s15}
+\tilde X= X+d\xi \frac{\partial}{\partial (dt)}+
+            d\eta \frac{\partial}{\partial (dq)}+
+           d\eta^{[1]} \frac{\partial}{\partial (dp )}\; \cdot
+\end{equation}
+Now the invariance of Eq. (\ref{ch1:s13}) under $\tilde X$ reads
+\[ \tilde X (dq-pdt)|_{(\ref{ch1:s13})}=0,\]
+i.e.
+\[(\eta_t dt+p\eta_qdt+\eta_pdp)-\eta^{[1]} dt-p(\xi_tdt+\xi_q pdt+\xi_pdp)=0,\]
+viz.
+\begin{equation}
+\label{ch1:s16}
+\left \{ \begin{array}{lll}
+\eta_p &= & p\xi_p,\\
+\eta^{[1]} & = & \eta_t+p(\eta_q-\xi_t)-p^2\xi_q.
+\end{array}
+\right.
+\end{equation}
+Whence the theorem.
+\begin{theo}
+\begin{em}
+A vector field
+\[X=\xi (t,q,p)\dt+\eta (t,q,p)\dq+\eta^{[1]} (t,q,p)\dr\]
+generates a one--parameter group of contact transformations provided its
+components satisfy Eqs. (\ref{ch1:s16}).
+
+We will call such a vector field a {\em contact vector field}.
+\end{em}
+\end{theo}
+
+{\bf Remark.} A contact vector field can also be written in terms of 
+Lie's {\em characteristic function} $W =\eta -p\xi$ as
+\[X=-W_p\dt+(W-pW_p)\dq+(W_t+pW_q)\dr\; \cdot \]
+{\bf Example.} The first prolongation of a point vector field defines a
+one--parameter  group of contact transformations, i.e. it is a contact
+vector field.
+\begin{defi}
+\begin{em}
+A Lie algebra of contact vector fields is {\em reducible} if there
+is a contact
+transformation which maps these vector fields into mere first prolongations
+of point vector fields. It is {\em irreducible} otherwise.
+\end{em}
+\end{defi}
+The next theorem gives an important criteria for reducibility and is due
+to Lie (see Lie and Engel 1890). This is also to be found in Campbell (1903).
+\begin{theo}
+\begin{em}
+A Lie algebra of contact vector fields is reducible if and only if its
+operators leave unaltered a system of the form
+\begin{equation}
+\label{ch1:s17}
+\frac{dt}{a}=\frac{dp}{\beta}=\frac{dq}{ap},
+\end{equation}
+where $a$ and $\beta$ are functions of $t,\;q,\;p$.
+\end{em}
+\end{theo}
+{\bf Proof.} See  Lie and Engel (1890), Cambpell (1903). 
+
+{\bf Example.} Consider the three--dimensional abelian Lie algebra $3L_1$ of
+contact vector fields with basis operators
+\[X_1=\dt,\;X_2=\dq,\;X_3=p\dt+\frac{p^2}{2}\dq \; \cdot \]
+Although $X_3$ is a nontrivial contact vector field, $3L_1$ is reducible.
+Indeed, it leaves invariant the system
+\[\frac{dt}{1}=\frac{dp}{0}=\frac{dq}{p}\; \cdot \]
+The contact transformation
+\[\bar t=pt-q,\;\bar q=p,\;\bar p=1/t\]
+maps  the basis operators of $3L_1$ to
+
+\[X_1=\bar q\frac{\partial}{\partial \bar t}-\bar p^2\frac{\partial}{\partial  \bar p},\;
+X_2=-\frac{\partial}{\partial \bar t},\;
+X_3=\frac{\bar q^2}{2}\frac{\partial}{\partial \bar t}-\bar q\bar p^2
+\frac{\partial}{\partial \bar p},\]
+which are first prolongations of point vector fields.
+
+The prolongations of contact vector fields are obtained by applying the same
+recursive formulas (\ref{ch1:t25}) as for point vector fields.
+\begin{theo}
+\begin{em}
+A contact vector field $X$ is a contact symmetry of a scalar ode
+\begin{equation}
+\label{ch1:s18}
+ q^{(n)}=\omega (t,q,\dot q,\ldots,q^{(n-1)}),
+\end{equation}
+if and only if
+\begin{equation}
+\label{ch1:s19}
+X^{[n]}(q^{(n)}-\omega)|_{(\ref{ch1:s18})}=0.
+\end{equation}
+\end{em}
+\end{theo}
+{\bf Proof.} Similar to the proof of Theorem \ref{inv}.
+
+{\bf Remark.} Only scalar des have contact symmetries (see for example
+Ovsiannikov 1982, Stephani 1989, Ibragimov 1999).
+\section{Noether point symmetries}
+Consider the variational principle
+\begin{equation}
+\label{ch1:n1}
+\delta  \int_{t_1}^{t_2} L(t,q(t),\dot q(t))dt=0,
+\end{equation}
+yielding  the Euler-Lagrange equations
+\begin{equation}
+\label{ch1:n2}
+\frac{d}{dt}\left (\frac{\partial L}{\partial \dot q_i}\right )
+-\frac{\partial L}{\partial q_i}=0,\;\;i=1,\ldots ,k.
+\end{equation}
+Consider also infinitesimal transformations in the $(t,q)$--space, defined
+by
+\begin{equation}
+\label{ch1:n3}
+\bar t\approx t+a\xi (t,q),\;\; \bar q_i\approx q_i+a\eta_i (t,q), \;\;i=1,\ldots,k.
+\end{equation}
+By means of Eqs. (\ref{ch1:n3}), each curve $t\rightarrow q(t)$, defined on an
+interval $[\alpha,\beta]$ is transformed (for sufficiently small $a$) into
+a (parameter--dependent) curve $\bar t\rightarrow \bar q(\bar t)$ in the new
+variables (see Logan 1977, Sarlet and Cantrijn 1981).
+\begin{defi}
+\begin{em}
+\label{ch1:noe}
+The infinitesimal transformations (\ref{ch1:n3}) define
+a Noether point symmetry (generator) of Eqs. (\ref{ch1:n2}) if there is a
+function $A(t,q)$, such  that for
+each differentiable curve $t\rightarrow q(t)$, we have
+\begin{equation}
+\label{ch1:n4}
+\int_{\bar t_1}^{\bar t_2} L(\bar t,\bar q(\bar t),\frac{d\bar q}{d\bar t}
+(\bar t))d\bar t =\int_{t_1}^{t_2} L(t,q(t),\dot q(t))dt
++  a\int_{t_1}^{t_2} \frac{dA}{dt}(t,q(t))dt + O(a^2),
+\end{equation}
+where $[t_1,t_2]$ is any subinterval of the interval $[\alpha,\beta]$ on
+which $q(t)$ is defined.
+\end{em}
+\end{defi}
+From Definition \ref{ch1:noe} and the usual formula for the
+change of variables in integrals, we infer that
+\begin{equation}
+\label{ch1:n5}
+L(\bar t,\bar q(\bar t),\frac{d\bar q}{d\bar t} (\bar t) )
+=L(t,q(t),\dot q(t))+ a\frac{dA}{dt}(t,q(t))+ O(a^2).
+\end{equation}
+Expanding the lefthand side of Eq. (\ref{ch1:n5}) about $a=0$ and equating
+coefficients of like powers of $a$, we  obtain
+\[ X^{[1]}L+D(\xi)L=DA,\]
+where $X$ is the symbol of the infinitesimal transformations (\ref{ch1:n3}),
+$D=d/dt$. Thus we have proved the following result.
+\begin{theo}
+\begin{em}
+A vector field $X$ in the $(t,q)$--space defines a Noether point symmetry of
+Eqs. (\ref{ch1:n2}) if and only if there exists a function $A(t,q)$ such that
+\begin{equation}
+\label{ch1:n6}
+X^{[1]}L+D(\xi)L=DA.
+\end{equation}
+\end{em}
+\end{theo}
+{\bf Remark.} Eq. (\ref{ch1:n6}) plays the role of determining equations for
+Noether point symmetries. Indeed Noether point symmetries are found by solving
+Eq. (\ref{ch1:n6}) for $\xi,\;\eta_i$ and $A$. Here again, Eq. (\ref{ch1:n6}) is,
+in general an  overdetermined system of linear partial differential equations.
+
+When $A=0$, the Noether point symmetry $X$ is sometimes called
+a {\em variational symmetry} of Eqs. (\ref{ch1:n2}) since it leaves the
+functional $L$ unchanged.
+
+\begin{theo}[Noether 1918]
+\begin{em}
+To each Noether point symmmety (\ref{ch1:n3}) corresponds a constant of motion or
+first integral
+$I(t,q,\dot q)$, given by
+\begin{equation}
+\label{ch1:n7}
+I(t,q,\dot q)=\left [ L\xi+\frac{\partial L}{\partial \dot q_i}
+(\eta_i-\dot q_i \xi) \right ]-A(t,q).
+\end{equation}
+\end{em}
+\end{theo}
+{\bf Proof.} See for instance Sarlet and Cantrijn (1981), Ovsiannikov (1982),
+Olver (1986), Ibragimov (1999).
+\section{Conclusion}
+In this introductory chapter we have provided salient features of Lie's
+theory of differential equations. We have specialised to odes as
+this will adequately serve our needs in the chapters to come.
+Furthermore, we have provided basic knowledge
+on contact  and Noether point symmetries. Other important concepts will be
+introduced as the need arises.
+
+\end{document}

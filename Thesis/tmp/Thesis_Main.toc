@@ -1,0 +1,38 @@
+\contentsline {chapter}{Marvin}{1}{Doc-Start}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Derivation of Navier-Stokes Equations}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Reynold's transport theorem}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Conservation of Mass}{11}{section.2.2}
+\contentsline {section}{\numberline {2.3}Conservation of Momentum}{13}{section.2.3}
+\contentsline {section}{\numberline {2.4}Dimensional Analysis}{15}{section.2.4}
+\contentsline {section}{\numberline {2.5}Geometries and Boundary Conditions}{17}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Dirichlet Boundary Condition}{17}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Neumann Boundary Condition}{18}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Mixed Boundary Condition}{19}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Periodic Boundary Condition}{19}{subsection.2.5.4}
+\contentsline {section}{\numberline {2.6}Conclusion}{20}{section.2.6}
+\contentsline {chapter}{\numberline {3}Discretization of the Navier-Stokes Equations}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Finite Difference Approximations}{22}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}First Order Finite Difference Approximations}{22}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Higher Order Finite Difference Approximations}{25}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}The Donor-Cell Discretization Scheme}{27}{section.3.2}
+\contentsline {section}{\numberline {3.3}Discretization of the Heat Equation}{28}{section.3.3}
+\contentsline {section}{\numberline {3.4}Discretization of the Spatial Derivative}{29}{section.3.4}
+\contentsline {section}{\numberline {3.5}Discretization of the Time Derivative}{33}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}The Time-Stepping Algorithm}{34}{subsection.3.5.1}
+\contentsline {section}{\numberline {3.6}Conclusion}{38}{section.3.6}
+\contentsline {chapter}{\numberline {4}Implementation of the Navier-Stokes Equations Solver}{39}{chapter.4}
+\contentsline {section}{\numberline {4.1}The Program}{40}{section.4.1}
+\contentsline {section}{\numberline {4.2}Conclusion}{44}{section.4.2}
+\contentsline {chapter}{\numberline {5}Visualization Techniques}{45}{chapter.5}
+\contentsline {section}{\numberline {5.1}Vector Field Representation}{46}{section.5.1}
+\contentsline {section}{\numberline {5.2}Streamlines}{46}{section.5.2}
+\contentsline {section}{\numberline {5.3}Conclusion}{46}{section.5.3}
+\contentsline {chapter}{\numberline {6}Examination of Classical Flows}{48}{chapter.6}
+\contentsline {section}{\numberline {6.1}Flow Over a Flat Plate}{48}{section.6.1}
+\contentsline {section}{\numberline {6.2}Flow Between Two Parallel Plates}{50}{section.6.2}
+\contentsline {section}{\numberline {6.3}Lid-Driven Cavity Flow}{53}{section.6.3}
+\contentsline {section}{\numberline {6.4}Flow Over a Backward Facing Step}{53}{section.6.4}
+\contentsline {section}{\numberline {6.5}Conclusion}{55}{section.6.5}
+\contentsline {chapter}{\numberline {7}Summary}{58}{chapter.7}
+\contentsline {chapter}{\numberline {}{References}}{60}{chapter*.5}

@@ -1,0 +1,825 @@
+\documentstyle[12pt]{report}
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{14pt}
+\renewcommand{\baselinestretch}{1.5}
+\setlength{\topmargin}{0pt}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\footskip}{45pt}
+\setlength{\footheight}{0pt}
+\setlength{\textwidth}{465pt}
+\setlength{\textheight}{660pt}
+\setlength{\oddsidemargin}{5pt}
+\newcommand{\RR}{\mathrm{I\!R\!}}
+\newcommand{\FF}{\mathrm{I\!F\!}}
+\newcommand{\LL}{{\cal L}}
+\newcommand{\dt}{\displaystyle{\frac{\partial}{\partial t}}}
+\newcommand{\dq}{\displaystyle{\frac{\partial}{\partial q }}}
+\newcommand{\dr}{\displaystyle{\frac{\partial}{\partial p }}}
+\newtheorem{defi}{Definition}[chapter]
+\newtheorem{theo}{Theorem}[chapter]
+\newtheorem{lem}{Lemma}[chapter]
+\begin{document}
+
+\chapter{Contact Symmetries of Scalar Ordinary Differential Equations}
+Using Lie's classification of irreducible contact transformations of the
+complex plane (Lie 1874, Lie and Engel 1890, Campbell 1903, Olver 1994,
+Ibragimov 1999),
+we show that
+a third--order scalar ordinary differential equation (ode)
+admits an irreducible contact symmetry algebra if and only if it is reducible
+to $q^{(3)}=0$ via a contact transformation. This result coupled with the
+classification of third--order odes with point symmetries
+(Mahomed and Leach 1988, 1990, Gat 1992, Ibragimov and Mahomed 1996)
+provide an explanation of symmetry breaking for third--order odes. Indeed, in
+general, the  point symmetry algebra of a third--order ode is not a
+subalgebra of the seven--dimensional point symmetry algebra of $q^{(3)}=0$.
+However, the contact symmetry algebra of any third--order ode, except for
+third--order linear odes with four-- and five--dimensional point
+symmetry algebras,  is a subalgebra of the ten--dimensional contact symmetry
+algebra of $q^{(3)}=0$.
+
+We also prove that a fourth--order
+scalar ode cannot admit an irreducible contact symmetry algebra.
+Moreover, we completely classify scalar $n$th--order ($n\ge 5$) odes
+which admit nontrivial contact symmetry algebras.
+The content of
+this chapter is also to be found in Wafo Soh {\em et al} (1999a).
+
+
+\section{Introduction}
+The notion of tangential transfomations was already present in Lie's doctoral
+thesis (Lie 1871) in which he found a contact transformation having
+the property of mapping straight lines into spheres in space. But the
+theoretical foundation of the theory of contact transformations was laid in
+Lie (1874) and Lie and Engel (1888, 1890, 1893). Since then, there have been
+numerous works on
+its applications to geometry (geodesics of a Riemannian space) and
+dynamics (Lie 1889, 1896, Vessiot 1906, Levi--Civita and Amaldi 1927,
+Whittaker 1927, Eisenhart 1933). Applications to differential equations were
+inaugurated by Lie himself: he proved that
+for ordinary differential equations (odes) of order $n$, $n \ge 3$, the
+contact symmetry algebra is finite--dimensional. He further classified
+partial differential equations with two independent variables admitting
+contact symmetries (Lie 1881, Ibragimov 1995). More importantly, he gave
+the complete classification of finite--dimensional irreducible contact
+Lie algebras in two complex variables
+(see Lie 1874, Lie and Engel 1890, Campbell 1903, Olver 1994, Ibragimov 1999).
+In this chapter, we exploit this result
+in order to  classify up to contact transformations, all $n$th--order odes,
+$n \ge 3$, admitting nontrivial contact symmetry algebras.
+
+\section{Contact symmetries of second--order odes}
+For the sake of completeness, we start by studying second--order odes.
+Hereafter, unless otherwise stated, all considerations will be local.
+
+Consider the second--order ode
+\begin{equation}
+\label{ch2:cs1}
+\ddot q=\omega (t,q,\dot q)
+\end{equation}
+which is equivalent to the system
+\begin{equation}
+\label{ch2:cs2}
+d\dot q-\omega (t,q,\dot q)dt =0,\;\; dq-\dot q dt=0.
+\end{equation}
+Let $I(t,q,\dot q)$ be a first integral\footnote{Since the equation defining
+a first integral of a second--order ode
+is a linear partial differential equation, this guarantees the local
+existence of a  first integral.}   of Eq. (\ref{ch2:cs1}) and
+$J(t,q,\dot q)$ a function  such that
+\begin{equation}
+\label{ch2:cs3}
+J_t+\dot q J_q+\omega (t,q,\dot q)J_{\dot q}=I(t,q,\dot q),
+\end{equation}
+where the subscripts refer to partial differentiations. Then, the change  of
+variables
+\begin{equation}
+\label{ch2:cs4}
+\bar t =t,\;\; \bar q= J(t,q,p),\;\;\bar p=I(t,q,p),
+\end{equation}
+where $p=\dot q$, is a contact transformation. Indeed
+\begin{eqnarray*}
+d\bar q-\bar p d\bar t &= & ( J_t dt+J_q dq+ J_pdp)-Idt \\
+&=& (J_t dt+pJ_qdt+\omega J_pdt )-Idt\;\;(\mbox{using Eqs. (\ref{ch2:cs2})} )\\
+&=& I dt-Idt\;\; (\mbox{by Eq. (\ref{ch2:cs3})})\\
+&=& 0.
+\end{eqnarray*}
+In the new variables, Eq. (\ref{ch2:cs1}) reads
+\[ \frac{d^2\bar q}{d {\bar t}^2}=0.\]
+Thus we have proved the following theorem.
+\begin{theo}
+\label{ch2:tc1}
+\begin{em}
+Up to contact transformations, all scalar second--order odes are equivalent
+to the free particle equation.
+\end{em}
+\end{theo}
+{\bf Example.} In order to illustrate Theorem \ref{ch2:tc1}, we consider the
+nonlinear equation
+\begin{equation}
+\label{ch2:cs5}
+\ddot q={\dot q}^n,\;\; n\ge 4 .
+\end{equation}
+Note that Eq. (\ref{ch2:cs5}) cannot be linearized by means of point
+transformations (Lie 1883, Tresse 1894, 1896, Mahomed 1989). A first
+integral of Eq. (\ref{ch2:cs5}) is
+\[I=\frac{p^{1-n}}{1-n}-t. \]
+Now Eq. (\ref{ch2:cs3}) becomes
+\[J_t+p J_q+p^n J_p=\frac{p^{1-n}}{1-n}-t.\]
+This equation has the general solution
+\[ J=  tp^{1-n}/(1-n)-t^2 +F\left (p^{1-n}/(1-n)-t,q-p^{2-n}/(2-n)\right ),\]
+where $F$ is an arbitrary function. Thus we can take for instance
+\[ \bar t=t,\;\; \bar q =q-p^{2-n}/(2-n)+tp^{1-n}/(1-n)-t^2,\;\;
+\bar p=p^{1-n}/(1-n)-t.\]
+
+
+An immediate consequence of Theorem \ref{ch2:tc1} is that the study of contact
+symmetries of second--order odes reduces to that of the free particle
+equation. This study has been undertaken by numerous authors (Campbell 1903,
+Schwarz 1983, Mahomed and Leach 1991) and is summarised in the following
+theorem.
+\begin{theo}
+\label{ch2:tc2}
+\begin{em}
+The contact symmetry Lie algebra of the free particle equation $\ddot q=0$ is
+the infinite--dimensional algebra $sl(3,\RR\;)\oplus_s L^{\infty}$, where
+$sl(3,\RR\;)$ is the Lie algebra of the projective group of the plane,
+$\oplus_s$ is the semi--direct sum and
+$L^{\infty}$ is the infinite--dimensional irreducible Lie algebra of contact
+vector fields generated by $W=tU(p,q-pt)+V(p,q-pt)$, where $U$ and $V$ are
+functions such that $W$ is not linear in $p$.
+\end{em}
+\end{theo}
+{\bf Proof.} See for instance Campbell (1903), Schwarz (1983),
+Mahomed and Leach (1991).
+
+Theorem \ref{ch2:tc1} together with Theorem \ref{ch2:tc2} yield the following one.
+\begin{theo}
+\begin{em}
+The contact symmetry Lie algebra of a nonlinear second--order scalar ode is
+isomorphic to the Lie algebra $sl(3,\RR\;)\oplus_s L^{\infty}$
+of Theorem \ref{ch2:tc2}.
+\end{em}
+\end{theo}
+
+\section{Contact symmetries of $n$th--order odes, $n\ge 3$}
+From the investigations of Lie and Scheffers (1891), Svirshchevskii (1993, 1995),
+Ibragimov {\em et al} (1997) and Yumaguzhin (1997), it appears that
+third--order linear
+odes reducible to $q^{(3)}=0$ via point transformations  are the only
+third--order linear odes admitting irreducible contact symmetry algebras.
+So the existence of
+nonlinear $n$th--order odes, $n\ge 3$ possessing irreducible contact symmetry
+algebras may be questioned. We shall completely tackle this problem in this
+section.
+\subsection{Some important results}
+Let us begin with some well--known fundamental results due to Lie.
+\begin{theo}[Lie--Scheffers 1891]
+\begin{em}
+Let
+\begin{equation}
+\label{ch2:cs6}
+q^{(n)}=\omega (t,q,\dot q,\ldots, q^{(n-1)})
+\end{equation}
+ be an  $n$th--order scalar
+ordinary differential equation. Then the following hold.
+
+(i) If $n=3$, then Eq. (\ref{ch2:cs6}) admits at most a ten--dimensional symmetry
+group of contact transformations. Moreover, the symmetry group is
+ten--dimensional if and only if Eq. (\ref{ch2:cs6}) is equivalent
+(up to a contact transformation) to $q^{(3)}=0.$
+
+(ii) If $n\ge 4$, then Eq. (\ref{ch2:cs6}) admits at most an $(n+4)$--parameter
+symmetry group of contact transformations. In addition, the symmetry group
+is $(n+4 )$--dimensional if and only if Eq. (\ref{ch2:cs6}) is equivalent to
+$q^{(n)}=0$.
+\end{em}
+\end{theo}
+{\bf Proof.}  Consult Lie and Scheffers (1891), Gonz\'alez--Gasc\'on and  Gonz\'alez--L\'opez
+(1983).
+
+The  next theorem first appeared in Lie (1874) and was reported in
+Lie and Engel (1890).
+\begin{theo}[Lie 1874]
+\begin{em}
+\label{ch2:liec}
+Finite--dimensional irreducible Lie algebras of contact transformations of the complex plane
+belong to one of the following  three classes modulo contact transformations.\\
+(i) $\LL_6$ with generators
+\[ X_1=\dt,\;X_2=t\dq+\dr,\;X_3=\dq,\]
+\[X_4=\frac{1}{2}t^2\dq+t\dr,\;
+X_5=t\dt-p\dr,\;X_6=p\dt+\frac{1}{2}p^2\dq,\]
+(ii) $\LL_7$ generated by  $X_1,\ldots,X_6$ and
+\[X_7=t\dt+2q\dq+p\dr ,\]
+(iii) $\LL_{10}$  with basis formed by $X_1,\ldots,X_7$ and
+\[X_8=(q-tp)\dt-\frac{1}{2}tp^2\dq-\frac{1}{2}p^2\dr,\;
+  X_9 = \frac{1}{2}t^2\dt+tq\dq+q\dr,\]
+\[  X_{10}= (tq-\frac{1}{2}t^2p)\dt+(q^2-\frac{1}{4}t^2p^2)\dq
+  +(qp-\frac{1}{2}tp^2)\dr \; \cdot \]
+\end{em}
+\end{theo}
+
+{\bf Proof.} See Lie (1874), Lie and Engel (1890), Campbell (1903).\\ 
+
+\subsection{Third--order odes}
+{\bf (a) Contact symmetries} 
+
+Consider a third--order ode
+\begin{equation}
+\label{ch2:cs8}
+q^{(3)}=\omega (t,q,\dot q,\ddot q)
+\end{equation}
+invariant under the Lie algebra $\LL_6$ of Theorem \ref{ch2:liec}. Invariance under
+$X_1$ and $X_3$ imply that $\omega$ is independent of $t$ and $q$. Hence Eq.
+(\ref{ch2:cs8}) reduces to
+\begin{equation}
+\label{ch2:cs9}
+q^{(3)}=\omega (\dot q,\ddot q).
+\end{equation}
+Imposing the symmetry $X_6$ on Eq. (\ref{ch2:cs9}), we find that $\omega$
+must satisfy
+\[-3\ddot q \omega =-\ddot q^2 \omega_{\ddot q},\]
+i.e.
+\[\omega=\ddot q^3J(\dot q),\]
+where $J$ is an arbitrary function. Now Eq. (\ref{ch2:cs9}) becomes
+\begin{equation}
+\label{ch2:cs10}
+q^{(3)}=\ddot q^3J(\dot q).
+\end{equation}
+The invariance of  Eq. (\ref{ch2:cs10}) under $X_2$  forces $J$ to satisfy
+\[\dot q J'+3J=0,\]
+where the prime stands for differentiation with respect to $\dot q$. Thus
+\[J=\frac{C}{\dot q^{3}},\]
+where $C$  is an arbitrary constant of integration. Finally, by imposing the
+symmetry $X_4$ on the resulting equation, we find that $C=0$. In summary,
+the third--order ode admitting $\LL_6$ is $q^{(3)}=0$. Note that $\LL_6$ is a
+subalgebra of $\LL_7$ and $\LL_{10}$. Furthermore, $X_7,\ldots ,X_{10}$ are also admitted
+by $q^{(3)}=0$. We have thus proved the theorem:
+\begin{theo}
+\label{ch2:3cont}
+\begin{em}
+A third--order ode admits an irreducible contact symmetry algebra if and only
+if it can be mapped to the simplest equation $q^{(3)}=0$ by means of contact
+transformations.
+\end{em}
+\end{theo}
+{\bf Example.} (Lie and Scheffers 1896, Campbell 1903, Ibragimov and
+Mahomed 1996). 
+
+(i) The  differential equation satisfied by all circles of the plane is
+\begin{equation}
+\label{ch2:cs11}
+q^{(3)}=\frac{3\dot q \ddot q^2}{1+\dot q^2}\;\cdot
+\end{equation}
+Under the contact transformation
+\begin{equation}
+\label{ch2:cs12}
+t= \frac{-\bar t}{2\bar p},\;\; \bar q=q-\frac{1}{2}\bar t\bar p,\;\;
+p=-{\bar p}^2,
+\end{equation}
+Eq. (\ref{ch2:cs11}) reduces to $\bar q^{(3)}=0$. Hence Eq. (\ref{ch2:cs11}) admits a
+ten--dimensional contact symmetry algebra. 
+
+(ii) The equation describing  hyperbolas of the plane is
+\begin{equation}
+\label{ch2:cs13}
+q^{(3)}=\frac{3\ddot q^2}{2\dot q}.
+\end{equation}
+The contact transformation\footnote{The contact transformation
+$\bar t= p,\;\; \bar q=tp-q,\;\; \bar p=t$ is the well-known Legendre
+transformation.}
+\begin{equation}
+\label{ch2:cs14}
+\bar t=\sqrt p,\;\; \bar q=tp-q,\;\; \bar p=t,
+\end{equation}
+maps Eq. (\ref{ch2:cs13}) to $\bar q^{(3)}=0$.\\
+Note that the complex  transformation
+\begin{equation}
+\label{ch2:cs15}
+t=\bar q+i\bar t,\;\; q=\bar t+i\bar q,
+\end{equation}
+maps Eq. (\ref{ch2:cs11}) to Eq. (\ref{ch2:cs13}) (see Ibragimov and
+Mahomed 1996).
+
+{\bf (b) Symmetry breaking}
+
+Its well-known that point symmetry Lie algebras of second--order odes
+are subalgebras of the eight--dimensional point symmetry algebra
+$sl(3,\RR\;)$, of the free particle equation $\ddot q=0$. For third--order
+odes  the classification of point symmetry Lie algebras given
+in Table 1.1  shows that this result does not apply.
+The main difference between scalar second--order linear odes and
+higher--order linear odes is that  for $n\ge 3$ there are three
+classes of scalar $n$th--order linear
+odes (see Mahomed 1989 and Mahomed and Leach 1990). This fact considerably
+affects the symmetry breaking problem as we shall see.
+
+Note that in Table 1.1 we have listed only realizations in the complex domain
+that are admitted by third--order odes (Mahomed 1989, Gat 1992, Ibragimov
+and  Mahomed 1996).  A close analysis of this table shows that all the
+equations listed except for those admitting $L_6$ and $L_7$ admit
+reducible contact symmetry algebras. Precisely, their contact symmetry Lie
+algebras are mere first prolongations of their point symmetry algebras. The
+equation  admitting $L_6$ admits an irreducible
+ten--dimensional contact symmetry algebra (cf. Lie and Scheffers 1896,
+Campbell 1903). From
+Theorem \ref{ch2:3cont}, we deduce that the equation is reducible via contact
+transformations to
+$q^{(3)}=0$. Further, except for equations admitting $L_{4,1}$ and $L_5$, the
+symmetries of the other equations are also symmetries of $q^{(3)}=0$.
+To see this
+we need to examine only the nontrivial cases $L_{3,6}^{II}$, $L_{3,6}^{III}$,
+$L_{4,4}$, $L_{4,5}^I$ and $L_6$. The last case has already been dealt with. 
+
+The Lie algebra $L_{4,5}^I$
+is a subalgebra of $L_6$ and we have seen that the equation admitting $L_6$ is
+reducible to $q^{(3)}=0$. Thus  the operators of $L_{4,5}^I$ written
+in appropriate coordinates  are symmetries of $q^{(3)}=0$.
+
+The equation admitting $L_{3,6}^{II}$, $L_{3,6}^{III}$ or $L_{4,4}$  can be
+considered as a generalization of Eq. (\ref{ch2:cs11}) and we have seen that this
+equation is reducible via contact transformations to $q^{(3)}=0$. Hence  
+the generators of $L_{3,6}^{II}$, $L_{3,6}^{III}$ or $L_{4,4}$ written in
+appropriate variables are symmetries of $q^{(3)}=0$. 
+
+In summary, we have proved the following theorem.
+\begin{theo}
+\label{ch2:3break}
+\begin{em}
+Except for linear equations admitting a maximal four-- or
+five--dimensional point
+symmetry Lie algebra, the contact symmetry algebra of any third--order ode is
+a subalgebra of the ten--dimensional contact symmetry algebra of the simplest
+equation $q^{(3)}=0$.
+\end{em}
+\end{theo}
+
+\subsection{Fourth--order odes}
+Here, we explore the existence of irreducible contact symmetry algebras
+for fourth--order odes.
+
+Consider a fourth-order ode
+\begin{equation}
+\label{ch2:cs16}
+q^{(4)}=\omega (t,q,\dot q,\ddot q, q^{(3)}).
+\end{equation}
+By imposing the symmetries $X_1,\ldots , X_5$ of Theorem \ref{ch2:liec}
+on Eq. (\ref{ch2:cs16}), we are led to
+\begin{equation}
+\label{ch2:cs17}
+q^{(4)}=C \left [ q^{(3)} \right ]^{4/3},
+\end{equation}
+where $C$ is an arbitrary constant. Straightfoward calculations show that
+Eq. (\ref{ch2:cs17}) does not admit $X_6$. Indeed, it is easy to verify that
+
+\[X_6^{[4]}\left ( q^{(4)}-C \left [ q^{(3)} \right ]^{4/3}\right )
+|_{(\ref{ch2:cs17})}=6\left [ q^{(3)}\right ]^2 \ne 0.\]
+
+Thus there is no fourth--order ode
+invariant under $\LL_6$. Since $\LL_6$ is a subalgebra of $\LL_7$ and
+$\LL_{10}$, we
+deduce the theorem:
+\begin{theo}
+\label{ch2:4cont}
+\begin{em}
+Fourth-order scalar odes do not  admit irreducible contact symmetry
+algebras.
+\end{em}
+\end{theo}
+\subsection{$n$th--order odes, $n \ge 5$} 
+In this section, we are concerned with the existence of $n$th--order odes,
+$n\ge 5$, admitting irreducible contact symmetry algebras. Contrary to
+the cases previously treated (third-- and fourth--order), we shall see that
+there are genuine nonlinear $n$th--order odes, $n\ge 5$, that admit
+irreducible contact symmetry algebras. 
+
+Let us start with the analysis of fifth--order odes. Consider the general
+fifth--order ode
+\begin{equation}
+\label{ch2:cs18}
+q^{(5)}=\omega (t,q,\dot q,\ddot q, q^{(3)},q^{(4)}).
+\end{equation}
+The invariance of Eq. (\ref{ch2:cs18}) under the operators $X_1,\;X_2,\;X_3$ and
+$X_4$ implies that $\omega =\omega (q^{(3)},q^{(4)})$. Further, by requiring
+the invariance of Eq. (\ref{ch2:cs18}) with respect to $X_5$ and $X_6$, we obtain
+the ode
+
+\begin{equation}
+\label{ch2:cs19}
+q^{(5)}=\frac{5}{3}\frac{\left [q^{(4)}\right ]^2 }{q^{(3)}}
++C\left [q^{(3)}\right ]^{5/3},
+\end{equation}
+where $C$ is an arbitrary constant. If we  impose $X_7$  on Eq. (\ref{ch2:cs19}),
+we find that $C=0$. Thus  the equation
+\begin{equation}
+\label{ch2:cs20}
+q^{(5)}=\frac{5}{3}\frac{\left [q^{(4)}\right ]^2 }{q^{(3)}} ,
+\end{equation}
+admits $\LL_7$. It is easy to check that Eq. (\ref{ch2:cs20}) does not admit
+$\LL_{10}$. Indeed, after cumbersome albeit simple
+calculations we find that
+
+\[ X_9^{[5]}\left (
+q^{(5)}-\frac{5}{3}\frac{\left [q^{(4)}\right ]^2 }{q^{(3)}} \right )
+|_{(\ref{ch2:cs20})}=-\frac{10}{3}q^{(4)} \ne 0. \]
+In summary we have proved the following:
+\begin{theo}
+\label{ch2:5cont}
+\begin{em}
+There are only two classes of fifth--order odes admitting irreducible contact
+symmetry algebras. A representative of the first class is Eq. (\ref{ch2:cs19}) which
+admits the six--dimensional Lie algebra $\LL_6$ and a representative of the
+second is Eq. (\ref{ch2:cs20}) which admits $\LL_7$.
+\end{em}
+\end{theo}
+In order to simplify the notation, from now on, the $n$th derivative of $q$
+with respect to $t$, viz. $q^{(n)}$, will be denoted simply by $q_n$. 
+
+Consider the most general sixth--order ode
+\begin{equation}
+q_6=F(t,q,q_1,q_2,q_3,q_4,q_5).
+\label{ch2:cs21}
+\end{equation}
+The invariance of Eq. (\ref{ch2:cs21}) under $X_1,\; X_2,\; X_3$ and $X_4$
+implies $F$ does not depend on $t$, $q$, $q_1$ and $q_2$, so 
+\begin{equation}
+F=G(q_3,q_4,q_5).
+\label{ch2:cs22}
+\end{equation}
+Moreover, the invariance of Eq. (\ref{ch2:cs21}) under $X_5$ restricts
+$G$ to
+\begin{equation}
+G=(q_3)^{2}H \left (q_3^{-1}q_4^{\frac{3}{4}},q_3^{-1}q_5^{\frac{3}{5}}
+\right ),
+\label{ch2:cs23}
+\end{equation}
+where $H$ is an arbitrary function of its argument.
+The further invariance of Eq. (\ref{ch2:cs21}) under $X_6$ implies
+that 
+\begin{equation}
+\label{ch2:cs24}
+H=-\frac{40}{9}q_3^{-4}q_4^3+5q_3^{-3}q_4q_5+P(s),
+\end{equation}
+where $P$ is an arbitrary function of $s$ with
+$s=q_3^{-\frac{8}{3}}q_4^2-\frac{3}{5}q_3^{-\frac{5}{3}}q_5$.
+Hence we arrive at the sixth-order ode with six--dimensional
+contact symmetry algebra given by
+\begin{equation}
+q_6=5q_3^{-1}q_4q_5-\frac{40}{9}q_3^{-2}q_4^3+q_3^2P(s).
+\label{ch2:cs25}
+\end{equation}
+If we further assume that Eq. (\ref{ch2:cs25}) is invariant under
+$X_7$, then $P$  becomes
+\[P(s)=Cs^{\frac{3}{2}}.\]
+Thus the sixth-order ode admitting $\LL_7$ is
+\begin{equation}
+q_6=5q_3^{-1}q_4q_5-\frac{40}{9}q_3^{-2}q_4^3
++Cq_3^{-2} \left (q_4^2-\frac{3}{5}q_3q_5 \right )^{\frac{3}{2}}.
+\label{ch2:cs26}
+\end{equation}
+A tedious but  simple calculation shows that there is no $C$ for which
+Eq. (\ref{ch2:cs26}) is invariant
+under $X_9$. This implies that there is no sixth--order equation
+admitting $\LL_{10}$. Therefore, we have shown the following:
+\begin{theo}
+\label{ch2:6cont}
+\begin{em}
+There are only two classes of sixth--order odes admitting irreducible contact
+symmetry algebras. A representative of the first class is Eq. (\ref{ch2:cs25})
+which
+admits the six--dimensional Lie algebra $\LL_6$ and a representative of the
+second is Eq. (\ref{ch2:cs26}) which admits $\LL_7$.
+\end{em}
+\end{theo}
+Next, we deal with seventh--order odes. Consider the seventh--order ode
+\begin{equation}
+q_7=F(t,q,q_1,q_2,q_3,q_4,q_5,q_6).
+\label{ch2:cs27}
+\end{equation}
+If the generators $X_1$, $X_2$, $X_3$, $X_4$ and $X_5$
+leave invariant Eq. (\ref{ch2:cs27}), this implies
+that $F$ has the form
+\begin{equation}
+F=q_3^{\frac{7}{3}}G(\lambda,\kappa,\mu),
+\label{ch2:cs28}
+\end{equation}
+where $\lambda=q_3^{-1}q_4^{\frac{3}{4}}$,
+$\kappa=q_3^{-1}q_5^{\frac{3}{5}}$, $\mu=q_3^{-1}q_6^{\frac{1}{2}}$.
+Furthermore, Eq. (\ref{ch2:cs27}) with $F$ given by Eq. (\ref{ch2:cs28})
+is invariant under $X_6$ if and only if
+\begin{equation}
+G=\frac{35}{3}\lambda^{\frac{16}{3}}+14z\lambda^{\frac{14}{3}}
+-\frac{350}{9}y\lambda^{\frac{8}{3}}+H(y,z),
+\label{ch2:cs29}
+\end{equation}
+where $y=\lambda^{\frac{8}{3}}-\frac{3}{5}\kappa^{\frac{5}{3}}$,
+$z=\frac{\mu^2}{2}+\frac{20}{9}\lambda^4-\frac{5}{2}\lambda^{\frac{4}{3}}
+\kappa^{\frac{5}{3}}$. Hence the seventh--order ode admitting $\LL_6$ 
+is
+\begin{equation}
+q_7=q_3^{\frac{7}{3}} \left [\frac{35}{3}\lambda^{\frac{16}{3}}+
+14z\lambda^{\frac{14}{3}}-\frac{350}{9}y\lambda^{\frac{8}{3}}+H(y,z)\right ].
+\label{ch2:cs30}
+\end{equation}
+By requiring Eq. (\ref{ch2:cs30}) to be invariant under $X_7$, $H$ is restricted
+to
+\[H=y^2Q(z^{-1}y^{\frac{3}{2}}).\]
+So, the seventh--order ode admitting $\LL_7$ is 
+\begin{equation}
+q_7=\frac{35}{9}q_3^{-3}q_4^4+7q_3^{-1}q_4q_6-\frac{35}{3}q_3^{-2}q_4^2q_5
+\nonumber \\
++(q_3^{-3}q_4^4+\frac{9}{25}q_3^{-1}q_5^2-\frac{6}{5}q_3^{-2}q_4^2q_5)Q(s),
+\label{ch2:cs31}
+\end{equation}
+where $s=(\frac{1}{2}q_3^2q_6+\frac{20}{9}q_4^3-\frac{5}{2}q_3q_4q_5)^{-1}
+(q_4^2-\frac{3}{5}q_3q_5)^{\frac{3}{2}}$ and
+$Q$ is an arbitrary function of $s$.
+Finally, to get seventh-order odes admitting
+$\LL_{10}$, it suffices to consider the invariance of
+Eq. (\ref{ch2:cs31}) under $X_8,\;X_9$ and $X_{10}$. The invariance under
+$X_9$ implies that $Q(s)$ satisfies
+\begin{equation}
+\left [\frac{5}{3}s^2(q_4^2-\frac{3}{5})^{\frac{1}{2}}-3s\right ]
+Q_s-4Q+\frac{490}{9}=0.
+\label{ch2:cs32}
+\end{equation}
+The solution of Eq. (\ref{ch2:cs32}) is 
+\[Q=\frac{490}{36}\;\cdot\]
+Hence we get the equation
+\begin{equation}
+q_7=7q_3^{-1}q_4q_6+\frac{35}{2}q_3^{-3}q_4^4+\frac{49}{10}q_3^{-1}
+q_5^2-28q_3^{-2}q_4^2q_5.
+\label{ch2:cs33}
+\end{equation}
+Routine calculations show that Eq. (\ref{ch2:cs33})
+also admits $X_8$ and $X_{10}$. In conclusion we have proved that:
+\begin{theo}
+\label{ch2:7cont}
+\begin{em}
+There are  three classes of seventh--order odes admitting
+irreducible contact
+symmetry algebras. A representative of the first class is Eq. (\ref{ch2:cs30})
+which
+admits the six--dimensional Lie algebra $\LL_6$, a representative of the
+second is Eq. (\ref{ch2:cs31}) which admits $\LL_7$ and a representative of the
+third is Eq. (\ref{ch2:cs33}) which admits $\LL_{10}$.
+\end{em}
+\end{theo}
+Consider now the general eighth--order ode
+\begin{equation}
+q_8=F(t,q,q_1,q_2,q_3,q_4,q_5,q_6,q_7).
+\label{ch2:cs34}
+\end{equation}
+The invariance of Eq. (\ref{ch2:cs34})  under $X_1,X_2,\cdots, X_6$
+constrains $F$ to
+\begin{equation}
+F=\frac{28}{3}q_3^{-1}q_4q_7-\frac{70}{3}q_3^{-2}q_4^2q_6
++\frac{35}{3}q_3^{-2}q_4q_5^2-\frac{70}{3}q_3^{-3}q_4^3q_5\nonumber\\
++\frac{280}{9}q_3^{-4}q_4^5+q_3^{\frac{8}{3}}G(\lambda,\kappa,\mu),
+\label{ch2:cs35}
+\end{equation}
+where $G$ is an arbitrary function of the indicated variables, and
+\[ \lambda=q_3^{-\frac{8}{3}}(q_4^2-\frac{3}{5}q_3q_5),\;\;
+\kappa=\frac{1}{2}q_3^{-2}q_6+\frac{20}{9}q_3^{-4}q_4^3-
+\frac{5}{2}q_3^{-3}q_4q_5,\]
+\[ \mu=q_3^{-\frac{7}{3}}q_7-\frac{35}{9}q_3^{-\frac{16}{3}}q_4^4
+-7q_3^{-\frac{10}{3}}q_4q_6+\frac{35}{3}q_3^{-\frac{13}{3}}q_4^2q_5.\]
+Moreover, by requiring Eq. (\ref{ch2:cs34}), with  $F$ given by
+Eq. (\ref{ch2:cs35}), to be invariant with respect to $X_7$, we obtain
+\begin{equation}
+G=q_3^{-\frac{20}{3}}(q_4^2-\frac{3}{5}q_3q_5)^{\frac{5}{2}}H(y,z),
+\label{ch2:cs36}
+\end{equation}
+where is arbitrary and
+\[ y=(q_4^2-\frac{3}{5}q_3q_5)^{-\frac{3}{2}}(\frac{1}{2}q_3^2q_6
++\frac{20}{9}q_4^3-\frac{5}{2}q_3q_4q_5),\]
+
+\[z=(q_4^2-\frac{3}{5}q_3q_5)^{-2}(q_3^2q_7-7q_3^2q_4q_6
++\frac{35}{3}q_3q_4^3q_5+\frac{280}{9}q_4^4).\]
+
+Thus we get the eighth--order ode with seven-dimensional contact
+symmetry algebra given by
+\begin{equation}
+q_8=\frac{28}{3}q_3^{-1}q_4q_7-\frac{70}{3}q_3^{-2}q_4^2q_6
++\frac{35}{3}q_3^{-2}q_4q_5^2-\frac{70}{3}q_3^{-3}q_4^3q_5\nonumber\\
++\frac{280}{9}q_3^{-4}q_4^5+q_3^{-4}(q_4^2
+-\frac{3}{5}q_3q_5)^{\frac{5}{2}}H(y,z).
+\label{ch2:cs37}
+\end{equation}
+Finally, Eq. (\ref{ch2:cs37}) does not admit $\LL_{10}$ for any choice of $H$.
+Indeed it cannot be invariant under $X_9$. To see this, note that the
+invariance under $X_9$ requires that $H$  satisfies 
+the following system of first-order partial differential equations.
+
+\begin{equation}
+H_y-\frac{8}{5}z+\frac{700}{9}=0,\;\;\nonumber\\
+3yH_y+(4z-\frac{490}{9})H_z-5H-112y=0.
+\label{ch2:cs38}
+\end{equation}
+
+It is easy to see that Eqs. (\ref{ch2:cs38}) have no solutions.
+Indeed, by integrating the first equation of (\ref{ch2:cs38}), we get 
+
+\begin{equation}
+H=\frac{8}{5}yz-\frac{700}{9}y+P(z),
+\label{ch2:cs39}
+\end{equation}
+where $P(z)$ is an arbitrary function. The substitution of
+Eq. (\ref{ch2:cs39}) into the second equation of (\ref{ch2:cs38}) implies that
+$P$ satisfies 
+
+\[(4y-\frac{490}{9})P'-5P+\frac{16}{5}yz-\frac{446}{9}y=0,\]
+
+which is clearly impossible. In conclusion we have established that:
+
+\begin{theo}
+\label{ch2:8cont}
+\begin{em}
+There are  two classes of eighth--order odes admitting
+irreducible contact
+symmetry algebras. A representative of the first class is Eq. (\ref{ch2:cs34})
+with $F$ given by Eq. (\ref{ch2:cs35}) which admits the six--dimensional
+Lie algebra $\LL_6$ and  a representative of the
+second is Eq. (\ref{ch2:cs37}) which admits $\LL_7$.
+\end{em}
+\end{theo}
+To complete the classification, we next deal with $n$th--order odes,
+$n \ge 9 $. Direct calculations in this case are quite cumbersome. We shall
+thus use the calculation of fundamental invariants and invariant one--forms
+of the Lie algebras $\LL_6,\;\LL_7$ and $\LL_{10}$ given in Olver (1994).
+
+\begin{theo}
+\label{ch2:ncont}
+\begin{em}
+For $n$th--order odes, $n \ge 9$, there are three classes of equations with
+irreducible contact symmetry algebras  corresponding to $\LL_6,\;\LL_7,\;
+\LL_{10}$ respectively.
+
+(i) A representative of the first class is
+\begin{equation}
+\label{ch2:cs40}
+F(I, \Gamma [I],\ldots , \Gamma^{n-5}[I])=0,
+\end{equation}
+where
+\[ I=q_3^{-8/3} (3q_3q_5-5q_4^2),\;\;\Gamma=q_3^{-1/3}\frac{d}{dt}\;\cdot\]
+(ii) A representative of the second is
+\begin{equation}
+\label{ch2:cs42}
+F(I, \Gamma [I],\ldots ,\Gamma^{n-6}[I])=0,
+\end{equation}
+where
+\[I=(3q_3q_5-5q_4^2)^{-3/2}(9q_3^2q_6-45q_3q_4q_5+40q_4^3),\]
+\[\Gamma=q_3(3q_3q_5-5q_4^2)^{-1/2}\frac{d}{dt}\;\cdot\]
+(iii) A representative of the third is
+\begin{equation}
+\label{ch2:cs43}
+F(I, \Gamma [I],\ldots , \Gamma^{n-9}[I])=0,
+\end{equation}
+where
+\[I=J^{-5/2}K,\;\;\Gamma=q_3J^{-1/4}\frac{d}{dt},\]
+\[J=10q_3^7-70q_3^2q_4q_6-49q_3^2+280q_3q_4^2q_5-175q_4^4,\]
+\[K=q_3^2[JD^2_tJ-\frac{9}{8}(D_t J)^2]+q_3q_4JD_tJ-\frac{4}{5}
+(7q_3q_5-5q_4^2)J^2,\;\;D_t\equiv d/dt.\]
+
+\end{em}
+\end{theo}
+{\bf Proof.} The $I$s appearing in the theorem are the fundamental invariants
+and the $\Gamma$s  are operators of invariant differentiation
+(Ovsiannikov 1982)
+of the corresponding Lie algebras. All these were given in Olver (1994).
+The result
+of the theorem follows then from Lie's classical invariant
+representation of differential equations (Lie 1884).
+
+In summary, from the above discussion, we infer that fourth--order odes
+do not admit irreducible contact Lie algebras and that nontrivial odes with
+irreducible contact symmetry algebras occur from order $n\ge 5$ only.
+
+\begin{table}
+\label{ch2:tab1}
+\begin{center}
+\caption{Point symmetry algebras of third--order odes in the complex domain} 
+\begin{tabular}{|l|l|l|}
+\hline
+Algebras  & Realizations in the complex plane & Representative Equations \\
+\hline \hline
+$ L_1$  &  $X_1=\dt$ & $q^{(3)}=f(q,\dot q,\ddot q)$ \\
+\hline
+$ L_{2,1}^I$ &  $X_1=\dt,\;\;X_2=\dq$ & $q^{(3)}=f(\dot q,\ddot q)$  \\
+\hline
+$L_{2,1}^{II}$  & $X_1=\dq,\;\;X_2=t\dq$ & $q^{(3)}=f(t,\ddot q)$\\
+\hline
+$L_{2,2}^{I}$ & $X_1=\dq,\;\;X_2=t\dt+q\dq$ &
+$q^{(3)}=\ddot q^2 f(\dot q,t\ddot q)$\\
+\hline
+$L_{2,2}^{II}$ & $X_1=\dq,\;\;X_2=q\dq$ & $q^{(3)}=\dot q f(t,\ddot q/\dot q)$ \\
+\hline
+$L_{3,1}$ & $X_1=\dq,\;\;X_2=\dt,\;\;X_3=t\dq$ & $q^{(3)}=f(\ddot q)$\\
+\hline
+$L_{3,2}^I$ & $X_1=\dq,\;\;X_2=\dt,$ &
+$q^{(3)}=\ddot q^2f(\ddot q\exp \dot q)$\\
+& $X_3=t\dt+(t+q)\dq$    &       \\
+\hline
+$L_{3,2}^{II}$ & $X_1=\dq,\;\;X_2=t\dq,\;\;X_3=\dt+q\dq$ &
+$q^{(3)}\ddot q=f(\exp t/\ddot q)$ \\
+\hline
+$L_{3,3}^I $ & $X_1=\dt,\;\;X_2=\dq,\;\;X_3=t\dt$ &
+$q^{(3)}=\ddot q ^{3/2}f(\ddot q\dot q^{-2})$\\
+\hline
+$L_{3,3}^{II} $ & $X_1=\dq,\;\;X_2=t\dq,\;\;X_3=t\dt+q\dq$ &
+$q^{(3)}=\ddot q^2f(t\ddot q)$\\
+\hline
+$L_{3,4} $ & $X_1=\dt,\;\;X_2=\dq,\;\;X_3=t\dt+q\dq$  &
+$q^{(3)}=\ddot q^2f(\dot q)$\\
+\hline
+$L_{3,5}^{I,a} $ & $X_1=\dt,\;\;X_2=\dq,$ &
+$q^{(3)}=\ddot q^{(a-3)/(a-2)}f(\ddot q^{1-a}\dot q^{a-2}),\;a\ne 0,1,2;$\\
+ & $X_3=t\dt+aq\dq$ & $q^{(3)}=\dot q^{-1}f(\ddot q),\; a=2$ \\
+\hline
+$L_{3,5}^{II,a} $ & $X_1=\dq,\;\;X_2=t\dq,$ &
+$q^{(3)}=\ddot q^{(3a-2)/(2a-1)}f(t^{1-2a}\ddot q^{1-a}),$\\
+ & $X_3=(1-a)t\dt+q\dq$  &  $\;a\ne 0,1,1/2;$\\
+ &  & $q^{(3)}=t^{-1}f(\ddot q),\; a=1/2$ \\
+\hline
+$L_{3,6}^I$ & $ X_1=\dq,\;\;X_2=t\dt+q\dq,$ &
+$ q^{(3)}= 3\ddot q^2\dot q^{-1}
++t^{-2}\dot q^4 f[(2t\ddot q+\dot q)\dot q^{-3}]$\\
+& $X_3=2tq\dt+q^2\dq$ &  \\
+\hline
+$L_{3,6}^{II}$ & $ X_1=\dq,\;\;X_2=t\dt+q\dq,$ &
+$ q^{(3)}=3\dot q\ddot q^2 (1+\dot q^2)^{-1}$\\
+& $X_3=2tq\dt+(t^2+q^2)\dq$  & $+t^{-2}(1+\dot q^2)^2
+f[(t\ddot q-\dot q-\dot q^3)(1+\dot q^2)^{-3/2}]$ \\
+\hline
+$L_{3,6}^{III}$ & $ X_1=\dq,\;\;X_2=q\dq,\;\;X_3=q^2\dq$ &
+$q^{(3)}=\displaystyle{\frac{3}{2}\frac{\ddot q^2}{\dot q}}+\dot qf(t)$ \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\setcounter{table}{0}
+\begin{table}
+\label{ch2:tab2}
+\begin{center}
+\caption{Point symmetry algebras of third--order odes in the complex domain
+(continued)}
+\begin{tabular}{|l|l|l|}
+\hline
+Algebras  & Realizations in the complex plane & Representative Equations \\
+\hline \hline
+$L_{4,1}$ & $X_1=\dq,\;\;X_2=t\dq,$ &
+$q^{(3)}= \left ( h^{(3)}(t)/\ddot h \right )\ddot q,\;\; h^{(3)}\ne 0$\\
+& $X_3=h(t)\dq,\;\;X_4=q\dq$ &  \\
+\hline
+$L_{4,2}$ & $X_1=\dt,\;\;X_2=\dq,$ &
+$q^{(3)}=C\ddot q^2/\dot q,\;\;C\ne 0,3/2$\\
+& $X_3=q\dq,\;\;X_4=t\dt$ & \\
+\hline
+$L_{4,3}^b$ & $X_1=\dq,\;X_2=\dt,$ &
+$ q^{(3)}=C\ddot q^{(b-2)/(b-1)},\;b\ne 1,\;2;\;C\ne 0$ \\
+& $X_3=t\dq,\;X_4=t\dt+(1+b)q\dq$ & \\
+\hline
+$L_{4,4}$ & $X_1=\dq,\;X_2=\dt,$ &
+$q^{(3)}=3\dot q\ddot q^2(1+\dot q^2)^{-1}+C\ddot q^2 (1+\dot q^2)^{-1},\;
+C\ne 0 $\\
+& $X_3=t\dt+q\dq,\;X_4=q\dt-t\dq$ & \\
+\hline
+$L_{4,5}^I$ & $X_1=\dt,\;X_2=\dq,$ &
+$ q^{(3)}=\displaystyle{\frac{3}{2}\frac{\ddot q^2}{\dot q}}
++C\dot q,\;\; C\ne 0$\\
+& $X_3=q\dq,\;X_4=q^2\dq$   &   \\
+\hline
+$L_{4,5}^{II}$ & $X_1=\dq,\;X_2=t\dt+q\dq,$ &
+$ q^{(3)}=\displaystyle{\frac{3}{2}\frac{\ddot q^2}{\dot q}
++C\frac{(2t\ddot q+\dot q)^{3/2}}
+{t^2\sqrt{\dot q}}}$\\
+& $\;X_3=2tq\dt+q^2\dq,\;X_4=t\dt$ & \\
+\hline
+$L_{4,6}$ & $X_1=\dq,\;X_2=t\dq,$ &
+$q^{(3)}=C\exp (-\ddot q)$ \\
+& $X_3=\dt,\;X_4=t\dt+(2q+t^2/2)\dq$ & \\
+\hline
+$L_{5}$ & $ X_1=\dt,\;X_2=q\dq,\;X_i=\eta_i (t)\dq,$ &
+$ q^{(3)}+k\dot q+lq=0$\\
+ & where the $\eta_i$s are independent & \\
+ & solutions of  & \\
+ & $\eta '''+k\eta '+l\eta=0,\;\;k,\;l=\mbox{ const.}$ & \\
+\hline
+$L_6$ & $X_1=\dt,\;X_2=t\dt,\;X_3=t^2\dt,$ & $q^{(3)}=\displaystyle{
+\frac{3}{2}\frac{\ddot q^2}{\dot q}}$\\
+ & $X_4=\dq,\;X_5=q\dq,\;\;X_6=q^2\dq$ &    \\
+\hline
+$L_7$ & $X_1=q\dq,\;X_2=\dq,\;X_3=t\dq,$ & \\
+& $\;X_4=t^2\dq,\;X_5=\dt$ & $q^{(3)}=0$ \\ 
+   & $\;X_6=t\dt,\; X_7=t^2\dt+2tq\dq$ & \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\end{document}
+
+

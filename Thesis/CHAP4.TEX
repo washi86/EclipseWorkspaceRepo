@@ -1,0 +1,583 @@
+%\documentstyle[12pt]{report}
+%\setlength{\parindent}{0mm}
+%\setlength{\parskip}{14pt}
+%\renewcommand{\baselinestretch}{1.5}
+%\setlength{\topmargin}{0pt}
+%\setlength{\headheight}{0pt}
+%\setlength{\headsep}{0pt}
+%\setlength{\footskip}{45pt}
+%\setlength{\footheight}{0pt}
+%\setlength{\textwidth}{430pt}
+%\setlength{\textheight}{660pt}
+%\setlength{\oddsidemargin}{10pt}
+%\newcommand{\RR}{\mathrm{I\!R\!}}
+%\newtheorem{prop}{Proposition}[chapter]
+%\newtheorem{theo}{Theorem}[chapter]
+%\newtheorem{defi}{Definition}[chapter]
+%\newtheorem{coro}{Corollary}[chapter]
+%\newtheorem{lem}{Lemma}[chapter]
+
+%\begin{document}
+
+\chapter{Generalization of Abel--Forsyth Formula: a Symmetry  Approach}
+
+
+Using Lie symmetry analysis, we prove that if we know $mn-1$ linearly
+independent solutions of a system of $m$ linear homogeneous  $n$th--order
+ordinary differential equations (odes), we can write down its general
+solution employing known ones only. Hence we obtain a generalization
+of the celebrated Abel--Forsyth formula. This result is applied to projective Riccati
+equations which frequently appear in applications (control theory,
+population dynamics,
+chemistry of self-catalysing reactions, soliton theory
+(B\"acklund transformations), \ldots). We also show how an extension to
+nonhomogeneous systems can be implemented. Thus we provide a
+symmetry--based justification and extension  of the well--known
+method of variation of parameters to systems.
+The scalar case was considered in Ibragimov (1999). The main idea of this
+chapter has been presented in Wafo Soh and Mahomed (1999d).
+
+\section{Introduction}
+The knowledge of $n$ linearly independent solutions of
+a scalar $n$th--order linear homogeneous ode enables one to write its general 
+solution as the linear combination of the known ones. A less demanding
+result is also
+known. Namely $n-1$ linearly independent solutions of a scalar 
+linear homogeneous ode are enough to solve it by quadratures. This result was
+first proved by Abel (1839) for the case $n=2$ by means of an 
+ansatz for the general solution. It was later generalized by
+Forsyth (1921). In his proof, Forsyth used  a modified version of the
+method of variation of parameters for which an analoguous method for systems
+was still unknown. Besides, there is no clear relation between the
+Abel and Forsyth approaches. Thus if we wish
+to extend their results to systems, it is  important to prove them using
+different and unifying arguments.
+This task will be carried out in this chapter.
+Precisely, we show using symmetry methods that if we know $mn-1$ linearly
+independent solutions of a system of $m$ linear homogeneous $n$th--order odes, we can solve 
+the underlying system by quadratures and thus express the general solution 
+in terms of the known ones only. This result is applied to the
+{\em projective Riccati equation} (Aderson {\em et al.} 1982)
+which is the multi--dimensional
+counterpart of the usual scalar Riccati equation and which occurs in numerous
+applications, e.g. in contol theory, population dynamics, chemistry of
+self--catalysing reactions and soliton theory. 
+Moreover, an extension to nonhomogeneous systems is implemented.
+This provides the group--theoretic basis and generalization
+for variation of parameters. It is opportune to
+mention that the group--theoretic method for variation of parameters of
+scalar linear odes is given in Ibragimov (1999).
+\section{Symmetry justification of the Abel--Forsyth \\
+formula}
+Firstly we reprove, in a simple and unified manner, the classical
+result of Forsyth (1921) on scalar linear homogeneous odes by means
+of Lie point symmetries. Note that the case of second--order linear
+homogeneous odes was treated earlier by Abel (1839).
+
+\begin{theo}[Abel--Forsyth]
+\label{ch4:theo1}
+\begin{em}
+When $n-1$ linearly independent particular solutions of a scalar linear 
+homogeneous ode of the $n$th order are known, the equation  can
+be solved by quadratures.
+\end{em}
+\end{theo}
+{\bf Proof.}  If $n-1$ linearly independent solutions $y_1,\ldots,y_{n-1}$
+are known, the equation admits the point symmetries
+$ X_k=y_k\partial/\partial y,\quad k=1,\ldots,n-1.$ 
+The homogeneity operator $X_n=y\partial/\partial y$
+is also admitted by the equation. Hence the equation admits $n$ symmetries
+which spans the Lie algebra with commutators
+\[ [X_i, X_j]=0,\;\;\;[X_i,X_n]=X_i,\;\; i,\;j=1,\ldots,n-1.\] 
+Thus the equation admits a solvable Lie algebra of symmetries.
+Whence it is solvable, via Lie's solvability criteria, by quadratures 
+(Ovsiannikov 1982, Olver 1986, Bluman and Kumei 1989,
+Stephani 1989, Ibragimov 1999). This completes the proof. 
+
+In order to illustrate how the superposition principle can be obtained, we
+next deal with the particular case $n=2.$ Consider the second--order linear 
+ode
+\[\ddot y-a(x)\dot y-b(x)y=0\]
+for which a solution $y_1(x)$ is known. Therefore this  equation has,
+apart from $X_2=y\partial/\partial y$, $X_1=y_1(x)\partial/\partial y$.
+The first prolongation of this operator is given by 
+\[X_1^{[1]}=y_1(x)\frac{\partial}{\partial y}+
+\dot y_1(x)\frac{\partial}{\partial\dot y}\]
+and a basis of first order differential invariants is provided by
+$u=x,\;\;v=\dot y_1y-y_1\dot y.$ In the new coordinates $(u,v)$,
+the equation becomes
+\[\frac{dv}{du}=av\]
+and inherits $X_2=v\partial/\partial v.$ It is easily solved and
+consequently
+\[y_1\dot y-\dot y_1 y=C_2\mbox{exp}\left (\int a(x)dx\right ),\quad
+C_2=\mbox{const.}\]
+Hence
+\[y=C_2y_1\int \left [\frac{1}{y_1^2}\mbox{exp}\left 
+(\int a(x)dx \right) \right ]dx+C_1y_1,\;\;C_1,\;C_2=\mbox{const.}\]
+This formula is known as Abel's formula (Abel 1839, Ince 1927). 
+Its analogue for arbitrary order due to Forsyth (1921) is also known
+and will be re--discovered in the following section
+as a consequence of Lie symmetry analysis of linear systems. We in fact
+provide a generalization of the Abel--Forsyth formula using group--theoretic
+arguments. Notwithstanding, we also give a group--theoretic treatment and
+extension of the variation of parameters method.
+\section{Systems of linear homogeneous  first--order odes}
+It is well established that the knowledge of $m$ linearly independent
+solutions of a system of $m$ first--order linear homogeneous odes enables
+one to write its general solution as a linear combination of the known ones.
+The following theorem shows that one of the known solutions is redundant.
+Its proof is mainly based on symmetry properties of the equation.
+\begin{theo}
+\label{ch4:theo2}
+\begin{em} 
+Consider the following system
+\begin{equation}
+\dot x=A(t)x,  \label{ch4:eq1}
+\end{equation}
+where $A=[a_{ij}]$ is an $m\times m$ matrix, $x=(x_1,\ldots,x_m)^T$ and the  
+overdot denotes  differentiation with respect to $t$. If $m-1$ 
+linearly independent solutions
+\begin{equation}
+e_{\alpha}=(e_{\alpha 1},\ldots ,e_{\alpha m})^T 
+,\;\;\alpha=1,\ldots,m-1
+\label{ch4:eq2}
+\end{equation}
+of Eq. (\ref{ch4:eq1}) are known, we can solve it 
+by quadratures. Assume without loss of generality that\footnote{This
+is justified by the fact that the $e_{\alpha}$s
+are linearly independent}
+\[\Delta=\left |\begin{array}{cccc}
+e_{11}&e_{12}&\cdots&e_{1m-1}\\
+\vdots&     &       & \vdots\\
+e_{m-11}&e_{m-12} & \cdots &e_{m-1m-1}
+\end{array} \right | \ne 0.\]
+Then the general solution is given by 
+\begin{eqnarray}
+x_{\alpha} &=& e_{\beta \alpha}\left [
+ c_{\beta}+c_m\int^{t}\left [ \frac{\Delta_{\beta \gamma} 
+a_{\gamma m}}{\Delta^2}\mbox{exp}\int^{\xi}\mbox{Tr} A\; d\eta 
+\right ]\;d\xi \right ], \nonumber \\
+& &                          \label{ch4:eq2p} \\
+x_m &=& e_{\beta m}c_{\beta}+c_m \left [ 
+e_{\beta m}\int^{t}\left [ \frac{\Delta_{\beta \gamma} 
+a_{\gamma m}}{\Delta^2}\mbox{exp}\int^{\xi}\mbox{Tr} A\; d\eta 
+\right ] \; d\xi +\frac{1}{\Delta}\mbox{exp}\int^{t}\mbox{Tr}A\;d\xi \right ]
+\nonumber,
+\end{eqnarray}
+where summation over the repeated indices is assumed  
+and  $c_i,\;i=1,\ldots,m$ are arbitrary constants, 
+$\alpha,\;\beta,\;\gamma=1,\ldots,m-1$,
+$\mbox{Tr} A=\sum_{i=1}^{m}a_{ii}$
+is the trace of $A$, the $\Delta_{\alpha \beta}$s are  
+the cofactors\footnote{By convention, the cofactor of a $1\times 1$ 
+matrix is 
+equal to $1$. This is motivated by the use of cofactors in the calculation 
+of determinants.}
+of $[e_{\alpha \beta}] $ defined by
+\[\Delta_{\alpha \beta}=(-1)^{\alpha +\beta}\mbox{det}[\hat e_{\alpha \beta}]\]
+in which $[\hat e_{\alpha \beta}]$ is the matrix $[e_{\alpha \beta}]$  with the
+$\alpha$th row and $\beta$th column deleted.
+\end{em}
+\end{theo}
+{\bf Proof.} Throughout this proof, summation over repeated 
+indices is assumed and the notation not explicitly stated is 
+that of the theorem statement.
+Eq. (\ref{ch4:eq1}) admits the symmetries
+\begin{equation}
+X_{\alpha}=e_{\alpha i}\frac{\partial}{\partial x_i},\;\;  
+\alpha=1,\ldots,m-1
+\label{ch4:eq3}
+\end{equation}
+and the trivial one (homogeneity operator)
+\begin{equation}
+X_m=x_i\frac{\partial}{\partial x_i}\, \cdot \label{ch4:eq4}
+\end{equation}
+It can easily be checked that the following algebraic property holds: 
+\begin{equation}
+[X_{\alpha}, X_{\beta}]=0,\;\;\;\;[X_{\alpha},X_m]=X_{\alpha}, \label{ch4:eq5}
+\;\; \alpha,\;\beta=1,\ldots,m-1.
+\end{equation}
+Next we prove that there is  a new coordinate system $(T,y_1,\ldots ,y_m)$
+in which the symmetries have the canonical form
+\begin{equation}
+X_{\alpha}=\frac{\partial}{\partial y_{\alpha}},\;\;
+X_m=y_i\frac{\partial}{\partial y_i},\;\;\alpha=1,\ldots,m-1.
+ \label{ch4:eq6}
+\end{equation}
+Indeed take $T=t$ and look for $y_{\alpha},\;\alpha=1,\;\ldots,m-1,$ in
+the form
+\begin{equation}
+y_{\alpha}=y_{\alpha}(t,x_{\beta}),\;\; \alpha,\;\beta=1,\ldots,m-1. 
+\label{ch4:eq7}
+\end{equation}
+Thus the $y_{\alpha}$s satisfy the system:
+\begin{equation}
+e_{\beta \gamma}\frac{\partial y_{\alpha}}{\partial x_{\gamma}}=
+\delta_{\alpha \beta},\;\; 
+x_i\frac{\partial y_{\alpha}}{\partial x_i}=y_{\alpha}, \label{ch4:eq8}
+\;\;\alpha,\;\beta=1,\ldots,m-1,
+\end{equation}
+where $\delta_{\alpha \beta}$ is Kronecker's symbol. 
+Note that the compatibility
+conditions are satisfied for (\ref{ch4:eq8}) because of (\ref{ch4:eq5}).
+Using Cramer's rule for (\ref{ch4:eq8}a) we obtain
+\begin{equation}
+\frac{\partial y_{\alpha}}{\partial x_{\beta}}=
+\frac{\Delta_{\alpha \beta }}{\Delta}, 
+\;\;\; \alpha,\;\beta=1,\ldots,m-1, \label{ch4:eq9}
+\end{equation}
+where $\Delta=\mbox{det}[e_{\alpha \beta}]$ and the $\Delta_{\alpha \beta}$s 
+are the cofactors of $[e_{\alpha \beta}]$. Note that $\Delta$ and
+$\Delta_{\alpha\beta }$ depend on $t$ only. From Eqs. (\ref{ch4:eq9}) and 
+(\ref{ch4:eq8}b) we deduce
+\begin{equation}
+y_{\alpha}=\frac{\Delta_{\alpha \beta}}{\Delta}x_{\beta},
+\;\;\alpha,\; \beta=1,\ldots,m-1.
+ \label{ch4:eq10}
+\end{equation}
+Likewise $y_m$ is a solution of the system
+\begin{equation}
+\label{ch4:eq11}
+\left \{  \begin{array}{l}
+\displaystyle{e_{\alpha j}\frac{\partial y_m}{\partial x_j}}= 0, 
+\; \alpha=1,\;\ldots,m-1, \\
+\displaystyle{x_i\frac{\partial y_m}{\partial x_i}}= y_m . 
+\end{array} \right.
+\end{equation}
+We find\footnote{Perform the change of variable $y_m=\ln z_m$ to reduce 
+the probem to an algebraic one.}
+\[y_m=\left |\begin{array}{cccc}
+e_{11} & e_{12} &\cdots& e_{1m}\\ 
+\vdots &        &      & \vdots\\
+e_{m-1 1}& e_{m-1 2}&\cdots &e_{m-1 m}\\
+x_1 & x_2 &\cdots & x_m
+\end{array} \right |\times f_m(t),\]
+where $f_m$ is an arbitrary function which is not identically zero. 
+This completes the construction of the new coordinate system and its 
+inverse is found  after some calculations\footnote{$x_{\alpha}$ is found
+from (\ref{ch4:eq10}) and $x_m$ is obtained easily by noticing that
+$\frac{\partial x_m}{\partial y_{\alpha}}=e_{\alpha m},\;\;
+y_i\frac{\partial x_m}{\partial y_i}=x_m. $}
+to be 
+\[\left\{ \begin{array}{lll}
+x_{\alpha} &=& e_{\beta \alpha }y_{\beta},\;\; \alpha,\;\beta=1,\ldots,m-1,\\
+x_m &=&\displaystyle{e_{\beta m }y_{\beta}+\frac{y_m}{\Delta f_m(t)}}\;\cdot
+\end{array} \right.\]
+In the new coordinates, Eq. (\ref{ch4:eq1}) reads
+\begin{equation} 
+\left \{ \begin{array}{lll}
+\dot y_{\alpha} &=& \displaystyle{\frac{\Delta_{\alpha \beta}}
+{\Delta^2f_m}a_{\beta m} y_m},\;\; \alpha,\beta=1,\ldots ,m-1,\\
+\dot y_m &=&\displaystyle{\left (\mbox{Tr}A+\frac{\dot f_m}{f_m} \right)y_m},
+\end{array}\right.  \label{ch4:eq12}
+\end{equation}
+where $\mbox{Tr} A$ is the trace of $A$. The solution of (\ref{ch4:eq12}) is
+given by
+\begin{eqnarray*}
+y_{\alpha} &=& c_{\alpha}+c_m\int^{t}\left [ \frac{\Delta_{\alpha \beta} 
+a_{\beta m}}{\Delta^2}\mbox{exp}\left (\int^{\xi}\mbox{Tr} A\; d\eta 
+\right ) \right ]\;d\xi,\quad
+ \alpha,\beta=1,\ldots ,m-1 \\ 
+y_m &=&c_m f_m\mbox{exp}\int^{t}\mbox{Tr}A\;d\xi,
+\end{eqnarray*}
+where the $c_i$s are arbitrary constants.
+Whence
+\begin{eqnarray*}
+x_{\alpha} &=& e_{\beta \alpha}\left [
+ c_{\beta}+c_m\int^{t}\left [ \frac{\Delta_{\beta \gamma} 
+a_{\gamma m}}{\Delta^2}\mbox{exp}\int^{\xi}\mbox{Tr} A\; d\eta 
+\right ]\;d\xi \right ] \\
+x_m &=& e_{\beta m}c_{\beta}+c_m \left [ 
+e_{\beta m}\int^{t}\left [ \frac{\Delta_{\beta \gamma} 
+a_{\gamma m}}{\Delta^2}\mbox{exp}\int^{\xi}\mbox{Tr} A\; d\eta 
+\right ] \; d\xi +\frac{1}{\Delta}\mbox{exp}\int^{t}\mbox{Tr}A\;d\xi \right ]
+\\
+& & \quad \alpha,\beta,\gamma=1,\ldots,m-1 .
+\end{eqnarray*}
+This completes the proof of the theorem. 
+
+\begin{coro}[Abel--Forsyth]
+\label{ch4:coro1}
+\begin{em}
+Consider the equation
+\begin{equation}
+y^{(m)}=\sum^{m-1}_{i=0}a_i(t)y^{(i)}. \label{ch4:e1}
+\end{equation}
+If $m-1$ linearly independent solutions $y_1,\ldots ,y_{m-1}$ of Eq. 
+(\ref{ch4:e1}) are given, its general solution is defined by the formula
+\begin{equation}
+y=\sum_{i=1}^{m-1}c_iy_i+c_m\sum_{i=1}^{m-1}y_i\int^t 
+\left [\frac{\Delta_i}{\Delta^2}\mbox{exp}\int^{\xi}a_{m-1}d\eta \right ]d\xi,
+\label{ch4:e2}
+\end{equation} 
+where
+\[ \Delta=\left | \begin{array}{cccc}
+y_1&\dot y_1 & \cdots & y_1^{(m-2)}\\
+y_2& \dot y_2 & \cdots & y_2^{(m-2)}\\
+\vdots&       &        & \vdots\\
+y_{m-1}& \dot y_{m-1} & \cdots & y_{m-1}^{(m-2)}\\
+\end{array} \right |,\]
+$\Delta_i$ is the cofactor of $y_i^{(m-2)}$ in $\Delta$ and the $c_i$s are
+arbitrary constants.
+\end{em}
+\end{coro}
+{\bf Proof.} By means of the change of variables
+\[x_1=y,\;x_2=\dot y,\ldots ,x_m=y^{(m-1)},\]
+Eq. ({\ref{ch4:e1}) becomes
+\begin{equation}
+\dot x =Ax,\label{ch4:e3}
+\end{equation}
+where
+\[A= \left [ \begin{array}{ccccc}
+0 & 1 & 0 & \cdots &0\\
+\vdots & \ddots  &\ddots &\ddots  &\vdots  \\
+\vdots &  & \ddots & \ddots &0\\    
+0 &\cdots &\cdots & 0 & 1\\
+a_0 & a_1 & a_2 & \cdots  & a_{m-1}
+\end{array} \right ]. \]
+Eq. (\ref{ch4:e3}) posseses the particular solutions
+\[e_{\alpha}=(y_{\alpha},\;\dot y_{\alpha},\ldots , y_{\alpha}^{(m-1)})^T,\;\;
+\alpha=1,\ldots,m-1,\]
+with
+\[\mbox{Tr} A=a_{m-1} .\]
+Furthermore $\Delta$ does not vanish as $y_1,\ldots ,y_{m-1}$ are
+linearly independent.
+Finally, use $ y=x_1 $ and formula (\ref{ch4:eq2p}) to conclude.
+
+\section{ The general case}
+
+The natural generalization of Theorem \ref{ch4:theo2} is
+Theorem \ref{ch4:theo3}.
+\begin{theo}
+\label{ch4:theo3}
+\begin{em}
+When $mn-1$ linearly independent solutions of a system of $m$ linear 
+homogeneous $n$th-order  odes
+are known, we can integrate this system by quadratures.
+\end{em}
+\end{theo}
+{\bf Proof.}  Consider a system
+\begin{equation}
+x^{(n)}=\sum_{i=0}^{n-1} A_ix^{(i)},\label{ch4:eq13} 
+\end{equation}
+where the $A_i$s are $m\times m$ matrices, $x=(x_1,\ldots ,x_m)^T$.
+We prove the theorem by induction on the order $n$ of the system. 
+From Theorem \ref{ch4:theo2}, the assertion of the theorem is true for $n=1$. 
+Assume now that it is true for any order $k$ with $1\le k\le n-1$. Let  
+\[e_k=(e_{kl})^T,\;\;\;\; k,\;l=1,\ldots ,m\]
+be $m$ arbitrary  solutions of the $mn-1$ solutions of (\ref{ch4:eq13}). 
+Thus (\ref{ch4:eq13}) admits the symmetries
+\[X_k=e_{kl}\frac{\partial}{\partial x_l},\;\; k=1,\ldots,m.\]
+Since $[X_i,X_j]=0$, using the same method as in the proof of 
+Theorem \ref{ch4:theo2}, we show that there is a change of variables
+$y_1,\ldots ,y_m$ which is linear in $x$ and  which reduces the $X_k$s to
+the translations
+\[X_k= \frac{\partial}{\partial y_k}\,\cdot\]
+Indeed
+\[y_i=\frac{\Delta_{ij}}{\Delta}x_j+f_i(t),\;\; i=1,\ldots ,m, \]
+where $\Delta=\mbox{det}[e_{ij}]$, the $\Delta_{ij}$s are 
+the cofactors of $[e_{ij}]$ and the $f_i$s are arbitrary functions.
+We set the ``gauge'' functions $f_i$ to zero in order to retain 
+the homogeneous structure of the equation.
+Since the change of variables is linear in $x$,  the
+system remains linear in the new coordinates and reads 
+\begin{equation}
+y^{(n)}=\sum_{i=1}^{n-1}B_iy^{(i)}, \label{ch4:eq14}
+\end{equation}
+where the $B_i$s are $m\times m$ matrices. In Eq. (\ref{ch4:eq14}), perform the 
+change of variable
+\begin{equation}
+v=\dot y. \label{ch4:eq15}
+\end{equation}
+The system (\ref{ch4:eq14}) becomes
+\begin{equation}
+v^{(n-1)}=\sum_{i=0}^{n-2} B_{i+1}v^{(i)}. \label{ch4:eq16}
+\end{equation}
+Note that we have used only $m$ solutions of (\ref{ch4:eq13}). The remaining
+$(n-1)m-1$ solutions are transformed into solutions of (\ref{ch4:eq16}) using
+the  change of variables $y$ and (\ref{ch4:eq15}). Hence (\ref{ch4:eq16}) is a system
+of $m$ linear homogeneous $(n-1)$st--order odes for which we know 
+$(n-1)m-1$ solutions.
+We conclude using the hypothesis of induction.
+
+An alternative proof consists in writing (\ref{ch4:eq13}) as a system of $nm$ 
+linear homogeneous first--order odes. We will use this argument in deriving
+the superposition formula.
+\begin{theo}[Superposition law]
+\begin{em}
+Consider the system
+\begin{equation}
+x^{(n)}=\sum_{i=0}^{n-1}A^{i}x^{(i)}, \label{ch4:a1} 
+\end{equation}
+where $n,\; m\ge 2$, $A^i=[a_{jk}^i]$ is an $m\times m$ matrix,
+$x=(x_1,\ldots ,x_m)^T$. Assume that we know $mn-1$ linearly independent 
+solutions of (\ref{ch4:a1})
+\[e_{\alpha}=(e_{\alpha 1},\ldots,e_{\alpha m})^T,\;\;\alpha=1,\ldots,mn-1.\]
+Suppose without loss of generality\footnote{ This is justified in 
+that the $e_{\alpha}$s are linearly independent.} that
+\[ \Delta=\left | \begin{array}{ccccccc}
+e_1 & \dot e_1 &\cdots &e_1^{(n-2)}&e_{11}^{(n-1)}&\cdots &e_{1m-1}^{(n-1)}\\
+\vdots & & & & & & \vdots\\
+e_{mn-1} & \dot e_{mn-1} &\cdots &e_{mn-1}^{(n-2)}&
+e_{mn-11}^{(n-1)}&\cdots &e_{mn-1m-1}^{(n-1)}
+\end{array}\right |\ne 0.\]
+Then the general solution of (\ref{ch4:a1}) is given by
+\begin{eqnarray}
+x_{i} &= & e_{\alpha i} \left \{c_{\alpha}+c_{mn}\int^t\left [
+\frac{\Delta_{\alpha\; m(n-1)}}{\Delta^2}\mbox{exp}\int^{\xi}\mbox{Tr}A^{n-1}
+\;d\eta \right ]d\xi \right. \nonumber\\
+& &\left. +c_{mn}\int^t\left [\frac{\Delta_{\alpha\;j+m(n-1)}a_{jm}^{n-1}}
+{\Delta^2}\mbox{exp}\int^{\xi}\mbox{Tr}A^{n-1}\;d\eta\right ]d\xi \right \},
+\label{ch4:a2}
+\end{eqnarray}
+where summation is assumed over repeated indices,
+$i=1,\ldots ,\;m$; $j=1,\ldots,m-1$; $\alpha=1,\dots,mn-1$; 
+$c_1,\dots,c_{mn}$ are arbitrary constants and the $\Delta_{\beta \gamma}$s
+are cofactors of $\Delta$. 
+\end{em}
+\end{theo}
+{\bf Proof.} Consider the change of variables
+\[y_1=x,\; y_2=\dot x,\ldots,y_n=x^{(n-1)};\;\;n\ge 2, \]
+where $y_i=(y_{i1},\ldots,y_{im})^T,\;i=1,\dots,n$. Under this change of
+variables, Eq. (\ref{ch4:a1}) becomes
+\begin{equation}
+\dot y=Ay , \label{ch4:a3}
+\end{equation}
+where
+\[A= \left [ \begin{array}{ccccc}
+0 & I_m & 0 & \cdots &0\\
+\vdots & \ddots  &\ddots &\ddots  &\vdots  \\
+\vdots &  & \ddots & \ddots &0\\    
+0 &\cdots &\cdots & 0 & I_m\\
+A^0 & A^1 & A^2 & \cdots  & A^{n-1}
+\end{array} \right ]\equiv [a_{ij}] \]
+and $I_m$ is the $m\times m$ identity matrix.
+Now Eq. (\ref{ch4:a3}) is a system of $mn$ first--order linear
+homogeneous
+odes for which $mn-1$ linearly independent solutions
+\[E_{\alpha}=(e_{\alpha},\dot e_{\alpha},\ldots,e_{\alpha}^{(n-1)})^T,
+\;\;\alpha=1,\ldots,mn-1\]
+are known. Thus we can apply Theorem \ref{ch4:theo2} to (\ref{ch4:a3}). Now
+$x=y_1$. Whence
+\[x_i=y_{1i}=E_{\alpha i}\left \{ c_{\alpha}+c_{mn}\int^t \left [
+\frac{\Delta_{\alpha \beta} a_{\beta\;mn}}{\Delta^2}\mbox{exp}\int^{\xi} 
+\mbox{Tr} A \;d\eta \right ]d\xi \right \}, \]
+where $i=1,\ldots, m$; $\alpha,\beta=1,\ldots,mn-1$ and $c_1,\ldots,c_{mn}$ 
+are arbitrary constants. Now $\mbox{Tr} A= \mbox{Tr}A^{n-1}$ and 
+for $i=1,\ldots,m$, $E_{\alpha i}=e_{\alpha i}$. Thus
+\[x_i=e_{\alpha i}\left \{ c_{\alpha}+c_{mn}\int^t \left [
+\frac{\Delta_{\alpha \beta} a_{\beta\;mn}}{\Delta^2}\mbox{exp}\int^{\xi} 
+\mbox{Tr} A^{n-1} \;d\eta \right ]d\xi \right \} .\]
+However,
+\[a_{\beta\;mn}=\left \{ \begin{array}{cc}
+0 &\mbox{if $\beta <m(n-1)$,}\\
+1& \mbox{if $\beta =m(n-1)$,}\\
+a^{n-1}_{\beta-m(n-1)\;m } & \mbox{otherwise.}
+\end{array} \right. \]
+Hence (\ref{ch4:a2}).
+
+\section{Application: superposition laws for projective Riccati
+equations}
+The notion of {\em projective Riccati equations} was introduced
+in Anderson {\em et al.} (1982) as a natural  generalization of
+scalar Riccati equations.
+For these equations they obtained  superposition laws. Here we  
+prove that for these equations, the number of solutions required 
+for the superposition principles obtained in Anderson {\em et al.} (1982) can
+be reduced by
+one.
+
+\begin{defi}[Anderson {\em et al.} 1982]
+\begin{em}
+The projective Riccati equations in $\RR^{\;m}$ are given by
+\begin{equation}
+\dot x=(A-aI)x-(\alpha,x)x+\beta, \label{ch4:eq17}
+\end{equation}
+where $A$ is an $m\times m$ matrix,
+$x(t),\;\alpha(t),\;\beta(t) \in \RR^{\;m}$,
+$a(t)$ is a scalar function and $(.,.)$ is the standard inner product on 
+$\RR^{\;m}$.
+\end{em}
+\end{defi}
+
+\begin{lem}[Anderson {\em et al.} 1982]
+\label{ch4:lem1}
+\begin{em}
+If one solution of Eq. (\ref{ch4:eq17}) is known, then it 
+is linearizable by means of a nonlocal invertible transformation.
+\end{em}
+\end{lem}
+{\bf Proof.} Let $v$ denote a known solution of (\ref{ch4:eq17}).
+Use the following change of variables
+\[y=(x-v)\mbox{exp}\int^t (\alpha,x-v)dt^{'}\]
+whose inverse is given by
+\[x=v+\frac{z}{1+\int^t (\alpha,z)dt^{'}}\;\cdot\]
+
+Now we are ready to prove a generalization of a well--known result for
+scalar Riccati equations (Forsyth 1921).
+\begin{theo}
+\begin{em}
+If $m$ linearly independent solutions of Eq. (\ref{ch4:eq17}) are known,
+then it can be solved by quadratures.
+\end{em}
+\end{theo}
+{\bf Proof.} Use Lemma \ref{ch4:lem1} and Theorem \ref{ch4:theo2}.
+
+\section{Extension to nonhomogeneous equations}
+
+Note that the results we obtained for homogeneous equations rely mainly on
+Theorem \ref{ch4:theo2}. Thus in order to extend these results to linear
+nonhomogeneous  systems (see Ibragimov 1999 for a group approach to scalar
+linear odes), we have to formulate an analogue of Theorem \ref{ch4:theo2}
+for nonhomogeneous systems. Consider then the system
+\begin{equation}
+\dot x=Ax+b,   \label{ch4:b1}
+\end{equation}
+where $x=(x_1,\dots,x_m)^T,\;b=(b_1,\ldots,b_m)^T$ and $A$ is an $m\times m$
+matrix. Assume that we know $m-1$ linearly independent solutions 
+\[e_{\alpha}=(e_{\alpha 1},\ldots,e_{\alpha m})^T,\;\;\alpha=1,\ldots, m-1\]
+of the homogeneous equation associated with Eq. (\ref{ch4:b1}).
+Then according
+to Theorem \ref{ch4:theo2}, we can construct an $m$th solution 
+\[e_m=(e_{m 1},\ldots,\ldots,e_{mm})^T\]
+of the associated homogeneous equation which depends only on the known ones. 
+Furthermore, $e_1,\ldots,e_m$ are linearly independent. The operators
+\[X_i=e_{ij}\frac{\partial}{\partial x_j},\;\;i=1,\ldots,m\]
+are symmetries of (\ref{ch4:b1}) as well as that of the associated homogeneous
+equation. Since $[X_i, X_j]=0,\;\;i,j=1,\ldots,m $, we can find a change of 
+coordinates $y_1,\ldots,y_m$ in which
+\[X_i=\frac{\partial}{\partial y_i},\;\; i=1,\ldots,m.\]
+Indeed
+\[y_i=\frac{\Delta_{ij}}{\Delta}x_j,\;\;i=1,\ldots ,m,\]
+where $\Delta=\mbox{det}[e_{ij}]$ and the $\Delta_{ij}$s are the
+cofactors of $[e_{ij}]$, will do the job. In this new coordinate system,  
+Eq. (\ref{ch4:b1}) becomes
+\[\dot y_i= \bar b_i, \;\;i=1,\ldots,m,\]
+where $\bar b_i$ is a known function of $t$. This last system is uncoupled
+and is integrable by quadratures. Whence the Theorem \ref{ch4:theo6}.
+\begin{theo}
+\label{ch4:theo6}
+\begin{em}
+If we know $m-1$ linearly independent solutions of the homogeneous equation 
+associated with (\ref{ch4:b1}), then we can integrate (\ref{ch4:b1}) by
+quadratures.
+\end{em}
+\end{theo}
+
+This theorem provides a natural generalization of the variation of parameters
+method for scalar linear odes to linear systems.
+
+\section{Conclusion}
+In this chapter, the classical results of Abel (1839) and Forsyth (1921)
+known for scalar linear odes, viz. the Abel--Forsyth formula,
+have been extended to systems of linear odes by using Lie point symmetry
+arguments and application
+has been made to projective Riccati equations. Finally
+we have shown how an extension to linear nonhomogeneous
+systems can be carried out algorithmically. Hence we have provided a
+group--theoretic basis for the method of variation of parameters
+for linear systems.
+%\end{document}
+
+
+ 

@@ -1,0 +1,671 @@
+%\documentstyle[12pt]{report}
+%\setlength{\parindent}{0mm}
+%\setlength{\parskip}{14pt}
+%\renewcommand{\baselinestretch}{1.5}
+%\setlength{\topmargin}{0pt}
+%\setlength{\headheight}{0pt}
+%\setlength{\headsep}{0pt}
+%\setlength{\footskip}{45pt}
+%\setlength{\footheight}{0pt}
+%\setlength{\textwidth}{430pt}
+%\setlength{\textheight}{660pt}
+%\setlength{\oddsidemargin}{10pt}
+%\begin{document}
+%\newcommand{\RR}{\mathrm{I\!R\!}}
+%\newcommand{\dt}{\frac{\partial}{\partial t}}
+%\newcommand{\dx}{\frac{\partial}{\partial x}}
+%\newcommand{\dy}{\frac{\partial}{\partial y}}
+%\newtheorem{theo}{Theorem}[chapter]
+
+\chapter{Symmetry breaking for a system of two linear second--order ordinary
+differential equations}
+
+A new canonical form for systems of two second--order linear ordinary
+differential equations (odes) is obtained. The latter is decisive in
+unravelling the symmetry structure of systems of two second--order linear odes.
+Namely, we establish that the point symmetry Lie algebras of systems of two
+second--order linear odes can be $5$--, $6$--, $7$--, $8$-- or
+$15$--dimensional. This result enhances both the richness and the complexity
+of the symmetry structure of linear systems. The work presented here
+is reported in Wafo Soh and Mahomed (1999e).
+
+\section{Introduction}
+Symmetry properties of scalar odes is well--documented in the literature.
+Many results about scalar odes were obtained by the founder of symmetry
+analysis of differential equations (des) Sophus Lie (1891) himself.
+For scalar  second--order odes, Lie showed that the maximum number
+of point symmetries is $8$ and is achieved by linear odes.
+Also, he proved that a scalar second--order ode is linearizable
+if and only if it has $8$ point symmetries.
+
+In the case of scalar linear odes of oder $n$, $n\ge 3$, Mahomed and Leach
+(1990) recently showed that the number of point symmetries can be $n+1$,
+$n+2$ or $n+4$. This clearly shows that for $n\ge 3$, scalar linear odes are
+not equivalent to each other. Further, for $n\ge 3$, there are nonlinear
+and nonlinearizable equations with $n+1$ and $n+2$ symmetries
+(Ibragimov and Mahomed 1996).
+Hence linearization criteria for scalar $n$--order odes, $n\ge 3$, do not
+rest solely on the dimension of their Lie point symmetry  algebras
+(Mahomed and Leach 1990).
+
+The purpose of this chapter is to investigate symmetry properties of systems
+of second--oder linear odes. We show that a system of two second--order linear
+odes can admit $5$, $6$, $7$, $8$ or $15$  point symmetries. We also provide
+a representative element for each class.
+
+The outline of this work is as follows. In Section 5.2 we investigate
+canonical forms for systems of linear odes. In Section 5.3 we discuss
+group classification for systems of two second--order linear odes. Finally,
+in Section 5.4 we discuss some implications of the results obtained in the
+previous section.
+
+We would like to refer the
+reader to a recent paper by Gorringe and Leach (1988). These authors
+treated the case of systems of two second--oder linear odes
+with constant coefficents in the complex
+domain and they proved that these systems can have $7$, $8$ or $15$
+point symmetries.
+
+
+\section{Canonical forms of systems of second--order linear odes}
+The major difficulties one faces when trying to classify the general linear
+equation is the huge number of arbitrary elements. For a system of $n$
+second--order nonhomogeneous linear odes, there are $2n^2+n$ arbitrary
+elements. Since invertible transformations do not affect the number of
+symmetries, we shall get a simple form of the system before performing
+group classification. Let us start with a theorem which will be crucial for
+reducing the number of arbitrary elements.
+\begin{theo}
+\begin{em}
+\label{ch5:t1}
+Any system of $n$ second--order nonhomogeneous linear odes
+\begin{equation}
+\label{ch5:c1}
+\b x''=A\b x'+B\b x +\b c
+\end{equation}
+can be mapped invertibly to one of  the following forms
+\begin{eqnarray}
+\b y'' &=&\bar A \b y',  \label{ch5:c2} \\
+\b z'' &= & \bar B \b z,  \label{ch5:c3} 
+\end{eqnarray}
+where $A$, $B$, $\bar A$, $\bar B$ are $n \times n$ matrices
+and $\b x$, $\b y$, $\b z$ and $\b c$ are vectors.
+
+We shall refer to (\ref{ch5:c2}) as
+the {\em first canonical form} of the general system of second--order linear 
+odes (\ref{ch5:c1})  and to (\ref{ch5:c3}) as the {\em second canonical form}. 
+Note that they are the counterpart of the
+Laguerre--Forsyth canonical forms (Forsyth 1921) for scalar equations.
+\end{em}
+\end{theo}
+
+{\bf Proof.}
+Let $\b x^{*}=(x^{*}_{1},\ldots,x^{*}_{n})^T$ be a
+particular solution of Eq. (\ref{ch5:c1}). Under the change of variables 
+\begin{equation}
+\b x=M\b y+\b x^{*}, \label{ch5:eq2} 
+\end{equation}
+Equation (\ref{ch5:c1}) becomes
+\begin{equation}
+M\b y^{''}+\left (2M^{'}-AM \right )\b y^{'}
++\left (M^{''}-AM^{'}-BM \right )\b y=0. \label{ch5:eq3} 
+\end{equation}
+Now let 
+\[ \b m_j=(m_{ij})^T,\;\; i,j=1,\ldots ,n\]
+be $n$ linearly independent solutions of the homogeneous equation associated
+with (\ref{ch5:c1}).  Choose $M=[m_{ij}]$. Thus M is nonsingular and satisfies
+the equation
+\[M^{''}-AM^{'}-BM=0.\]
+Whence with this choice, Eq. (\ref{ch5:eq3}) reduces to
+\begin{equation}
+\b y^{''}=\bar A \b y^{'}, \label{ch5:eq4}
+\end{equation}
+where $\bar A=M^{-1}(AM-2M^{'})$. By taking $\b m_j=(m_{ij})^T$ to be $n$ 
+linearly independent solutions of
+\[2\b x^{'}-A\b x=0\]
+and $M=[m_{ij}]$, we arrive at the equation
+\begin{equation}
+\b y^{''}=\bar B \b y, \label{ch5:eq5}
+\end{equation}
+where $\bar B= M^{-1}(AM^{'}+BM-M^{''})$. It should be stressed that in general,
+$\bar A $ and $\bar B$
+are nonzero. This completes the proof of the theorem.
+
+When we specialize Theorem \ref{ch5:t1} to the case $n=2$ we see that the
+number of arbitrary elements reduces from $2\times 2^2+2=10$ to
+$4$. We aim at obtaining further reduction in the case $n=2$. Consider a
+system of two second-order linear odes written in the second canonical form
+\begin{equation}
+\label{ch5:c4}
+\left \{ \begin{array}{lll}
+          x'' &=& a(t)x+b(t)y, \\
+          y'' &= & c(t)x+d(t)y.
+          \end{array}
+          \right.
+\end{equation}
+Perform the following change of variables
+\begin{equation}
+\label{ch5:c5}
+\bar x=x/\rho (t),\;\; \bar y=y/\rho (t),\;\; \bar t= \int^t \rho^{-2}(s)ds,
+\end{equation}
+where $\rho$ satisfies the following equation
+\begin{equation}
+\label{ch5:c6}
+\rho ''-\frac{a+d}{2}\rho =0.
+\end{equation}
+Simple calculations show that
+\begin{equation}
+\label{ch5:c6}
+\left \{ \begin{array}{lll}
+        \bar x'' &=&\alpha (\bar t)\bar x+ \beta (\bar t) \bar y, \\
+        \bar  y'' &= & \gamma (\bar t)\bar x -\alpha (\bar t) \bar y,
+          \end{array}
+          \right.
+\end{equation}
+where
+\[ \alpha=\frac{\rho^3 (a-d)}{2},\;\;\beta=\rho^3 b,\;\;\gamma=\rho^3 c.\]
+Hence we have proved the following theorem.
+\begin{theo}
+\label{ch5:t2}
+\begin{em}
+Any system of two second-order linear odes can be mapped invertibly to
+the linear system
+\begin{equation}
+\label{ch5:c7}
+\left \{ \begin{array}{lll}
+          x'' &=& a(t)x+b(t)y, \\
+          y'' &= & c(t)x-a(t)y.
+          \end{array}
+          \right.
+\end{equation}
+\end{em}
+\end{theo}
+Theorem \ref{ch5:t2} implies that symmetry properties of a system of two
+second--order linear odes depend on three arbitrary elements only. Thus
+the problem of group classification of systems of two second--order linear
+odes is reduced to that of (\ref{ch5:c7}). In the sequel, we shall perform
+group classification of (\ref{ch5:c7}).
+
+\section{Group classification of systems of two second--order linear odes}
+
+Models occuring in different fields of applied science
+(Fluid Mechanics, Elasticity, \dots)  sometimes contains
+some parameters (functions)  which cannot be determined by any known law.
+Quite often, empirical results may help in determining the form of these
+unknown parameters. But Lie--Ovsiannikov's theory provides an elegant
+and simple way
+of finding these arbitrary parameters: its seems that nature prefers models
+which are maximally symmetric. Hence finding such models leads to explicit
+forms for the unknown parameters. This process is termed
+{\em group classification}.
+The classification is done up to form preserving transformations (equivalence
+transformations). For the methodology of group classification, the excellent
+book by Ovsiannikov (1982) is recommended.
+
+Consider the operator
+\[X=\xi (t,x,y)\dt +\eta (t,x,y)\dx+\mu (t,x,y)\dy \; \cdot\]
+According to the Lie algorithm described in Chapter 1, $X$ is a symmetry of
+(\ref{ch5:c7}) if and only if it satisfies the system
+\begin{eqnarray}
+\xi_{xx}  =  0,\;\; \xi_{yy}=0,\;\;\xi_{xy}=0,\;\;\mu_{xx} &=& 0, \label{ch5:d1} \\
+\eta_{xy}-\xi_{ty} = 0,\;\;\eta_{xx}-2\xi_{tx} &= & 0,\label{ch5:d2}\\
+\eta_{ty}-(ax+by)\xi_{y} &= & 0, \label{ch5:d3}\\
+2\eta_{tx}-\xi_{tt}-3(ax+by)\xi_{x}-(cx-ay)\xi_{y} &=& 0, \label{ch5:d4}\\
+\eta_{tt}+(ax+by)(\eta_x-2\xi_t)+(cx-ay)\eta_y &=& a'x\xi +b'y\eta +
+a\eta + b\mu , \label{ch5:d5}\\
+\mu_{xy}-\xi_{tx} =  0,\;\;\mu_{yy}-2\xi_{ty} &= & 0, \label{ch5:d6}\\
+\mu_{tx}-(cx-ay)\xi_x &= & 0, \label{ch5:d7}\\
+\mu_{tt}+ (cx-ay)(\mu_y-2\xi_t)+(ax+by)\mu_x &=&
+c'x\xi -a'y\xi + c\eta -a\mu , \label{ch5:d8}\\
+2\mu_{ty}-\xi_{tt}-3(cx-ay)\xi_y-(ax+by)\xi_x &=& 0. \label{ch5:d9}
+\end{eqnarray}
+Using (\ref{ch5:d1}), (\ref{ch5:d2}) and (\ref{ch5:d6}), we get
+\begin{eqnarray}
+\xi &= & \alpha (t) x+\beta (t) y+\lambda (t), \label{ch5:d10}\\
+\eta  &=& \alpha '(t)x^2+\beta '(t)xy+r(t)x+s(t)y+u(t), \label{ch5:d11}\\
+\mu &=& \beta '(t)y^2+\alpha '(t)xy+p(t)x+q(t)y+v(t). \label{ch5:d12}
+\end{eqnarray}
+Now substitute (\ref{ch5:d10})--(\ref{ch5:d12}) into (\ref{ch5:d3}). After some
+simple calculations, we obtain:
+\begin{eqnarray}
+s &=&s_0=\mbox{const.}, \label{ch5:d13}\\
+\beta b &= & 0,\label{ch5:d14}\\
+\beta ''-a\beta &= & 0. \label{ch5:d15}
+\end{eqnarray}
+Equation (\ref{ch5:d14}) prompts the consideration of the following cases:
+
+{\bf Case I  \boldmath{ $b\ne 0.$} }
+
+In this case, simple manipulations leads to the following:
+\begin{eqnarray}
+\xi &=& \lambda (t),\label{ch5:d16}\\
+\eta &=& (\frac{\lambda '}{2}+r_0)x+s_0 y+u(t), \label{ch5:d17}\\
+\mu & =& p_0 x+(\frac{\lambda '}{2}+q_0)y+v(t), \label{ch5:d18}
+\end{eqnarray}
+where $(u,v)$ solves (\ref{ch5:c7}), $r_0,\;s_0,\;p_0,\; q_0$ are arbitrary
+constants and  $\lambda$ satisfies the equations
+\begin{eqnarray}
+\frac{\lambda '''}{2}-2a\lambda '-a'\lambda+s_0 c-bp_0 &=&0,
+\label{ch5:d19}\\
+\frac{\lambda '''}{2}+2a\lambda '+a'\lambda-s_0 c+bp_0 &=& 0,
+\label{ch5:d20}\\
+2b\lambda '+b'\lambda+2as_0+(q_0-r_0)b &= & 0 ,\label{ch5:d21}\\
+2c\lambda '+c'\lambda-2ap_0+(r_0-q_0)c & =& 0. \label{ch5:d22}
+\end{eqnarray}
+By adding (\ref{ch5:d19}) to (\ref{ch5:d20}), we obtain:
+\[\lambda '''= 0, \]
+i.e.
+\begin{equation}
+\lambda=\frac{c_1}{2}t^2+c_2t+c_3. \label{ch5:d23}
+\end{equation}
+Substituting (\ref{ch5:d23}) into (\ref{ch5:d20})--(\ref{ch5:d22}), we get
+\begin{eqnarray}
+2a(c_1t+c_2)+a'(\frac{c_1}{2}t^2+c_2t+c_3)-s_0c+p_0b &=& 0,
+\label{ch5:d24}\\
+2b(c_1t+c_2)+b'(\frac{c_1}{2}t^2+c_2t+c_3)+2as_0+(q_0-r_0)b &=&0,
+\label{ch5:d25}\\
+2c(c_1t+c_2)+c'(\frac{c_1}{2}t^2+c_2t+c_3)-2ap_0+(r_0-q_0)c &=&0,
+\label{ch5:d26}
+\end{eqnarray}
+At this point, we can start group classification.
+
+{\bf Case I.1  \boldmath{$\;a,\; b$} and \boldmath{$c$} are arbitrary.}
+
+In this case we find that
+\[c_1=c_2=c_3=s_0=p_0=0,\;\;r_0=q_0.\]
+Hence
+\begin{eqnarray}
+\xi &= & 0, \label{ch5:d27}\\
+\eta & = & r_0 x+u(t), \label{ch5:d28}\\
+\mu & =& r_0 y+v(t), \label{ch5:d29}
+\end{eqnarray}
+where $(u,v)$ solves (\ref{ch5:c7}). Thus the {\em principal Lie algebra}
+(see Ovsiannikov 1982 for terminology) is spanned by the following operators:
+\begin{eqnarray}
+X_i &=& u_i \dx+ v_i \dy,\;\;i=1,\ldots,4, \label{ch5:d30}\\
+X_5 & =& x \dx+ y \dy, \label{ch5:d31}
+\end{eqnarray}
+where $(u_i,v_i)$ are linearly independent solutions of (\ref{ch5:c7}).\\
+Rewrite (\ref{ch5:d24})--(\ref{ch5:d26}) in matrix form.
+\[ \left [ \begin{array}{l}
+            a'\\
+            b'\\
+            c'
+            \end{array}
+   \right ]  +
+\left [ \begin{array}{lll}
+
+\displaystyle{\frac{2(c_1t+c_2)}{\frac{c_1}{2}t^2+c_2t+c_3 }} &
+\displaystyle{\frac{p_0}{\frac{c_1}{2}t^2+c_2t+c_3 }} &
+\displaystyle{\frac{-s_0}{\frac{c_1}{2}t^2+c_2t+c_3 }}\\
+\displaystyle{\frac{2s_0}{\frac{c_1}{2}t^2+c_2t+c_3 }} &
+\displaystyle{\frac{-2(c_1t+c_2)+q_0-r_0}{\frac{c_1}{2}t^2+c_2t+c_3 }} &    0\\
+\displaystyle{\frac{-2p_0}{\frac{c_1}{2}t^2+c_2t+c_3 }} & 0 &
+\displaystyle{\frac{2(c_1t+c_2)+r_0-q_0}{\frac{c_1}{2}t^2+c_2t+c_3 }}
+
+\end{array}
+\right ]
+\left [ \begin{array}{l}
+           a\\
+           b\\
+           c
+           \end{array}
+ \right ] =0.
+\]
+Whence the following cases should be considered.
+
+{\bf Case I.2 \boldmath{$\;\;a=a_0,\; b=b_0,\; c=c_0.$} } 
+
+Substitution of $a$, $b$ and $c$ into (\ref{ch5:d24})--(\ref{ch5:d26}) yields
+\begin{eqnarray*}
+c_1 &=& 0,\\
+c_2 &=& \frac{-a_0}{b_0}s_0+\frac{r_0-q_0}{2},\\
+p_0 & =& \frac{2a_0^2+b_0c_0}{b_0^2}s_0+\frac{a_0}{b_0}(q_0-r_0),\\
+2a_0(a_0^2+b_0c_0)s_0 &= & b_0(a_0^2+b_0c_0)(r_0-q_0).
+\end{eqnarray*}
+At this point the following subcases arise. 
+
+{\bf Case I.2.1  \boldmath{$\;\; \Delta =a_0^2+b_0c_0=0. $}}
+\begin{eqnarray*}
+X_6 &= & \dt , \\
+X_7 & = & -\frac{a_0}{b_0}t\dt +(-\frac{a_0}{2b_0}x+y)\dx +
+(\frac{2a_0^2+b_0c_0}{b_0^2}x-\frac{a_0}{2b_0}y)\dy,\\
+X_8 &= & \frac{1}{2}t\dt+\frac{5}{4}x\dx +
+(-\frac{a_0}{b_0}x+\frac{1}{4}y)\dy \;\cdot
+\end{eqnarray*}
+{\bf Case I.2.2  \boldmath{$\;\;\Delta =a_0^2+b_0c_0 \ne 0.$} }
+\begin{eqnarray*}
+X_6 &= & \dt , \\
+X_7 &= &\left \{ \begin{array}{ll}
+                 \left ( x+\displaystyle{\frac{b_0}{2a_0}}y \right )\dx & \mbox{if }
+                 a_0\ne 0, \\
+                 &   \\
+                 y\dx +\frac{c_0}{b_0}x\dy & \mbox{if } a_0=0.
+                 \end{array}
+                 \right.
+\end{eqnarray*}
+
+{\bf Case I.3 \boldmath{$\;\;a=a_0,\;b=b_0,\;c\ne\mbox{const.}$}}
+
+In this case, the equations (\ref{ch5:d24}) to (\ref{ch5:d26}) become
+\begin{eqnarray}
+2a_0(c_1t+c_2)-s_0c+p_0b_0 &=& 0, \label{ch5:n1}\\
+2b_0(c_1t+c_2)+2s_0a_0+(q_0-r_0)b_0 &=& 0, \label{ch5:n2}\\
+2c(c_1t+c_2)+c'(\frac{c_1}{2}t^2+c_2t+c_3)-2p_0a_0+(r_0-q_0)c &=& 0. \label{ch5:n3}
+\end{eqnarray}
+Since $b_0\ne0$, (\ref{ch5:n2}) implies that $c_1=0$ and (\ref{ch5:n1}) gives
+$s_0=0$. Note that if $q_0=r_0$, there is no extension of the principal Lie
+algebra. Hence by assuming that $q_0\ne r_0$, we find up to equivalence
+transformation that
+\[c=c_0t^{-4}-\frac{a_0^2}{b_0},\; c_0\ne 0\]
+and the extending operator is
+\[X_6=\frac{1}{2}t\dt +\frac{5}{4}x\dx+ \left (-\frac{a_0}{b_0}x+\frac{1}{4}y
+\right )\dy \cdot\]
+
+{\bf Case I.4 \boldmath{$a=a_0,\;b\ne \mbox{const.},\;c=0.$}}
+
+Simple calculations lead to the following subcases.
+
+{\bf Case I.4.1 \boldmath{$\;\;a=a_0\ne 0,\;b=b_0\mbox{e}^{mt}+ka_0,\;c=0.$}}
+
+Straightfoward manipulations yield the extra operator
+\[X_6=\frac{1}{m}t\dt+\left ( x+\frac{k}{2}y \right ) \dx \;\cdot \]
+
+{\bf Case I.4.2 \boldmath{$\;\;a=0=c,\;b\ne \mbox{const.}$}}
+
+Eqs. (\ref{ch5:d24})--(\ref{ch5:d26}) become
+\[
+p_0 =0 ,\quad
+(\frac{c_1}{2}t^2+c_2t+c_3)b'+(2c_1t+2c_2+q_0-r_0)b = 0 .
+\]
+Whence the subcases:
+
+{\bf Case I.4.2.1  \boldmath{$\;\;b$} arbitrary.}
+
+In this case, $p_0=0$, $r_0=q_0$, $c_1=c_2=c_3=0$.
+\[X_6=y\dx\cdot \]
+
+{\bf Case I.4.2.2 \boldmath{$\;b=b_0\ne 0.$}}
+
+This case falls into Case I.2.1.
+
+{\bf Case I.4.2.3 \boldmath{$\;\;b\ne \mbox{const.}$} }
+
+\[b=b_0(\frac{c_1}{2}t^2+c_2t+c_3)^{-2}\exp \left [
+\int \frac{1}{\frac{c_1}{2}t^2+c_2t+c_3} \right ].  \]
+Using time translation and scaling which are obviously
+equivalence transformations, we arrive at the following subcases:
+
+{\bf Case I.4.2.3.1  \boldmath{$\;\;b=b_0t^m,\; m\ne 0,\;-4.$}}
+
+Simple calculations show that
+\[ c_1= 0,\quad c_3=0,\quad c_2 = \frac{r_0-q_0}{m+2}\cdot \]
+Thus the extending operators are:
+\[ X_6  = y\dx,\quad X_7  =  2t\dt +(2m+5)x\dx + y\dy \cdot \]
+Note that the case $m=-2$ is not special.
+
+{\bf Case I.4.2.3.2 \boldmath{$\;\; b=b_0t^{-4}.$}}
+
+The change of variables
+\[T=-1/t,\;X=x/t,\;Y=y/t,\]
+brings this case to Case I.2.1. 
+
+{\bf Case I.4.2.3.3 \boldmath{$\;\;b=b_0 \exp (mt)$, $m\ne 0.$} }
+
+Straightfoward computations give:
+\[ c_1=c_2 = 0,\quad c_3 =\frac{r_0-q_0}{m}\; \cdot  \]
+The extending operators are
+\[X_6 = y\dx,\quad X_7 = \dt-my\dy \cdot \]
+
+{\bf Case I.4.2.3.4  \boldmath{$\;\;b=b_0 (t^2+1)^{-2}
+\exp (m \mbox{ Arctg } t).$}}
+
+After simple manipulations, we find that the added operators are
+\[ X_6 = y\dx,\quad X_7 = (t^2+1)\dt + (t+m)x\dx+ ty\dy \;\cdot \]
+{\bf Case I.4.2.3.5  \boldmath{$\;\; b=b_0
+\displaystyle{\frac{(1+t)^{m/2-2}}{(1-t)^{m/2+2}}}\;\cdot$}}
+
+The following subcases arise:
+
+(i) If $m\ne \pm 4$, the extending operators are:
+\[ X_6 =y\dx,\quad X_7 = (t^2-1)\dt +(t+m)x\dx +ty \dy \;\cdot \]
+(ii) If $m=\epsilon 4$, $\epsilon=\pm 1$
+
+The extra operators are
+\begin{eqnarray*}
+X_6 &=& y\dx,\\
+X_7 &=& (t-\epsilon)^2\dt +(t-\epsilon)x\dx + (t-\epsilon)y\dy,\\
+X_8 &=& 2(t-\epsilon)\dt +x\dx + 5y \dy \;\cdot
+\end{eqnarray*}
+{\bf Case I.5 \boldmath{$\;\;a\ne\mbox{const.},\;b=b_0,\;c=c_0.$}}
+
+Routine calculations show that there is no extension of the principal Lie
+algebra in this case.
+
+{\bf Case I.6 \boldmath{$\;\;a=a_0,\; b,\;c\ne \mbox{const.}$}}
+
+After some simple calculations, the following subcases arise:
+
+{\bf Case I.6.1  \boldmath{$\;\; a=a_0\ne 0,\; b=b_0\mbox{e}^{mt},\; c=c_0\mbox{e}^{-mt},\;
+m\ne 0$.}}
+
+The principal Lie algebra is extended by
+\[X_6=\dt+mx\dx \cdot \]
+
+{\bf Case I.6.2  \boldmath {$\; a=0,\;b=b_0(t^2+1)^{-2}\exp (m\mbox{ Arctg } t),\\
+c=c_0(t^2+1)^{-2}\exp (-m\mbox{ Arctg } t),\; m\ne 0.$}}
+
+The extra operator is
+\[X_6=(t^2+1)\dt+(t+m)x\dx+ty\dy \;\cdot\]
+
+{\bf Case I.6.3  \boldmath{$\; a=0,\; b=b_0 \displaystyle{\frac{(1+t)^{m/2-2}}{(1-t)^{m/2+2}}},\;
+c=c_0 \displaystyle{\frac{(1+t)^{-m/2-2}}{(1-t)^{-m/2+2}}},\;m\ne 0.$}}
+
+The additional operator is
+\[X_6=(t^2-1)\dt+(t+m)x\dx+ty\dy \; \cdot\]
+
+{\bf Case I.6.4  \boldmath{$\;a=0,\; b=b_0t^{m-2},\;c=c_0t^{-m-2},\;m\ne 0,-2,2.$}}
+
+The extra operator is
+\[X_6=2t\dt+(2m+1)x\dx+y\dy \;\cdot\]
+
+{\bf Case I.6.5 \boldmath{$\;a=0,\;b=b_0(\frac{c_1}{2}t^2+c_2t+c_3)^{-2},\;
+                       c=\alpha b,\; \alpha=\mbox{const.}$} }
+
+The extending operators are
+\begin{eqnarray*}
+X_6 &=& y\dx+\alpha x\dy ,\\
+X_7 & = & (\frac{c_1}{2}t^2+c_2t+c_3)\dt +(\frac{c_1}{2}t+\frac{c_2}{2})x\dx
++(\frac{c_1}{2}t+\frac{c_2}{2})y\dy \cdot
+\end{eqnarray*}
+{\bf Case I.6.6  \boldmath{$\; a=a_0,\; b=b_0t,\;c=\frac{p_0b_0}{s_0}t.$}}
+
+\[X_6=-\frac{2a_0s_0}{b_0}\dt+s_0y\dx+p_0x\dy \;\cdot\]
+
+{\bf Case I.6.7 \boldmath{$a=0,\; b=b_0(t^2+\epsilon),\;c=\frac{p_0b_0}{s_0}(t^2+
+\epsilon),\; \epsilon =0,\pm 1.$}} 
+
+\[X_6=s_0y\dx+p_0x\dy\;\cdot\]
+
+{\bf Case I.7 \boldmath{$\; a\ne \mbox{const.},\; b=b_0,\; c\ne \mbox{const.}$}}
+
+The only choice of the arbitrary elements leading to the extension of the
+principal Lie algebra is up to equivalence transformations:
+\[a=a_0t^{-2}+kb_0,\; b=b_0,\; c=c_0t^{-4}-k(2a_0t^{-2}+kb_0),\]
+where $a_0,\;c_0,\;k$ are constants, $a_0\ne 0$, $(c_0,k)\ne (0,0)$. The extra
+operator is:
+\[X_6=2t\dt+5x\dx+(y-4kx)\dy \;\cdot \]
+
+{\bf Case I.8 \boldmath{$\; a\ne \mbox{const.},\;b \ne \mbox{const.},\; c=0.$}}
+
+In this case we have
+\[a=a_0\left ( \frac{c_1}{2}t^2+c_2t+c_3\right )^{-2}.\]
+Up to time translation and scaling, the following subcases arise:
+
+{\bf Case I.8.1  \boldmath{ $\;a=a_0t^{-2},\;\;b=\frac{n}{m-2}t^{-2}+b_0t^{-m},\;c=0
+,\;m\ne 2,\;b_0\ne 0.$}}
+
+The principal Lie algebra is extended by
+\[X_6=2t\dt +\left [ (5-2m)x-\frac{n}{a_0}y \right ]\dx +y\dy \;\cdot \]
+
+{\bf Case I.8.2  \boldmath{$\;a=a_0t^{-2},\;b=\frac{n}{m-2}t^{-2},\;c=0,\;n\ne 0,\; m\ne 2.$}}
+
+The principal Lie algebra is extended by the following operators:
+\[
+X_6 = t\dt ,\quad
+X_7 = \left (x+\frac{n}{2a_0(m-2)}y \right )\dy \;\cdot
+\]
+
+{\bf Case I.8.3  \boldmath{$\;a=a_0t^{-2},\;b=b_0t^{-2}+nt^{-2}\ln t,\; c=0,\;n\ne 0.$} }
+
+The extra operator is
+\[X_6=2t\dt +\left ( x-\frac{n}{a_0}y \right ) \dx +y\dy \;\cdot\]
+
+{\bf Case I.8.4 \boldmath{ $\; a=a_0 (t^2+\epsilon)^{-2},\;
+bt^4\mbox{e}^{-m/t}=n\int t^2(t^2+\epsilon)^{-2}\mbox{e}^{-m/t} dt,\\
+c=0,\; \epsilon=o,\pm 1,\; (m,n)\ne (0,0) \mbox{ if } \epsilon=0.$}}
+
+The principal Lie algebra is extended by the single operator
+\[X_6=t^2\dt +\left ( tx-\frac{n}{2a_0}y \right )\dx+(t+m)y\dy\;\cdot \]
+
+{\bf Case I.8.5 \boldmath{$\;a=a_0t^{-4},\;b=b_0t^{-4},\;c=0.$}}
+
+The change of variables
+\[T=-1/t,\;X=x/t,\;Y=y/t,\]
+brings us back to Case I.2.2. 
+
+{\bf Case I.9 \boldmath{$\;a,\;b,\;c \ne \mbox{const.}$}}
+
+In general the system (\ref{ch5:d24})--(\ref{ch5:d26}) does not have closed form
+solution although a power series solution can be obtained. In order to find
+specifications of the arbitrary elements leading to the extension of
+the principal Lie algebra, let us rewrite (\ref{ch5:d24})--(\ref{ch5:d26}) in the
+following form:
+\begin{eqnarray}
+\left ( 2at+\frac{a'}{2}t^2 \right )c_1+(2at+a't)c_2-s_0c+p_0b &=&0,
+\label{ch5:a1}\\
+\left ( 2bt+\frac{b'}{2}t^2 \right )c_1+(2bt+b't)c_2 +b'c_3+2s_0a
++(q_0-r_0)b &=&0, \label{ch5:a2}\\
+\left ( 2ct+\frac{c'}{2}t^2 \right )c_1+(2ct+c't)c_2
++c'c_3-2ap_0 +(r_0-b_0)c &=&0 . \label{ch5:a3}
+\end{eqnarray}
+Note that for extension to be brought by a given constant, the choice  of the
+arbitrary elements must be such that that constant does not appear
+explicitly in (\ref{ch5:a1})--(\ref{ch5:a3}).
+Hence the relevant cases are the following ones.
+ 
+{\bf Case I.9.1 \boldmath{$\;a=a_0t^{-4},\; b=b_0t^{-4}\; ,  c=c_0t^{-4}.$} }
+
+The change of variables
+\[T=-1/t,\;X=x/t,\;Y=y/t,\]
+brings us back to Case I.2. \\
+
+{\bf Case I.9.2 \boldmath{$ \;a=a_0t^{-2},\; b=b_0t^{-2},\;c=c_0t^{-2},\; b_0\ne 0.$} }
+
+Substitution of these expressions into (\ref{ch5:d24}) to (\ref{ch5:d26}) leads
+to the following equations:
+\[c_1 = 0,\quad c_2=0,\quad p_0 = \frac{c_0}{b_0}s_0,\quad
+r_0 = q_0+\frac{2a_0}{b_0}s_0.
+\]
+The following extensions result:
+\[
+X_6 = t\dt , \quad
+X_7 = \left (\frac{2a_0}{b_0}x+y \right )\dx +\frac{c_0}{b_0}x\dy \;\cdot
+\]
+{\bf Case II \boldmath{$\;\;b=0.$}}
+
+Without loss of generality, we can assume that $c=0$. Otherwise the change
+of variables (which is indeed an equivalence transformation)
+\[\bar t= t,\;\;\bar x=y, \;\; \bar y= x, \]
+will bring us back to the case $b\ne 0$. Thus the relevant cases are:
+
+
+{\bf Case II.1  \boldmath{$\;\;b=0=c,\; a$} arbitrary.}
+\[X_6 =x\dx\cdot \]
+
+{\bf Case II.2  \boldmath{$\;\;b=0=c,\; a=a_0\ne 0.$} }
+
+We find that:
+\[X_6 = x\dx,\;\;X_7 = \dt \cdot \]
+
+{\bf Case II.3  \boldmath {$\;\;b=0=c,\; a\ne \mbox{cont.}$} }
+
+\[ a=a_0(\frac{c_1}{2}t^2+c_2t+c_3)^{-2}. \]
+Thus the following subcases up to equivalence transformations
+(time translation and scaling) arise:
+
+{\bf Case II.3.1 \boldmath{$ \;\;a=a_0t^{-2}.$}}
+\[ X_6 = x\dx ,\quad X_7  = t\dt \cdot \]
+
+{\bf Case II.3.2 \boldmath{$\;a=a_0t^{-4}.$} }
+
+The change transformation
+\[T=-1/t,\;X=x/t,\;Y=y/t,\]
+brings us back to the Case I.2.2. 
+
+{\bf Case II.3.3 \boldmath{$\;\; a=a_0(t^2\pm 1)^{-2}.$} }
+\[ X_6 = x\dx ,\quad  X_7 = (t^2\pm 1)\dt +tx \dx +ty \dy \cdot \]
+{\bf Case II.4 \boldmath {$\;\;a=b=c=0.$}}
+
+We obtained in this case the well--known free particle equations. The
+additional operators are
+\[X_6 = \dt,\quad X_7=x\dx ,\quad X_8 =x\dt, \quad X_9 =y\dt,\]
+\[X_{10}=t\dt,\quad X_{11}=y\dx,\quad X_{12}=x\dy ,\quad
+X_{13}= t^2\dt +tx \dx +ty \dy,\]
+\[X_{14}=tx\dt +x^2 \dx +xy\dy,\quad X_{15}=ty\dt +xy \dx +y^2\dy\; \cdot\]
+\section{Discussion and  applications}
+From the analysis we have perfomed, the following theorem emerges.
+\begin{theo}
+\label{ch5:t3}
+\begin{em}
+A linear system of two second--order odes is reducible to the free particle
+equation if and only if it has $15$ symmetries.
+\end{em}
+\end{theo}
+An application of this theorem is provided by the well-known
+time--dependent oscillator equation
+\[x''=-\omega (t)x,\;\;y''=-\omega (t) y,\]
+which appears in numerous applications. Straightforward calculations show
+that it has $15$  point symmetries. Hence it can be mapped to the free particle
+equation.
+The following transformation (cf. Gorringe and Leach 1988):
+
+\begin{equation}
+ \bar t=\int^t \rho^{-2}(t) ds,\;\;\bar x=x/\rho (t) ,
+\;\;\bar y=y/\rho (t), \label{ch5:os} 
+\end{equation}
+where $\rho ''+\omega (t) \rho =0$, does the job. 
+
+Furthermore, if a system of two second--order linear odes has $5$ or $6$
+point symmetries, it cannot be reduced to a system with constant coefficients.
+Also constant coefficients as well as variable coefficients systems can
+have $7$ or $8$ symmetries.
+
+It is worth noting that the classification done in Gorringe and Leach (1988)
+for the complex constant
+coefficients case does not take into account all real cases.
+Indeed for a given dimension, there are more nonsimilar real Lie algebras
+than there are nonsimilar complex Lie algebras. Our approach is general
+(constant as well as variable coefficients are dealt with) and is done in the
+real domain.
+
+\section{Conclusion}
+We have proved that a system of two second--order odes can have $5$, $6$,
+$7$, $8$ or $15$ point symmetries. The maximum number of symmetries being
+attained by equations reducible to the free particle equation.
+Further, $5$ and $6$ point 
+symmetries are the preserve of equations with variable coefficients.
+
+The study of symmetry breaking for systems of $m$ $n$th order linear odes, $m\ge 3$,
+$n\ge 2$, remains open.  Note that the difficulty here is the absence of a sort
+of optimal canonical form comparable to (\ref{ch5:c7})
+. This fact renders the analysis of the determining
+equation quite tedious. For $n=2$, only the lower bound, $2m+1$,
+and the upper bound, $(m+2)^2-1$, for the number of
+symmetries are known (Gonz\'alez-Gasc\'on and Gonz\'alez--L\'opez 1983).
+
+%\end{document}
+
+
+
+

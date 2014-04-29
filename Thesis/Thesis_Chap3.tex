@@ -1,0 +1,104 @@
+%\documentclass[12pt]{report}
+%\setlength{\parindent}{0mm}
+%\setlength{\parskip}{14pt}
+%\renewcommand{\baselinestretch}{2.0}
+%\setlength{\topmargin}{0pt}
+%\setlength{\headheight}{0pt}
+%\setlength{\headsep}{0pt}
+%\setlength{\footskip}{45pt}
+%\setlength{\textwidth}{465pt}
+%\setlength{\textheight}{660pt}
+%\setlength{\oddsidemargin}{10pt}
+%\newcommand{\RR}{\mathrm{I\!R\!}}
+%\newcommand{\FF}{\mathrm{I\!F\!}}
+%\newcommand{\dt}{\frac{\partial}{\partial t}}
+%\newcommand{\dq}{\frac{\partial}{\partial q }}
+%\newcommand{\dr}{\frac{\partial}{\partial p }}
+%\newtheorem{defi}{Definition}[chapter]
+%\newtheorem{theo}{Theorem}[chapter]
+
+%\begin{document}
+
+\chapter{Implementation of the Navier-Stokes Equations Solver}
+
+In this chapter, we discuss the functions needed to implement the algorithm for finding the numerical solutions to Navier-Stokes equations. All these functions were implemented in 
+C by Griebel {\em et al}.\cite{nsfd}. The program is available as an open source software called Nast2d.  
+
+\section{The Program}
+
+The following is an explaination of the input paramaters and functions used in the aforementioned open source code.
+\begin{itemize}
+\item \texttt{inputfile} is the inputfile name
+\item \texttt{problem} is the specific predefined problem types
+\item \texttt{xlength} is the length of the computational domain in the x direction
+\item \texttt{ylength} is the length of the computational domain in the y direction
+\item \texttt{imax} is the number of subinterval of xlength
+\item \texttt{jmax }is the number of subinterval of ylength
+\item \texttt{delx} is the spatial step size in the x direction
+\item \texttt{dely} is the spatial step size in the y direction
+\item \texttt{delt} is the time step size
+\item \texttt{$t_{end}$} is the final time level
+\item \texttt{tau} is a safety factor used when choosing the time step
+\item \texttt{itermax} is the maximum number of iterations
+\item \texttt{eps} is the stopping tolerance for the pressure iteration
+\item \texttt{omg} successive overrelaxation parameter
+\item \texttt{gamma} is the parameter chosen to maintain stability for convective terms
+\item \texttt{Re} is the Reynold's number
+\item \texttt{GX} is the body force in the x direction
+\item \texttt{GY} is the body force in the y direction
+\item \texttt{UI} is the initial velocity in the horizontal direction
+\item \texttt{VI} is the initial velocity in the vertical direction
+\item \texttt{PI} is the initial pressure
+\item \texttt{wW }is the western boundary
+\item \texttt{wE} is the eastern boundary
+\item \texttt{wN} is the northern boundary
+\item \texttt{wS} is the southern boundary
+\end{itemize}
+
+Using the described variables, the following functions are used to implement the algorithm.
+
+\begin{itemize}
+	
+	\item \texttt{ReadParameter}( inputfile, problem, xlength, ylength, imax, jmax, delx, dely, delt, $t_{end}$, tau, itermax, eps, omg, gamma, Re, GX, GY, UI, VI, PI, wW, wE, wN, wS ) 
+
+This function is tasked with reading all of the input parameters required for the program.
+
+	\item \texttt{InitUVP}( U, V, P, imax, jmax, UI, VI, PI)
+
+This function is tasked with initializing the arrays $U$, $V$, and $P$ with their corresponding inital values $UI$, $VI$, and $PI$.
+
+	\item \texttt{CompDelt}( delt, imax, jmax, delx, dely, U, V, Re, tau)
+	
+This function is tasked with calculating the stepsize delt for the next time step according to equation(). If tau < 0, the stepsize read in from ReadParameter is to be used.
+
+	\item \texttt{SetBCond}( U, V, imax, jamx, wW, wE, wN, wS)
+	
+This function is tasked with setting the boundary data parameters wW, wE, wN, wS for the arrays U and V.
+
+	\item \texttt{SetSPECBcond}( U, V, imax, jamx, wW, wE, wN, wS)
+	
+This function is tasked with specifying problem specific boundary conditions. 
+
+	\item \texttt{CompFG}( U, V, F, G, imax, jamx, delt, delx, dely, GX, GY, gamma, Re)
+	
+This function is tasked with the computation of $F$ and $G$ according to equation().
+
+	\item \texttt{CompRHS}( F, G, RHS, imax, jmax, delt, delx, dely) 
+	
+This function is tasked with the computation of the right-hand side of the pressure equation.
+
+	\item \texttt{Poisson}( P, RHS, imax, jmax, delx, dely, eps, itermax, omg, res)
+	
+This function is tasked with performing the successive over relaxation iteration for the pressure Poisson equation and is terminated once the residual norm reaches its tolerance eps, or once the maximum number of iterations(itermax) is reached.
+
+	\item \texttt{AdapUV}( U, V, F, G, P, imax, jmax, delt, delx, dely)
+	
+This function is tasked with calculating the new velocities according to Eq. (\ref{nvfp}).
+	
+\end{itemize} 
+
+
+\section{Conclusion}
+
+In this chapter, we presented the functions needed for implementation of the aformentioned algorithm. In the next chapter, techniques to visualize the numerical solutions obtained are presented.
+%\end{document}

@@ -1,0 +1,820 @@
+%\documentstyle[12pt]{report}
+%\setlength{\parindent}{0mm}
+%\setlength{\parskip}{14pt}
+%\renewcommand{\baselinestretch}{1.5}
+%\setlength{\topmargin}{0pt}
+%\setlength{\headheight}{0pt}
+%\setlength{\headsep}{0pt}
+%\setlength{\footskip}{45pt}
+%\setlength{\footheight}{0pt}
+%\setlength{\textwidth}{465pt}
+%\setlength{\textheight}{660pt}
+%\setlength{\oddsidemargin}{5pt}
+%\newcommand{\RR}{\mathrm{I\!R\!}}
+%\newcommand{\FF}{\mathrm{I\!F\!}}
+%\newcommand{\LL}{{\cal L}}
+%\newcommand{\dx}{\displaystyle{\frac{\partial}{\partial x}}}
+%\newcommand{\dy}{\displaystyle{\frac{\partial}{\partial y }}}
+%\newcommand{\dz}{\displaystyle{\frac{\partial}{\partial y' }}}
+%\newtheorem{defi}{Definition}[chapter]
+%\newtheorem{theo}{Theorem}[chapter]
+%\newtheorem{lem}{Lemma}[chapter]
+%\begin{document}
+
+\chapter{Noether Symmetries of \boldmath{$y''=f(x)y^n$} with
+Applications to Non--Static Spherically Symmetric Perfect Fluid Solutions}
+We study the Noether point symmetries and integrability
+of the equation $y''=f(x)y^n$, $n\ne -1, 0, 1$. The
+case $n=2$ is applied to shear--free spherically symmetric perfect fluid
+solutions. As a result
+we re-obtain the Kustaanheimo and Qvist 
+class and other known solutions in a systematic manner without
+resorting to {\em ad hoc} methods. Moreover, we show how one can construct 
+new solutions as well. For the case $n=-1/3$, it is shown that all existing solutions 
+arise as a result of the equation admitting a Noether point symmetry.
+In addition, the Noether integral gives rise to a class of solutions
+which contains the existing solutions. This work has been reported in
+Wafo Soh and Mahomed (1999b)
+\section{ Introduction}
+In the study of solutions of Einstein's field equations, the equation
+\begin{equation} y''=f(x)y^n  \label{ch3:i1} \end{equation} occurs on two
+occasions. 
+
+The first occurence of Eq. (\ref{ch3:i1})  is found in the theory of non--static
+spherically symmetric perfect fluid solutions with no shear. In their
+celebrated paper, Kustaanheimo and Qvist (1948)
+(see also Kramer {\em et al} 1980)  showed that
+non--static spherically symmetric perfect fluid solutions with no shear
+are obtained by solving the second--order ordinary differential equation
+(ode) \begin{equation} y''=f(x)y^2. \label{ch3:i2} \end{equation} In general,
+Eq. (\ref{ch3:i2}) cannot be solved in closed form. But for some
+specifications of $f(x)$ it can. The problem is then the following one:
+how does one prescribe the form of $f(x)$ such that Eq. (\ref{ch3:i2}) is
+solvable by quadratures? Kustaanheimo and Qvist (1948) resorted to
+what is nowadays known as Lie symmetry analysis
+(Ovsiannikov 1982, Ibragimov 1985, 1999, Olver 1986, Bluman and Kumei 1989,
+Stephani 1989, Hill 1992, see also Chapter 1)
+to provide an answer to this question. After the pioneering work of Sophus
+Lie (cf. Lie and Scheffers 1891), it is  known that the more symmetries an equation has the
+easier its integration. Kustaanheimo and Qvist (1948) found that Eq. (\ref{ch3:i2})
+admits a point symmetry if and only if 
+\begin{equation} \frac{d^3}{dx^3}\left (
+\alpha f^{-2/5}+\beta f^{-2/5}\int f^{2/5}dx \right ) =(\gamma x+\delta)f, 
+\label{ch3:i3} \end{equation} 
+where $\alpha,\;\beta,\; \gamma$ and
+$\delta$ are constants. As it can immediately be seen, Eq. (\ref{ch3:i3}) is a
+third--order, nonlinear integro--differential equation for which a
+closed form solution exists only in special cases.
+Kustaanheimo and Qvist (1948)
+found the particular solution 
+\begin{equation} f=(ax^2+bx+c)^{-5/2},
+\end{equation} 
+where $a,\;b$ and $c$ are constants, under the assumption that
+$\beta=\gamma=\delta=0$. Since this is just a particular solution
+to Eq. (\ref{ch3:i3}), there might still be other possibilities of $f(x)$ for which
+Eq. (\ref{ch3:i2}) possesses point symmetries. Recently, Leach {\em et al}
+(1992), Herlt and Stephani (1992) and  Stephani and Wolf (1996)
+further analyzed  Eq.
+(\ref{ch3:i3}). 
+
+The second occurence of Eq. (\ref{ch3:i1}) with $n=-1/3$ is in the study of non--static spherically
+symmetric perfect fluid solutions with non-zero shear (geodesic flow). 
+
+Since the direct Lie method does not lead to a
+complete classification of Eq. (\ref{ch3:i1}) as mentioned earlier, our
+concern in this chapter is to study Noether point symmetries of Eq. (\ref{ch3:i1}). It
+is worth mentioning that Noether symmetries  are particular Lie symmetries
+which have the interesting property of being associated with conservation
+laws or first integrals via  the celebrated Noether theorem
+(Noether 1918). Furthermore, a scalar
+second--order ode  with only one Noether point symmetry is integrable by
+quadratures. Thus, the advantage of studying Noether point symmetries 
+corresponding to a Lagrangian of Eq. (\ref{ch3:i1}) is that it is a more
+fundamental approach for integrability in that a Noether symmetry directly gives 
+via the Noether theorem an explicit integral which itself is invariant. Some previously known
+integrable cases of Eq. (\ref{ch3:i1}) are recovered and new integrable cases are uncovered. It is important
+to stress that the Lie point symmetry approach
+(used in Leach {\em et al } 1992, Herlt and Stephani 1992,
+Stephani and Wolf 1996)
+and the Noether point symmetry approach used here are complementary
+in the sense that the Noether approach picks 
+out the one symmetry cases that are solvable whereas the Lie approach is more general
+and does not guarantee integrability for the one symmetry cases in a straightforward
+manner. Thus it becomes natural and vital, if one can
+find a Lagrangian, to employ the Noether approach which we do here. 
+
+ 
+The outline of this chapter is as follows. Section 3.2 deals with the
+classification of Eq. (\ref{ch3:i1}) with respect to the Noether point symmetries of the natural
+Lagrangian of Eq. (\ref{ch3:i1}),
+i.e., we find all the forms of $f(x)$ for which a Noether point symmetry
+exists. For the $n=2$ case, we recover the Kustaanheimo and Qvist, and Stephani solutions.
+Notwithstanding, we obtain new solutions. Also, for the case $n=-1/3$, we provide a unified
+approach to obtaining the existing solutions. In Section 3.3 we give
+applications to non--static spherically symmetric perfect fluid solutions.
+
+To place this chapter in its proper perspective, we would like
+to refer the reader to  recent works by
+Wyman (1976), Leach {\em et al} (1992), Stephani and Herlt (1992),
+Stephani and Wolf (1996), Maharaj {\em et al} (1996),
+Wafo Soh and Mahomed (1999c).
+In  Leach {\em et al} (1992), Stephani and Herlt (1992) and
+Stephani and Wolf (1996),
+the direct Lie method is applied , the Painlev\'e analysis is
+utilised in  Wyman (1976) and the method of preliminary group classification
+is employed in Wafo Soh and Mahomed (1999c). The subject of
+Maharaj {\em et al} (1996) is the study of first integrals of
+Eq. (\ref{ch3:i2}) using an {\em ad hoc} method which is later justified
+in the same paper by the Lie method.
+
+\section{ Noether symmetries  and integration of \\
+$\boldmath{y''=f(x)y^n}$} 
+
+Let us begin with some important facts about Noether's first integral
+(Chapter 1, Section 1.5). 
+\begin{theo} \label{ch3:t2} \begin{em} The first integral $I$
+associated with the Noether point symmetry $X$ satisfies 
+\begin{equation}
+X^{[1]}I=0,  \label{ch3:n7}
+\end{equation}
+i.e. $X$ is a point symmetry of the first
+integral $I$.
+\end{em} \end{theo}
+
+{\bf Proof.} See for instance Lutzky (1979), Sarlet and Cantrijn (1981) and
+Kara {\em et al} (1994). The
+references Kara {\em et al} (1994) and Ibragimov {\em et al} (1998)
+contain a more general proof.
+
+\begin{theo}
+\label{ch3:t3} \begin{em} A scalar second--order ordinary differential equation
+admitting a single Noether point symmetry is solvable by quadratures. 
+\end{em} \end{theo} 
+
+{\bf Proof.} Use Theorem \ref{ch3:t2}.
+
+{\bf Illustrative example.} Consider the Emden--Fowler equation
+\begin{equation}
+\label{ch3:x1}
+y''+\frac{2}{x}y'=3y^5 .
+\end{equation}
+Its natural Lagrangian is
+\begin{equation}
+\label{ch3:x2}
+L=\frac{1}{2}x^2y'^2+\frac{1}{2}x^2y^6.
+\end{equation}
+Using the determining equations for Noether symmetries
+(cf. Chapter 1, Section 1.5), we find
+\begin{equation}
+\label{ch3:x3}
+X=2x\dx-y\dy,\;\;A=0.
+\end{equation}
+Applying Noether's theorem (Chapter 1, Section 1.5), we determine
+\begin{equation}
+\label{ch3:x4}
+I=-x^3y'^2-x^2yy'+x^3y^6.
+\end{equation}
+Hence the reduced equation can be written as
+\begin{equation}
+\label{ch3:x5}
+x^3y'^2+x^2yy'-x^3y^6=C_1,
+\end{equation}
+where $C_1$ is an arbitrary constant. According to Theorem \ref{ch3:t2}, $X$
+is also a symmetry of the reduced equation. In order to solve Eq.
+(\ref{ch3:x5}) we use the invariant of $X$ as the new dependent variable. This
+invariant is found from the characteristic equation associated with $X$,
+viz.
+\[\frac{dx}{2x}=\frac{dy}{-y}\;\cdot\]
+We obtain an invariant $u=yx^{1/2}$.
+Eq. (\ref{ch3:x5}) in terms of $u$ reads
+\begin{equation} \label{ch3:x6}
+x^2u'^2-\frac{1}{4}u^2-u^6=C_1.
+\end{equation}
+Eq. (\ref{ch3:x6}) is obviously variables separable
+(cf., e.g., handbooks Kamke 1971, Polyanin and Zaitsev 1995 for another
+approach to (\ref{ch3:x1})).
+Here it should be pointed out that a single
+Noether point symmetry which turns out to be the only Lie point symmetry
+of the equation, leads to quadrature. In the usual Lie approach, a single 
+point symmetry of a second--order ode in general does not result
+in quadrature.
+
+Henceforth we consider Eq. (\ref{ch3:i1})
+with $n\ne -1, 0, 1$.
+Its natural Lagrangian is
+\begin{equation}
+L=\frac{y'^2}{2}+f(x)\frac{y^{n+1}}{n+1}, \; n\ne -1 . \label{ch3:n8}
+\end{equation}
+By using the determining equations for Noether point symmetries
+(Chapter 1) and separating with respect to powers of $y'$,
+we get the system
+
+\begin{eqnarray} \xi_y & =& 0, \label{ch3:n9}\\
+\xi_x-2\eta_y &=& 0,
+\label{ch3:n10}\\
+\eta_x &= & A_y , \label{ch3:n11} \\ y^{n+1}\left (\xi_x f+\xi
+f'\right )+(n+1)y^n f\eta & =& (n+1)A_x . \label{ch3:n12}
+\end{eqnarray}
+
+After simple calculations, the system Eqs. (\ref{ch3:n9})--(\ref{ch3:n12}) reduces to
+\begin{eqnarray}
+\xi &=& a(x), \label{ch3:n13}\\
+\eta &=& \frac{a'}{2}y+b(x), \label{ch3:n14}\\
+A &=& \frac{a''}{4}y^2+b'y+B(x), \label{ch3:n15}\\
+y^{n+1}(af'+fa')+(n+1)y^n f\left (\frac{a'}{2}y+b \right) &=&
+(n+1)\left (\frac{a'''}{4}y^2+b''y+B'\right ).\;\;
+\label{ch3:n16}
+\end{eqnarray}
+Eq. (\ref{ch3:n16}) prompts the consideration of the following cases. 
+
+{\bf Case I. \boldmath{$\; n\ne -1,\;0,\;1,\; 2.$}}\\
+We find that
+\begin{eqnarray}
+a & = & \alpha x^2+2\beta x +\gamma ,\quad b=0 ,\label{ch3:n17}\\
+\eta &= & (\alpha x+\beta)y, \label{ch3:n18}\\
+f &=& f_0 (\alpha x^2+2\beta x+\gamma)^{-\frac{n+3}{2}}, \label{ch3:n19} \\ A
+&=& \frac{\alpha}{2}y^2+\mbox{ const.},\label{ch3:n20} \end{eqnarray}
+where $\alpha,\;\beta$, $\gamma$ and $f_0$ are constants.
+Using Theorems \ref{ch3:t2} and
+\ref{ch3:t3}, we find that the solution to Eq. (\ref{ch3:i1}) is given by
+\begin{equation} y=u(\alpha x^2+2\beta x+\gamma)^{1/2}, \label{ch3:n21}
+\end{equation} where $u$ is defined by \begin{equation} \int
+\frac{du}{\left [ (\beta^2-\alpha \gamma)u^2+2f_0u^{n+1}/(n+1)+C_1 \right
+]^{1/2}} =\int \frac{dx}{\alpha x^2+2\beta x+\gamma}  +C_2, \label{ch3:n22}
+\end{equation} where $C_1$ and $C_2$ are arbitrary constants of
+integration (this solution is also given, e.g. in
+the handbooks Kamke 1971, Polyanin and Zaitsev 1995).
+The implications of this solution in the physical case $n=-1/3$ will
+be discussed in the next section.
+
+{\bf Case II. \boldmath{$\;n=2$.}}\\
+Eq. (\ref{ch3:n16}) splits into the following 
+\begin{eqnarray}
+af'+\frac{5}{2}a'f &=& 0, \label{ch3:n23} \\
+4bf &=& a''', \label{ch3:n24}\\
+b &=& \alpha x+\beta , \; B =  \mbox{const.}, \label{ch3:n25}
+\end{eqnarray}
+where $\alpha$ and $\beta$ are constants. The following subcases arise. 
+
+{\bf Case II.1 \boldmath{$\;\alpha=0=\beta$}, i.e. \boldmath{$\;b=0.$} }\\
+We  find \begin{eqnarray} a &=& rx^2+2sx+q, \label{ch3:n27} \\ f &=&
+f_0(rx^2+2sx+q)^{-5/2}, \label{ch3:n28} \end{eqnarray} where $r,\;s,\;q$ and
+$f_0$ are constants. This is the case which was investigated by Kustaanheimo
+and Qvist (1948). Since there is a vast literature
+(see Kramer {\em et al} 1980 and
+references therein) on this case, we will not elaborate any further.
+
+{\bf Case II.2  \boldmath{$\alpha\ne0 \mbox{ or } \beta\ne 0$}, i.e.
+\boldmath{$b\ne 0$.}}\\ We  obtain \begin{eqnarray} a &=& a_0f^{-2/5},
+\label{ch3:n29}\\ \eta &=& \frac{1}{2}ya'+b(x),\label{ch3:n30}\\ A &=&
+\frac{1}{4}a''y^2+b'y+\mbox{const.}, \label{ch3:n31}\\
+b''=0,\;\;4a^{-5/2}b &= & a''', \label{ch3:n32} \end{eqnarray} where
+$a_0$ is an arbitrary constant. Since Noether symmetries form a Lie
+algebra, without loss of generality we can set $a_0=1$ and then 
+$a=f^{-2/5}$.
+The  first integral of Eq. (\ref{ch3:i1}) associated with
+the Noether point symmetry \begin{equation} X= a\dx+\left
+(\frac{1}{2}a'y+b\right )\dy, \label{ch3:n38} \end{equation} is (Chapter 1)
+\begin{equation}
+I=-\frac{1}{2}ay'^2+\frac{1}{2}a'yy'+\frac{1}{3}a^{-3/2}y^3-\frac{1}{4}a''y^2 
++by'-b'y, \label{ch3:n39} \end{equation} provided Eqs.
+(\ref{ch3:n32}) and $a=f^{-2/5}$ are satisfied. A basis of invariant of $X$ is
+given by \begin{equation} \omega=a^{-1/2}y-\int ba^{-3/2}dx . \label{ch3:n40}
+\end{equation} Taking $\omega$ as the new dependent variable, the first
+integral Eq. (\ref{ch3:n39}) becomes
+\begin{equation}
+I=-\frac{1}{2}a^2\omega'^2+\frac{1}{3}\omega^3+D\omega^2+E\omega+F,
+\label{ch3:n41}
+\end{equation}
+where
+\begin{eqnarray}
+D &=& \frac{1}{8}a'^2-\frac{1}{4}aa''+\int ba^{-3/2}dx, \label{ch3:n42} \\ E
+&=& \frac{1}{4}a'^2\int ba^{-3/2}dx+\left (\int ba^{-3/2}dx\right )^2
+-\frac{1}{2}aa''\int ba^{-3/2}dx \nonumber\\
+ & & +\frac{1}{2}ba^{-1/2}a'-b'a^{1/2},
+\label{ch3:n43}\\
+F &=& \frac{1}{8}a'^2\left (\int ba^{-3/2}dx\right )^2
++\frac{1}{2}b^2a^{-1} +\frac{1}{2}a^{-1/2}ba'\int
+ba^{-3/2}dx+\frac{1}{3}\left ( \int b a^{-3/2} dx \right )^3 \nonumber \\
+& & -\frac{1}{4}aa''\left (\int ba^{-3/2}dx \right )^2-a^{1/2}b'\int
+ba^{-3/2}dx. \label{ch3:n44} \end{eqnarray} 
+Straightforward calculations reveal that
+$E,\; D$ and $F$ are constants. Let us for instance show that $D$ is a
+constant. Differentiate Eq. (\ref{ch3:n42}) once and obtain (\ref{ch3:n32}b). Similarly,
+to prove that $E$ and $F$ are constants, take their derivative with respect
+to $x$ and use Eqs. (\ref{ch3:n32}) to conclude. 
+
+
+Now (\ref{ch3:n41}) can be written as the reduced
+equation $I=-C_1$, viz.
+\begin{equation}
+\frac{1}{2}a^2\omega'^2=\frac{1}{3}\omega^3+D\omega^2+E\omega+F+C_1,
+\label{ch3:n45} \end{equation} where $C_1$ is an arbitrary constant. The
+solution to Eq. (\ref{ch3:n45}) is given by 
+\begin{equation}
+\int {dx\over a}=\sqrt{3\over2} \int  \frac{d\omega}{\left [ \omega^3
++3D\omega^2 +3E\omega+3F+3C_1\right]^{1/2}}+C_2 ,\label{ch3:n46}
+\end{equation} 
+where $C_2$ is an arbitrary constant of integration. In
+order to complete the integration, we need to solve Eqs
+(\ref{ch3:n32}). 
+
+Eq. (\ref{ch3:n32}a) gives 
+\begin{equation} 
+b=\alpha
+x+\beta . \label{ch3:n47} 
+\end{equation} 
+
+The above relations (\ref{ch3:n42}), (\ref{ch3:n43}) and (\ref{ch3:n44}) for $D$, $E$
+and $F$ can systematically and easily be used to solve the equation (\ref{ch3:n32}b) which 
+up to now has been solved in an {\em ad hoc} manner
+(cf. Polyanin and Zaitsev 1995, Maharaj {\em et al} 1996). The solution of (\ref{ch3:n32}b)
+naturally comes out from the relations (\ref{ch3:n42}), (\ref{ch3:n43}) and (\ref{ch3:n44}) straightforwardly by
+substituting (\ref{ch3:n42}) into (\ref{ch3:n43}), (\ref{ch3:n44}) and finally the resulting expression for 
+$ba^{-1/2}a'/2$ in (\ref{ch3:n43}) into (\ref{ch3:n44}). This gives 
+\begin{equation}
+F=b^2a^{-1}/2+E\int ba^{-3/2}dx-D(\int ba^{-3/2}dx)^2+(\int ba^{-3/2}dx)^3/3\,.\label{ch3:52}
+\end{equation}
+Now set 
+\begin{equation}
+\tau=-\int ba^{-3/2}dx \label{ch3:53}
+\end{equation}  
+and insert (\ref{ch3:53}) into (\ref{ch3:52}). Then (\ref{ch3:52}) becomes 
+\begin{equation}
+-{dx\over b^2}=\left(\frac32\right)^{3/2} {d\tau\over [\tau^3 +3D\tau^2+3E\tau+3F]^{3/2}}\label{ch3:54}
+\end{equation} 
+with $b$ given by (\ref{ch3:n47}). In order to obtain $\tau(x)$ one need to first solve (\ref{ch3:54})
+for $\tau(x)$ and then from (\ref{ch3:53}) 
+\begin{equation}
+a=(-b)^{2/3}\left({d\tau\over dx}\right)^{-2/3}\,.\label{ch3:55}
+\end{equation}
+
+Two cases arise in solving (\ref{ch3:54}). The solutions for each case, in general,
+are expressed in parametric form.
+
+{\bf Case (i)}: $\alpha=0$, $\beta\ne0$.
+
+For convenience we let
+\begin{equation}
+h(\tau)=-\left({3\over2}\right)^{3/2}\int {d\tau\over[\tau^3+3D\tau^2+3E\tau+3F]^{3/2}}\,\cdot\label{ch3:56}
+\end{equation}
+It is easy to deduce that for this case $a$ is defined in parametric form by
+\begin{equation} \label{ch3:57} 
+\begin{array}{lll} x &=&
+\beta^2h(\tau)-k,\\ 
+a &=& \beta^2[2\tau^3/3+2D\tau^2+2E\tau+2F]^{-1}, 
+\end{array} 
+\end{equation}
+where $k$ is  a constant. 
+
+{\bf Case (ii)}: $\alpha\ne0$.
+
+In this case $a$ is given in parametric form by
+\begin{equation}\label{ch3:58}
+\begin{array}{lll} \alpha x+\beta &= & (k-\alpha h(\tau))^{-1},\\
+a&=&(k-\alpha h(\tau))^{-2}[\frac23\tau^3+2D\tau^2+2E\tau+2F]^{-1},
+\end{array}
+\end{equation}
+where $k$ is a constant.
+
+The integral on the left hand side of (\ref{ch3:n46}) contains $a$ and $dx$ which are known in parametric
+form from (\ref{ch3:57}) and (\ref{ch3:58}).
+
+We firstly invoke (\ref{ch3:57}) into (\ref{ch3:n46}). This yields
+\begin{equation}
+- \int {d\tau\over \left [\tau^3 +3D\tau^2+3E\tau+3F\right ]^{1/2}}= 
+\int \frac{d\omega}{\left [ \omega^3
++3D\omega^2 +3E\omega+3F+3C_1\right]^{1/2}}+C_2.   \label{ch3:59}
+\end{equation}
+
+Let us next insert (\ref{ch3:58}) into (\ref{ch3:n46}). Precisely the same equation (\ref{ch3:59})
+results.
+
+We are now in a position to write down the general solution of Eq.\ (\ref{ch3:i2}) in terms of quadratures
+for the Case II.2. There are naturally two cases (i) and (ii) that
+arise. We find that (remember that $y=a^{1/2}(\omega-\tau)$ from (\ref{ch3:n40})):
+
+{\bf Case (i)}: $\alpha=0$, $\beta\ne0$.
+
+\begin{equation}\label{ch3:60}
+\begin{array}{lll}  x &= & \beta^2 h(\tau) -k,\\
+y&=&\beta[\frac23\tau^3+2D\tau^2+2E\tau+2F]^{-1/2}(\omega-\tau),\\
+f&=&\beta^{-5}[\frac23\tau^3+2D\tau^2+2E\tau+2F]^{5/2}\,.
+\end{array}
+\end{equation}
+
+{\bf Case (ii)}: $\alpha\ne0$.
+
+ \begin{equation}\label{ch3:61}
+\begin{array}{lll} \alpha x+\beta &= & (k-\alpha h(\tau))^{-1},\\
+y&=&(k-\alpha h(\tau))^{-1}[\frac23\tau^3+2D\tau^2+2E\tau+2F]^{-1/2}(\omega-\tau),\\
+f&=&(k-\alpha h(\tau))^{5}[\frac23\tau^3+2D\tau^2+2E\tau+2F]^{5/2}\,.
+\end{array}
+\end{equation}
+
+In equations (\ref{ch3:60}) and (\ref{ch3:61}), $h(\tau)$ is given by (\ref{ch3:56}) and $\omega$ by (\ref{ch3:59}).
+Equations (\ref{ch3:60}) and (\ref{ch3:61}) provide a new class of solutions. They also contain existing
+solutions as we shall soon point out below.
+
+Now let us investigate when the solutions given by Eqs. (\ref{ch3:60}) and (\ref{ch3:61}) can be written in
+terms of elementary functions.  The integrals occuring in Eqs. (\ref{ch3:56}) and (\ref{ch3:59}) are
+expressible in terms of elementary functions only if the radicands in (\ref{ch3:56}) and (\ref{ch3:59})
+have three repeated factors or two repeated factors.
+In the other case it is expressible in terms of elliptic functions. 
+
+{\bf Case (a): Three repeated factors}.
+
+We firstly consider the situation when the radicand in (\ref{ch3:56}) has three repeated factors. There are two
+cases (i) and (ii) to look at which we do in turn. If one sets the radicand in (\ref{ch3:56}) as $(\tau+D)^3$, then
+$D^2=E$, $D^3=3F$ and  $h(\tau)=\left(\frac32\right)^{3/2}\left(\frac27\right)(D+\tau)^{-7/2}$.  Also
+(\ref{ch3:59}) becomes
+\begin{equation}
+-\int {d\tau\over (D+\tau)^{3/2}}=\int {d\omega\over \left [ (\omega+D)^3
++3C_1\right]^{1/2}}+C_2.\label{ch3:63}
+\end{equation}
+In order for the right hand side radicand to have three repeated roots, we require $C_1=0$.
+
+For Case (i), (\ref{ch3:60}) gives the one-parameter family of solutions
+\begin{equation}\label{ch3:64}
+\begin{array}{lll}  
+x&=&\beta^2(\frac32)^{3/2}\left(\frac27\right)(D+\tau)^{-7/2}-k,\\
+y&=&\beta^{1/7}(\frac32)^{-1/7}(\frac27)^{-3/7}(x+k)^{3/7}\{
+[-(x+k)^{1/7}\beta^{-2/7}(\frac32)^{-3/14}(\frac27)^{-1/7}\\
+& & +C_2/2]^{-2}\}
+-\beta^{5/7}(\frac32)^{2/7}(\frac27)^{-1/7}(x+k)^{1/7},\\
+f&=&\beta^{-5/7}(\frac32)^{5/7}(\frac27)^{15/7}(x+k)^{-15/7}\,.
+\end{array}
+\end{equation}
+Although Stephani (1989) considers this case and provides the general solution in terms of 
+a line integral, the one-parameter solutions (\ref{ch3:64}) are, to the best of our knowledge,
+new and it would be interesting to see how they could 
+be obtained from Stephani's. These are the only solutions that are not in 
+parametric form for $f\sim x^{-15/7}$.
+
+In the Case (ii), (\ref{ch3:61}) implies the one-parameter family of solutions
+\begin{equation}\label{ch3:65}
+\begin{array}{lll} \alpha x+\beta &= & [k-\alpha(\frac27)(\frac32)^{3/2}(D+\tau)^{-7/2}]^{-1},\\
+y&=&\alpha^{-3/7}(\frac32)^{-1/7}(-\frac27)^{-3/7}(\alpha x+\beta)^{4/7}(1-k\beta-k\alpha x)^{3/7}\times\\
+&&[-(1-k\beta-k\alpha x)^{1/7}(\frac27)^{-1/7}\alpha^{-1/7}(\frac32)^{-3/14}(\alpha x+\beta)^{-1/7}+C_2/2]^{-2}\\
+&& -\alpha^{-1/7}(\frac32)^{2/7}(-\frac27)^{-1/7}(\alpha x+\beta)^{6/7}(1-k\beta-k\alpha x)^{1/7},\\
+f&=&\alpha^{15/7}(\frac32)^{5/7}(-\frac27)^{15/7}(\alpha x+\beta)^{-20/7}(1-k\beta-k\alpha x)^{-15/7}\,.
+\end{array}
+\end{equation}
+This one-parameter family of solutions which are not in parametric form
+is, as far as we are aware, new, although the form
+$f\sim (x-x_1)^{-15/7}(x-x_2)^{-20/7}$ was quoted before in
+Stephani and Wolf (1996).
+
+{\bf Case (b): Two repeated factors}.
+
+We next look at the situation when the radicand in (\ref{ch3:56}) has two repeated factors. There are two
+cases (i) and (ii). If we write the radicand in (\ref{ch3:56}) as $(\tau-p)^2(\tau-q)$, then $3D=-(2p+q)$,
+$3E=(p^2+2pq)$, $3F=-p^2q$ and 
+\begin{equation}\label{ch3:66}
+h(\tau)=\left \{  \begin{array}{ll} 
+&\displaystyle -\left({-1\over 2(p-q)(\tau-p)^2}+{5\over 4(p-q)^2(\tau-p)}+{15\over 4(p-q)^3}\right){(\frac32)^{3/2}\over
+\sqrt{\tau-q}}\\
+&- \displaystyle{15(\frac32)^{3/2}\over 8(p-q)^{7/2}}{\rm arctanh} {\sqrt{\tau-q}\over \sqrt{p-q}}, \quad {\rm if}\quad p>q\,,\\
+&\displaystyle -\left({-1\over 2(p-q)(\tau-p)^2}+{5\over 4(p-q)^2(\tau-p)}+{15\over 4(p-q)^3}\right){(\frac32)^{3/2}\over
+\sqrt{\tau-q}}\\
+& +\displaystyle{15(\frac32)^{3/2}\over 8(q-p)^{7/2}}{\rm arctan} {\sqrt{\tau-q}\over \sqrt{q-p}}, \quad {\rm if}\quad p<q\,.
+\end{array}\right.
+\end{equation}
+Equation (\ref{ch3:59}) when $C_1=0$ becomes
+\begin{equation}
+-\int {d\tau\over (\tau-p)(\tau-q)^{1/2}}=\int\displaystyle {d\omega\over (\omega-p)(\omega-q)^{1/2}}+C_2.\label{ch3:67}
+\end{equation}
+We deduce from (\ref{ch3:67}) that 
+\begin{equation}\label{ch3:68}
+\omega=\left \{  \begin{array}{ll}
+&q+(p-q)\left[\displaystyle{(\tau-q)^{1/2}+C_3\sqrt{p-q}\over \sqrt{p-q}+C_3(\tau-q)^{1/2}}\right]^2, 
+\quad {\rm if}\quad p>q\,,\\
+&q+(q-p)\left[\displaystyle{(\tau-q)^{1/2}+C_3\sqrt{q-p}\over \sqrt{q-p}-C_3(\tau-q)^{1/2}}\right]^2, 
+\quad {\rm if}\quad p<q\,,
+\end{array}\right.
+\end{equation}
+where $C_3={\rm tanh}\,(\sqrt{p-q}C_2/2)$ in (\ref{ch3:68}a) and
+$C_3={\rm tan}\,(\sqrt{q-p}C_2/2)$ in (\ref{ch3:68}b).
+Note that as $C_3\rightarrow \infty$, $\omega\rightarrow q+(p-q)^2/(\tau-q)$.
+This yields a singular solution to Eq. (\ref{ch3:i2}).
+
+For Cases (i) and (ii), (\ref{ch3:60}) and (\ref{ch3:61}) give the one-parameter family of solutions expressible 
+in terms of elementary functions in parametric form
+with $h(\tau)$ and $\omega$ given by (\ref{ch3:66}) and (\ref{ch3:68}) respectively. These constitute new 
+closed form solutions.
+
+We now provide a summary of the comparison of our results with those previously known.
+
+Previous workers have obtained exact solutions of Eq. (\ref{ch3:i2}) for various 
+forms of $f(x)$. In this regard, we can mention for example the paper
+by Wolf and Stephani (1996) wherein the two Lie point symmetry and a few
+one symmetry cases were stated. In the Noether approach adopted here,
+the one Lie point symmetry cases $f(x) =e^x$, $f(x)=x^n$ $(n\ne0,-5,-15/7,-20/7)$ and $f(x)=(x+\alpha)^n
+(x+\beta)^{-n-5}$ ($n\ne-5/2$), which turn out to be not integrable,
+do not arise. The cases $f(x)=x^{-15/7}$, $f(x)=(x-x_1)^{-15/7}(x-x_2)^{-20/7}$ and the 
+Kustaanheimo and Qvist forms do arise here as mentioned before. 
+All the two Lie point symmetry cases are equivalent (not
+from a physical point of view though) to the case $f(x)=1$
+(Conrad {\em et al } 1994, Herlt and Stephani 1992, Stephani and Wolf 1996)
+which turns out to be a  Noether
+case. The Noether 
+approach picks out  existing integrable cases and new ones not treated by
+previous workers. In fact we have provided the solutions in parametric form by means of the formulas
+(\ref{ch3:60}) and (\ref{ch3:61}). Notwithstanding we have presented new solutions in closed form with $h(\tau)$
+and $\omega$ given by (\ref{ch3:66}) and ({\ref{ch3:68}). 
+
+\section{Applications: Non--static spherically
+symmetric perfect fluid solutions} 
+
+\subsection{The basic equations}
+In a comoving frame of reference, the line element for time-dependent,
+spherically symmetric perfect fluid solutions reads
+(see for example Kramer {\em et al} 1980)
+\begin{equation} ds^2=Y^2(r,t)d\Omega^2+\mbox{e}^{2\lambda
+(r,t)}dr^2-\mbox{e}^{2\nu (r,t)}dt^2, \label{ch3:b1} \end{equation} where
+\begin{equation} d\Omega \equiv d\theta^2+\sin^2 \theta d\phi^2.
+\label{ch3:b2} \end{equation} In this coordinate system the field equations
+are
+\begin{eqnarray} \kappa_0\mu &=
+&\frac{1}{Y^2}-\frac{2}{Y}\mbox{e}^{-2\lambda} \left ( Y''-Y'\lambda'
++\frac{Y'^2}{2Y} \right )+\frac{2}{Y}\mbox{e}^{-2\nu}\left (\dot Y \dot
+\lambda +\frac{\dot Y^2}{2Y} \right ), \label{ch3:b3}\\ \kappa_0p &=
+&-\frac{1}{Y^2}+\frac{2}{Y}\mbox{e}^{-2\lambda} \left ( Y'\nu'
++\frac{Y'^2}{2Y} \right )-\frac{2}{Y}\mbox{e}^{-2\nu} \left (\ddot Y
+-\dot Y\dot \nu +\frac{{\dot Y}^2}{2Y} \right ), \label{ch3:b4}\\ \kappa_0 p Y
+&= &\mbox{e}^{-2\lambda}[(\nu ''+\nu^{'2}-\nu '\lambda ')Y+Y''+Y' \nu'
+-Y'\lambda '] \nonumber\\
+ & &-\mbox{e}^{-2\nu}[(\ddot \lambda+\dot \lambda^2-\dot \lambda  \dot
+ \nu)Y+ \ddot Y+ \dot Y \dot \lambda -\dot Y \dot \nu] \label{ch3:b5}\\
+0 &=& \dot Y'-\dot Y\nu '-Y'\dot \lambda, \label{ch3:b6}
+\end{eqnarray}
+where $\mu$ is the energy density, $p$ is the pressure and $\kappa_0$ is
+the gravitational constant, the overdot represents differentiation with
+respect to $t$ and the prime  differentiation with respect to $r$. The
+4--velocity is  \[u^i=(0,0,0,\mbox{e}^{-\nu}),\quad i=1,\ldots,4.\]
+
+The conservation of
+the energy--momentum tensor $T_{ab}=(p+\mu)u_au_b+pg_{ab}$
+yields the following useful equations
+\begin{equation}
+p'=-(\mu+p)\nu ',\;\;\dot \mu=-(\mu+p)(\dot \lambda+2\dot Y/Y). \label{ch3:m}
+\end{equation} Just as for perfect fluids, the spherically symmetric solutions
+can be classified according to their kinematical properties. That is, the
+4--velocity's rotation ($\omega_{ab}$), acceleration ($\dot u_i$),
+expansion ($\Theta$) and shear ($\sigma_{ab}$).  As a result of spherical symmetry,
+$\omega_{ab}=0$. The other quantities  are 
+\begin{eqnarray} \dot u_i &= & (0,0,\nu ',0),\;\;  \Theta
+=\mbox{e}^{-\nu}(\dot \lambda+2\dot Y/Y), \nonumber\\ &  & \label{ch3:b7} \\
+\sigma_1^1 &=&\sigma^2_2=-\frac{1}{2}\sigma_3^3=\frac{1}{3}\mbox{e}^{-\nu}
+(\dot Y/Y-\dot \lambda). \nonumber \end{eqnarray} 
+
+\subsection{Expanding solutions without shear} 
+
+These solutions were characterized by
+Kustaanheimo and Qvist (1948) as follows. 
+\begin{theo}[Kustaanheimo and Qvist 1948]
+ \label{ch3:t4}
+\begin{em}
+Every non--static, expanding and shear--free spherically
+symmetric perfect fluid  solution has the form \begin{equation} ds^2
+=\frac{1}{F^2}(dr^2+r^2d\theta^2+r^2\sin^2 \theta d\phi^2)-\left [
+\frac{\dot F}{FA(t)}\right ]^2dt^2, \label{ch3:b8} \end{equation} where \[
+F=F(x,B(t),C(t))\] is the general solution of the equation
+\begin{equation} F_{xx}=f(x)F^2, \label{ch3:b9} \end{equation} 
+with $x=r^2$ and 
+$f(x),\;A(t)$ and $B(t)$ arbitrary functions of integration. \end{em}
+\end{theo} 
+{\bf Proof.} See Kustaanheimo and Qvist (1948), Kramer {\em et al } (1980).
+
+Eq. (\ref{ch3:b9}) is in fact
+Eq. (\ref{ch3:i2}) which we have studied at length in Section 3.2. We can readily
+exhibit a non--static spherically symmetric  expanding solution without
+shear that is not contained in the Kustaanheimo and Qvist class. For example
+Case (b) of Section 3.2 yields this type of solutions:
+take $x=r^2$, $F=y$, where now $C_3$ is a function of $t$.
+
+\subsection{Solutions with shear but without acceleration} 
+From Eq (\ref{ch3:b7}a) we infer that $\nu$ is a function of  $t$ only and using Eq.
+(\ref{ch3:m}a), we find that $p$ is also function of $t$ only. If we assume
+further that $Y'\ne 0 $ then we can choose $\nu=0$ and the field equations
+reduce  to (Kramer {\em et al} 1980)
+\begin{eqnarray} \mbox{e}^{2\lambda} &=&
+Y'^2/(1-\epsilon f^2(r)),\; \epsilon=0,\pm 1, \label{ch3:s1}\\ \kappa_0 p(t) Y^2
+&=& -2Y\ddot Y-\dot Y^2-\epsilon f^2(r), \label{ch3:s2}\\ \kappa_0\mu &=&
+-3p(t)-2\ddot Y'/Y', \label{ch3:s3} \end{eqnarray} where $f(r)$ is an
+arbitrary function of integration. In Eq. (\ref{ch3:s2}), perform the change
+of variable (cf. Herlt 1996)
+\begin{equation} Y=Z^{\alpha} , \label{ch3:s4} \end{equation}
+where $\alpha$ is a real constant to be chosen properly later. In the new
+variable, Eq. (\ref{ch3:s2}) reads \begin{equation} 2\alpha Z^{2\alpha
+-1}\ddot Z+\alpha (3\alpha-2)Z^{2\alpha-2}\dot Z^2
+=-\kappa_0p(t)Z^{2\alpha}-\epsilon f^2(r). \label{ch3:s5} \end{equation} In
+order to get rid of $\dot Z$, choose $\alpha=2/3$. Hence \begin{equation}
+\ddot Z=-\frac{3}{4}\left (\kappa_0p(t)Z+\epsilon f^2(r)Z^{-1/3} \right ).
+\label{ch3:s6} \end{equation} Further make the transformation of variables
+\footnote{This type
+of change of variables is also used in the study of the Ermakov--Pinney
+equation (Ermakov 1880).} \begin{equation} W=Z/\rho (t,r),\;\; \tau=\int^t \rho
+^{-2}(\xi,r)d\xi, \label{ch3:s7} \end{equation} where $\rho (t,r)$ is a solution
+of the linear second-order equation \begin{equation}  \rho_{tt} +\frac{3}{4}\kappa_0 p(t)\rho
+=0. \label{ch3:s8} \end{equation} Eq. (\ref{ch3:s6}) becomes
+\begin{equation}
+W_{\tau\tau} =-\frac{3}{4}\epsilon \rho^{8/3}f^2(r) W^{-1/3}. \label{ch3:s9}
+\end{equation}
+At this point, two cases arise.
+
+{\bf Case I  \boldmath{$\;\epsilon f(r)=0.$}}\\
+We find that
+\[ W=a(r)\tau+b(r),\]
+where $a(r)$ and $b(r)$ are arbitrary functions of integration.
+Thus
+\begin{equation}
+Y=\rho^{2/3} \left [ a(r)\int^t \rho^{-2} (\xi,r)d\xi +b(r)\right ]^{2/3}.
+\label{ch3:s10} \end{equation} In order to avoid zero shear, me must have
+$\dot Y'Y\ne \dot YY'$. Hence $a(r)$ and $b(r)$ must be non-zero. 
+One need to prescribe $\rho(t,r)$ to get a solution. The pressure $p$ is then given
+by Eq. (\ref{ch3:s8}) and the energy density follows from Eq. (\ref{ch3:s3}). This case was also
+treated in Herlt (1996).
+
+{\bf Examples}.\\
+{\bf (a) Dust solution, $\boldmath {p=0}$}.\\
+From Eq. (\ref{ch3:s8}), it follows that $\rho$ will be linear in $t$ (one can set 
+$\rho=1$) and from (\ref{ch3:s10})
+$$ Y=[c(r)t+d(r)]^{2/3}\,,$$
+where $c(r)$ and $d(r)$ are arbitrary functions. By the choices
+$c(r)=\pm 3/[2(2m(r))^{1/2}]$ and $d(r)=\mp 3t_0(r)/[2(2m(r))^{1/2}]$,
+we re-obtain the solutions of Bondi--Tolman
+(see Kramer {\em et al} (1980), p 160).
+When the pressure $p$ is constant, Eq. (\ref{ch3:s8}) can invertibly be
+mapped to the simplest second-order equation and thus $p$ can be interpreted
+without loss of generality as zero pressure with a non-zero cosmological constant.
+
+{\bf (b) Another solution}.\\
+Take \[\rho=t^{-1/2},\;\;a(r)=2r,\;\;b(r)=-1.\]
+From Eq. (\ref{ch3:s10}), we have \[Y=t^{-1/3}(rt-1)^{2/3}\] and the metric is
+given by \begin{equation} \label{ch3:met}
+ds^2=t^{-2/3}(rt-1)^{4/3}d\Omega^2+t^{4/3}(rt-1)^{-2/3}dr^2-dt^2.
+\end{equation} Straightforward calculations show that $\dot Y'Y\ne \dot
+YY'$. The pressure $p$ is given by $ p(t)=-1/[\kappa_0 t^2] $ and
+the energy density  is
+\[\mu=\frac{1}{\kappa_0}\left (\frac{3}{\kappa_0}+\frac{4}{9}\right )
+\frac{1}{t^2}+\frac{8r}{9\kappa_0(rt^2-t)}\left (1-\frac{r}{rt^2-t}\right).\]
+It can be observed that for large $r$, $\mu$ depends on $t$ only. Hence,
+this model can be considered as being asymptotically barotropic.
+
+One can obtain more solutions by judiciously choosing one or the other
+of $\rho$ or $p$.
+
+{\bf Case II  \boldmath{$\;\epsilon f(r)\ne 0.$}}\\
+Make the change of variable
+\[ W =\delta K,\]
+where
+\[\delta=\left [\frac{3}{4} f^2(r)\right ]^{3/4}.\]
+Eq. (\ref{ch3:s9}) becomes
+\begin{equation}
+K_{\tau\tau}=-\epsilon \rho^{8/3}K^{-1/3},\quad \epsilon=\pm 1. \label{ch3:s11}
+\end{equation}
+In Section 3.2, we have seen that Eq. (\ref{ch3:s11}) is solvable by quadratures
+for $\rho^{8/3}=-\epsilon f_0(a(r)\tau^2+2b(r)\tau+c(r))^{-4/3}$,
+i.e. 
+\begin{equation}
+\rho=(a(r)\tau^2+2b(r)\tau+c(r))^{-1/2},\label{ch3:s12}
+\end{equation}
+after we set $f_0=-\epsilon$. Since the pressure depends on time only, Eq. (\ref{ch3:s8})  
+imposes certain  constraints on  $a,\;b$ and $c$. 
+The solution to Eq. (\ref{ch3:s11}) is
+then given by  (see Section 3.2) 
+\[K=(a(r)\tau^2+2b(r)\tau+c(r))^{1/2}u,\]
+where $u$ is defined by 
+\begin{equation}
+\int  \frac{du}{\left
+[(b^2(r)-a(r)c(r))u^2-3\epsilon u^{2/3}+A(r)\right]^{1/2}} =\int
+\frac{d\tau}{a(r)\tau^2+2b(r)\tau+c(r)}+B(r),\label{ch3:sn10}
+\end{equation} 
+and $A(r)$, $B(r)$ are arbitrary
+functions of integration and $\epsilon=\pm1$. Finally the solution to Eq. (\ref{ch3:s2}) with $p$
+defined by Eq. (\ref{ch3:s8}) and $\rho$ given by Eq. (\ref{ch3:s12} ) is
+\begin{equation} \label{ch3:s13} \left \{ \begin{array}{lll}
+d\tau=(a(r)\tau^2+2b(r)\tau+c(r)) dt,\\ Y=\left (\frac{3}{4}
+f^2(r)\right )^{1/2}u^{2/3} ,\end{array} \right.
+\end{equation} where $u$ is defined by (\ref{ch3:sn10}).
+
+Now we show that the pressure and the energy
+density are well-defined. From Eq. (\ref{ch3:s8}), we deduce that
+\[p=-\frac{4}{3\kappa_0}\rho^{-1}\rho_{tt}.\] Using the chain
+rule, we find that \begin{equation} \label{ch3:s14}
+p=-\frac{4}{3\kappa_0}\rho^{-6}\left
+[\rho\rho_{\tau\tau}-2\rho_\tau^2\right ], \end{equation} where
+$\rho$ is provided by Eq. (\ref{ch3:s12}). Finally the energy density is
+computed from Eq. (\ref{ch3:s3}). 
+
+{\bf Remark}. Note that if the pressure is known before hand, (\ref{ch3:s14}) enables us
+to properly choose $\rho$. For instance, if $p=0$ (dust solutions), the choice $\rho=1$
+is appropriate. On the other hand, we can choose $\rho$ (i.e. choose $a(r)$, $b(r)$ and $c(r)$)
+and in this case $p$ is given by (\ref{ch3:s14}). The possible forms of $\rho$ are $1$, $\tau^{-1}$,
+$(\tau^2-1)^{-1/2}$ and $(\tau^2+1)^{-1/2}$ which can be deduced from
+the factorization of the quadratic in $\rho$. All these forms lead to $p=0$ or $p=$constant.
+The solutions that result here are precisely those obtained
+by Ruban (1969) (see also Herlt 1996).
+These turn out to be the only known solutions.
+
+{\bf Example}.\\
+{\bf (a) Dust solution, ${\boldmath p=0}$.}\\
+We select $\rho=1$. This corresponds to the choices $a=0$, $b=0$ and $c=1$.  Thus,
+$$
+\left \{ \begin{array}{lll}
+d\tau= dt,\\ 
+Y=\left (\frac{3}{4}f^2(r)\right )^{1/2}u^{2/3}, \end{array} \right.
+$$ 
+where $u$ is defined by
+$$
+{du\over dt}=(-3\epsilon u^{2/3}+A(r))^{1/2}\,.
+$$
+This in fact will yield the solutions of Bondi--Tolman. Indeed, we easily obtain
+$$
+{\dot Y}^2=-\epsilon f^2(r)+F(r)/Y\,,
+$$
+where $F(r)=f^3(r)A(r)/\sqrt{12}$ is arbitrary. From the last equation, after the introduction
+of $d\eta=f dt/Y$,  follow the solutions of Bondi-Tolman
+(Kramer {\em et al} 1980).
+
+\section{Conclusion} 
+The standard Lie method applied to Eq. (\ref{ch3:i1}) leads to complications as it gives rise
+to a third--order nonlinear integro--differential equation which is nontrivial to solve and
+hence the difficulty to provide a complete Lie symmetry classification of the equation. 
+
+In general if one
+knows a single Lie point symmetry of a second--order ordinary differential equation, 
+this fact does not guarantee its complete integrability in a straightforward
+manner whereas in the case of a single Noether point
+symmetry associated with a  given Lagrangian of the equation, complete integrability
+is assured. In this chapter,  we have
+studied Noether point symmetries corresponding to a natural Lagrangian of Eq. (\ref{ch3:i1})  in search of new integrable cases. 
+As a result we have found new integrable
+cases of Eq. (\ref{ch3:i2}) given by the class of solutions
+(\ref{ch3:60}) and (\ref{ch3:61}). This has been applied to the construction of
+non--static spherically symmetic perfect fluid solutions. Solutions not
+reducible to those of Kustaanheimo and Qvist (1948) have been obtained.
+Notwithstanding,
+existing solutions with shear have been systematically constructed in a unified manner
+via the Noether approach. This is contained in the formula (\ref{ch3:n22}).
+
+%\end{document}
+
+%\newpage
+%\begin{thebibliography}{99} \bibitem{qvis}
+%Kustaanheimo P and Qvist B 1948  A note on some general solutions of the
+%Einstein field equations in a spherically symmetric world {\em Soc. Sci.
+%Fennica, Comm. Phys.--Math.} {\bf XIII} 12 \bibitem{kram} Kramer D,
+%Stephani H, MacCallum M and Herlt E 1980 {\em Exact Solutions of
+%Einstein's Field Equations} (Cambridge: Cambridge University Press)
+%\bibitem{ovsi} Ovsiannikov L V  1982  {\em Group  Analysis of Differential
+%Equations} (New York: Academic Press) 
+%\bibitem{ibra} Ibragimov N H 1985 {\em Transformation Groups Applied to Mathematical 
+%Physics} (Dordrecht: D Reidel)
+%\bibitem{olve}  Olver P J 1986 {\em
+%Applications of Lie Groups to Differential Equations} (New York:
+%Springer--Verlag) 
+%\bibitem{blum} Bluman G W and Kumei S 1989 {\em
+%Symmetries and Differential Equations} (New York: Springer--Verlag)
+%\bibitem{step} Stephani H 1989 {\em Differential Equations--Their Solutions
+%Using Symmetries} (Cambridge: Cambridge University Press) 
+%\bibitem{lie}
+%Lie S 1912   {\em Vorlesungen \"uber Differentialgleichungen mit bekanten
+%infinitesimalen Transformation} (Berlin: Leipzig) 
+%\bibitem{leac} Leach
+%P G L, Maartens R and Maharaj S D 1992 Self--similar solutions of the
+%generalized Emden--Fowler equation {\em Int. J. Non--Linear Mech.}, Vol.
+%{\bf27} No. 4, 575--582 
+%\bibitem{herl} Herlt H and
+% Stephani H 1992  Invariant transformations of the class $y''=F(x)y^n$ of
+%differential equations {\em J. Math. Phys.} {\bf 28}(11) 
+%\bibitem{wolf} Stephani H and Wolf T 1996 Spherically
+%symmetric perfect fluids in shear--free motion---the symmetry approach
+%{\em Class. Quantum Grav.} {\bf 13}, 1261--1271 
+%\bibitem{noet}
+%Noether E 1918 Invariante Variationprobleme {\em Nachr. K\"onig. Gessell.
+%Wissen. G\"ottigen, Math--Phys.} {\bf Kl.}, 235--257 
+%\bibitem{wyma} Wyman M 1976
+% Jeffrey--Williams Lecture: Nonstatic radially symmetric distributions of
+%matter {\em Can. Math. Bull.} {\bf 19}, 343 
+%\bibitem{maha} Maharaj S D, Leach P G L and Maartens R 1996 Expanding 
+%Spherically Symmetric Models without Shear {\em Gen. Relativity and Grav.} {\bf28}(1), 35
+%\bibitem{catr} Sarlet W and Cantrijn F 1981 {\em SIAM Rev.} {\bf 23}, 467--494 
+%\bibitem{maho}  Kara A H Vawda F E and Mahomed F M    1994 Symmetries of first integrals and
+%solutions to differential equations {\em Lie Group and their Applications} Vol. {\bf1} No. 2, 27--48  
+%\bibitem{kara} Ibragimov N H, Kara A H and Mahomed F M 1998 Lie-B\"acklund and
+%Noether Symmetries with Applications {\em Nonlinear Dynamics} {\bf 15}, 115
+%\bibitem{kamk} Kamke E 1983 {\em Differentialgleichungen -- L\"osungsmethoden und L\"osungen I.}
+%(Stuttgart: B G Teubner)
+%\bibitem{poly} Polyanin A D and Zaitsev V F  1995 {\em Handbook of Exact Solutions for Ordinary
+%Differential Equations} (Boca Raton: CRC Press)
+%\bibitem{mell} Conrad M Mellin,  Mahomed F M and Leach P G L 1994 Solution of generalised
+%Emden-Fowler equations with two symmetries {\em Int. J. Non-Linear Mechanics} {\bf 29}, 529
+%\bibitem{herlt} Herlt E 1996 Spherically Symmetric Nonstatic Perfect Fluid Solutions with 
+%Shear {\em Gen. Relativity and Grav.} {\bf28}(8), 919
+%\bibitem{ruba} Ruban V A 1969 {\em ZhETF} {\bf5b}, 1914 [{\em Sov. Phys. JETP} {\bf29},1027]
+%\bibitem{erma} Ermakov V 1880 {\em Univ. Isz. Kiev Series} III {\bf 9}, 1 (trans. by O Harin) 
+%\end{thebibliography}
+%\end{document}
+

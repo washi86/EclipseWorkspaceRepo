@@ -1,0 +1,43 @@
+Info: Nothing to build for HelloWorld2
+Info: Nothing to build for HelloWorld2
+Info: Nothing to build for HelloWorld2
+Info: Nothing to build for HelloWorld2
+Info: Nothing to build for HelloWorld2
+Info: Nothing to build for HelloWorld2
+Info: Nothing to build for HelloWorld2
+Info: Nothing to build for HelloWorld2
+Info: Nothing to build for HelloWorld2
+Info: Nothing to build for HelloWorld2
+Info: Nothing to build for HelloWorld2
+21:36:26 **** Incremental Build of configuration Debug for project C++_HelloWorld ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C++_HelloWorld.o" "..\\src\\C++_HelloWorld.cpp" 
+g++ -o C++_HelloWorld.exe "src\\C++_HelloWorld.o" 
+Info: Nothing to build for C++_HelloWorld
+21:52:39 **** Rebuild of configuration Debug for project C++_HelloWorld ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C++_HelloWorld.o" "..\\src\\C++_HelloWorld.cpp" 
+g++ -o C++_HelloWorld.exe "src\\C++_HelloWorld.o" 
+Info: Nothing to build for C++_HelloWorld
+18:55:08 **** Rebuild of configuration Debug for project C++_HelloWorld ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C++_HelloWorld.o" "..\\src\\C++_HelloWorld.cpp" 
+g++ -o C++_HelloWorld.exe "src\\C++_HelloWorld.o" 
+01:16:39 **** Rebuild of configuration Debug for project C++_HelloWorld ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C++_HelloWorld.o" "..\\src\\C++_HelloWorld.cpp" 
+g++ -o C++_HelloWorld.exe "src\\C++_HelloWorld.o" 
+01:21:32 **** Clean-only build of configuration Debug for project C++_HelloWorld ****
+rm -rf src/C++_HelloWorld.d src/C++_HelloWorld.o C++_HelloWorld.exe 
+Cannot run program "rm": Launching failed
+
+Error: Program "rm" not found in PATH
+PATH=[C:\MinGW\bin;\bin;C:\Program Files (x86)\MiKTeX 2.9\miktex\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\jZip;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\MATLAB\R2011a\runtime\win64;C:\Program Files\MATLAB\R2011a\bin;C:\Program Files\Java\jdk1.7.0_51\bin]
+
+01:21:33 **** Clean-only build of configuration Debug for project C++_HelloWorld ****
+13:44:57 **** Rebuild of configuration Debug for project C++_HelloWorld ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C++_HelloWorld.o" "..\\src\\C++_HelloWorld.cpp" 
+g++ -o C++_HelloWorld.exe "src\\C++_HelloWorld.o" 
+Info: Nothing to build for C++_HelloWorld
+Info: Nothing to build for C++_HelloWorld

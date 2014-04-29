@@ -1,0 +1,688 @@
+%\documentstyle[12pt]{report}
+%\setlength{\parindent}{0mm}
+%\setlength{\parskip}{14pt}
+%\renewcommand{\baselinestretch}{1.5}
+%\setlength{\topmargin}{0pt}
+%\setlength{\headheight}{0pt}
+%\setlength{\headsep}{0pt}
+%\setlength{\footskip}{45pt}
+%\setlength{\footheight}{0pt}
+%\setlength{\textwidth}{430pt}
+%\setlength{\textheight}{660pt}
+%\setlength{\oddsidemargin}{10pt}
+%\newcommand{\RR}{\mathrm{I\!R\!}}
+%\newtheorem{defi}{Definition}[chapter]
+%\newtheorem{theo}{Theorem}[chapter]
+%\begin{document}
+
+\chapter{ Linearization of Systems of Second--order
+Nonlinear Ordinary Differential Equations}
+
+Firstly, we prove two linearization criteria for systems of
+two second--order ordinary
+differential equations (odes). The first one says that a system of two 
+second--order odes is reducible via a point transformation to a linear system
+if and only if it admits the four--dimensional abelian Lie algebra 
+$L_{4,1}$. The second one states that for a system of
+two second--order odes to be linearizable, it is necessary and sufficient that
+it admits the four--dimensional  Lie algebra
+$L_{4,2}$ with commutators
+$[X_i,X_j]=0,\;[X_i,X_4]=X_i,\;i,\;j=1,\;2,\;3.$ The approach used is
+contructive and enables us to explicitly work out
+the transformation leading to linearization.
+Secondly, we give necessary and sufficient conditions under which
+a system of two second--order linear odes is reducible to the
+free particle equation $x''=0,\;y''=0$. 
+The linearization criteria  are then generalized to a system of $n$
+($n > 2$) second--order odes. Finally, we give examples of how one can
+effect linearization for a system. The results contained here also appear
+in Wafo Soh and Mahomed (1999f).
+\section{Introduction}
+Systems of two second--order odes have enjoyed much interest over the years.
+In particular, the newtonian system
+\begin{equation}
+\label{ch6:h}
+x''=-\frac{\partial V}{\partial x},\quad
+y''=-\frac{\partial V}{\partial y},
+\end{equation}
+where the potential function $V$ depends on the position $(x,y)$, have been
+investigated for Lie point symmetry groups in Sen (1987). It was shown in
+Sen (1987) that (\ref{ch6:h}) can admit from $1$ to $7$ or $15$ Lie point
+symmetries. The symmetry classification of Sen (1987) has recently been
+rediscovered by Damianou and Sophocleous (1999). The group classification
+of arbitrary systems of second--order odes is a vast open problem.
+In particular, the investigation of symmetry properties of arbitrary systems
+of two second--order odes will yield a natural generalization of the above
+cited work. A partial solution to this problem will be presented
+in Chapter 7.
+
+In applications, linear equations often occur in disguised forms.
+Quite often  it is only after a point transformation that the linear 
+structure of a nonlinear differential equation is uncovered. Therefore, it is  
+important to have workable criteria for linearization of differential 
+equations via point transformations. This problem was tackled 
+completely for the case of
+scalar second--order odes by Lie (1883) and his student Tresse (1894, 1896).
+They mainly used the fact that all scalar linear second--order odes
+are reducible by
+means of point transformations to the free particle equation $y^{''}=0$. 
+A similar argument does not  apply to scalar linear higher order ($n\ge 3$)
+odes. For, according to recent work by Mahomed and Leach (1990)
+(see also Krause and Michel 1988), a scalar
+linear higher order ode ($n\ge 3$) can belong to one of three 
+classes depending upon whether it has $n+1$, $n+2$ or the maximum number
+$n+4$ of point symmetries. These authors also studied the linearization 
+problem for scalar higher order ($n\ge3$) odes. Their methods exploit both
+the symmetry structure and the Laguerre--Forsyth canonical form of scalar
+linear odes. In this chapter, we follow almost the same approach in the study 
+of linearizability of systems of two second--order odes. It is worth noting
+that symmetry properties of scalar second--order odes substantially
+differ from that of
+systems of two second--order odes: according to Chapter 5, a system of
+two second--order linear  odes can have $5,\;6,\;7,\;8$ or
+$15$ point symmetries. The maximum number of symmetries being achieved  by the
+two--dimensional free particle equation, viz. $x''=0,\;y''=0$.
+This clearly shows that systems of two linear second--order odes are not
+equivalent to each other.
+
+The outline of this chapter is as follows. In Section 6.2 we
+discuss realizations of the abelian four--dimensional algebra $L_{4,1}$ in
+$(1+2)$--dimensional space and the linearizability of systems of two
+second--order odes. Section 6.3 deals with representations of the
+four--dimensional Lie
+algebra $L_{4,2}$ with commutators $[X_i,X_j]=0,\;[X_i,X_4]=X_i,
+\;i,j=1,2,3$, and  the linearizability of systems 
+of two second--order odes. Section 6.4  extends the results of
+Section 6.2 and 6.3  to
+systems of $n$ ($n > 2$) second--order odes.
+Finally in Section 6.5 we give a few applications
+of the linearization criteria obtained in the previous sections.
+
+\section{Abelian structure and linearization}
+We begin with some definitions that will be useful in the sequel.
+\begin{defi}
+\begin{em}
+Let
+\[X_i=\xi_{ij}\frac{\partial}{\partial x_j},\;\;i=1,\ldots,p.\]
+{\bf 1.} The  operators $X_1,\ldots,X_p$ are {\em connected} if there
+are  functions $\lambda_1 (x),\ldots,\lambda_p (x)$  such that
+\[\lambda_1 (x) X_1+\cdots+\lambda_p (x)X_p=0\]
+and $(\lambda_1 (x),\ldots,\lambda_p (x))\ne 0.$
+They are {\em unconnected}  otherwise.
+
+{\bf 2.} The operators $X_1,\ldots, X_p $ are
+{\em linearly dependent} if there  are constants $c_1,\ldots,c_p$ such that
+\[c_1X_1+\cdots+c_pX_p=0\]
+and $(c_1,\ldots,c_p)\ne 0$.  They are {\em  linearly independent}  
+otherwise.
+\end{em}
+\end{defi}
+If  $r^{*}=\mbox{rank }[\xi_{ij}]$, it is obvious that at most $r^{*}$ 
+of the operators $X_1,\ldots,X_p$ are unconnected.
+
+{\bf Example. } Consider the operators
+\[X_1=\frac{\partial}{\partial x},\;\;\;X_2=x\frac{\partial}{\partial x}
+\;\cdot\]
+The operators $X_1$ and $X_2$ are linearly independent but they are
+connected as $X_2=xX_1$.
+
+Given the four--dimensional abelian Lie algebra $L_{4,1}$, we look for its  
+realizations in the space of vector fields in $\RR^{\;3}$ with coordinates
+$(t,x,y)$. Let
+$\left \{ X_1,\;X_2,\;X_3,\;X_4 \right \}$ be a basis of $L_{4,1}$ and
+$r^{*}=\mbox{rank }[X_1,X_2,X_3,X_4]$. It is clear that $1\le r^{*} \le 3$. 
+Hence the cases: 
+
+{\bf (i)} $r^{*}=3.$ 
+
+This means that at most three of the operators $X_1,\;X_2,\;X_3,\;X_4$ are
+unconnected. Since renaming these operators does not affect the structure
+of the algebra, we may assume without loss of generality that 
+$X_1,\;X_2,\;X_3$ are unconnected. Therefore there is a change of variables 
+$T=T(t,x,y),\;X=X(t,x,y),\;Y(t,x,y)$ in which
+\begin{eqnarray*}
+X_1 &=&\frac{\partial}{\partial T},\;\; X_2=\frac{\partial}{\partial X},\;\;
+X_3=\frac{\partial}{\partial Y},\\
+X_4 &=&\xi(T,X,Y)\frac{\partial}{\partial T}+
+\eta (T,X,Y)\frac{\partial}{\partial X}+\mu (T,X,Y)\frac{\partial}{\partial Y}
+\;\cdot
+\end{eqnarray*}
+Invoking the abelian structure, we obtain that $\xi,\;\eta,\;\mu$  are
+constants. This contradicts the fact that $X_1,\;X_2,\;X_3,\;X_4$ are
+linearly independent. Hence there is no transitive representations of
+the four--dimensional abelian algebra $L_{4,1}$ in a three--dimensional space.
+
+{\bf (ii)} $r^{*}=2.$
+
+Without loss of generality, we may assume that $X_1$ and $X_2$ are 
+unconnected. Thus there is a change of variables $T=T(t,x,y),\;X=(t,x,y),\;   
+Y=Y(t,x,y)$ such that
+\begin{eqnarray*}
+X_1 &=& \frac{\partial }{\partial T},\;\;\;\;
+X_2=\frac{\partial}{\partial X},\\
+X_3 & =& \xi (T,X,Y)X_1+\eta (T,X,Y)X_2=
+\xi (T,X,Y) \frac{\partial}{\partial T}+\eta (T,X,Y)\frac{\partial}
+{\partial X}, \\
+X_4 &=& a(T,X,Y)X_1+b(T,X,Y)X_2=
+a(T,X,Y) \frac{\partial}{\partial T}+b (T,X,Y)\frac{\partial}
+{\partial X}\,\cdot 
+\end{eqnarray*}
+Since the commutators of these operators must vanish, we have that
+$\xi=\xi(Y),\;\eta=\eta (Y),\;a=a(Y),\;b=b(Y)$.
+Since $X_1,\; X_2,\;X_3,\; X_4$ must be
+linearly independent, we have the additional condition
+\[\left | \begin{array}{cc}
+\xi^{'}(Y) & a'(Y)\\
+\eta^{'}(Y) & b'(Y) 
+\end{array}\right |\ne 0.\]
+Renaming the variables and the operators and using lower case variables, 
+we obtain the realization
+\begin{equation}
+\label{ch6:eq6}
+X_1=\frac{\partial}{\partial x},\;\; X_2=\frac{\partial}{\partial y},\;\;
+X_3=\xi (t) \frac{\partial }{\partial x}+\eta (t)\frac{\partial}{\partial y}
+,\;\; X_4=a(t) \frac{\partial }{\partial x}+b(t)\frac{\partial}{\partial y},
+\end{equation}
+where $\xi^{'}(t)b'(t)-a'(t)\eta^{'}(t)\ne 0$.
+
+{\bf (iii)} $r^{*}=1.$
+
+There is a change of variables $T=T(t,x,y),\;X=X(t,x,y),\;Y=Y(t,x,y)$
+in which
+\[X_1=\frac{\partial}{\partial T},\;\;X_2=f(T,X,Y)\frac{\partial}{\partial T}
+,\;\;X_3=g(T,X,Y)\frac{\partial}{\partial T},\;\;
+X_4=h(T,X,Y)\frac{\partial}{\partial T},\]
+where the set of functions $\{1,f,g,h\}$ is linearly independent. 
+Since the commutators of these oparators must vanish, we have that
+$f=f(X,Y),\;g=g(X,Y),\;h=h(X,Y)$.
+Now perform the change of coordinates
+\[\bar T=T,\;\;\bar X=f(X,Y),\;\;\bar Y=g(X,Y).\]
+In the new coordinates, the operators read
+\[X_1=\frac{\partial}{\partial \bar T},\;\;
+X_2=\bar X \frac{\partial}{\partial \bar T}
+,\;\;X_3=\bar Y\frac{\partial}{\partial \bar T},\;\;
+X_4=\bar h(\bar X,\bar Y)\frac{\partial}{\partial \bar T},\]
+where the set of functions $\{1, \bar X, \bar Y, \bar h\}$ is linearly 
+independent. Thus at least one second derivative of $\bar h$ does not
+vanish. Dropping the bars, renaming the variables and using lower case 
+variables, we obtain the realization
+\begin{equation}
+X_1=\frac{\partial}{\partial x},\;\; X_2=t\frac{\partial}{\partial x},\;\;
+X_3=y\frac{\partial}{\partial x},\;\;X_4=h(t,y)\frac{\partial}{\partial x},
+\label{ch6:eq7}
+\end{equation}
+where  at least one second derivative of $h$ does not vanish.  
+
+Hence we have proved the following theorem:
+\begin{theo} 
+\label{ch6:theo1}
+\begin{em}
+In (1+2)--dimensional space, the abelian Lie algebra $L_{4,1}$ has two classes
+of realizations\\
+\begin{equation}
+\mbox{{\bf(i)} } X_1=\frac{\partial}{\partial x},\;\; 
+X_2=\frac{\partial}{\partial y},\;\;
+X_3=f(t)\frac{\partial }{\partial x}+g(t)\frac{\partial}{\partial y},\;\;
+X_4=h(t)\frac{\partial }{\partial x}+k(t)\frac{\partial}{\partial y},
+\label{ch6:eq8}
+\end{equation}
+where
+\[\left | \begin{array}{cc}
+f'(t) & h'(t) \\
+g'(t) &  k'(t) 
+\end{array} \right |\ne 0,\]
+\begin{equation}
+\mbox{{\bf (ii)} }X_1=\frac{\partial}{\partial x},\;\;
+X_2=t\frac{\partial}{\partial x},\;\;X_3=y\frac{\partial}{\partial x},\;\;
+X_4=f(t,y)\frac{\partial}{\partial x},
+\label{ch6:eq9}
+\end{equation}
+where $f(t,y)\ne c_1t+c_2y+c_3$ and $c_1,\;c_2,\;c_3$ are constants.
+\end{em}
+\end{theo}
+An application of this theorem is given in the following result.
+\begin{theo}
+\label{ch6:theo2}
+\begin{em}
+A system of two second--order odes is linearizable by means of a point
+transformation if and only if it admits the abelian Lie algebra $L_{4,1}$.
+\end{em}
+\end{theo}
+{\bf Proof.} The necessity is straightfoward since any linearizable 
+system of two second--order odes  put in the first canonical form
+(cf. Chapter 5, Theorem 5.1) admits $L_{4,1}$. For the proof of sufficiency,
+we need
+to show that  if a system admits a realization of $L_{4,1}$ then this system 
+must be linear. Consider a system admitting the first realization
+(\ref{ch6:eq8})
+\begin{equation}
+\label{ch6:e1}
+\left \{ \begin{array}{ccc} x'' &=&E(t,x,y,x',y'),\\ y''&=&F(t,x,y,x',y'). 
+\end{array} \right.
+\end{equation}
+The invariance of (\ref{ch6:e1}) under $X_1$ is equivalent to (see Chapter 1)
+\[X_1^{[2]}(x''-E)|_{(\ref{ch6:e1})}=0,\;\;X_1^{[2]}(y''-F)|_{(\ref{ch6:e1})}=0,\]
+i.e.
+\[\frac{\partial E}{\partial x}=0,\;\;\frac{\partial F}{\partial x}=0,\]
+which give
+\[E=E_1(t,y,x',y'),\;\;F=F_1(t,y,x',y').\]
+Thus
+\begin{equation}
+\label{ch6:e2}
+\left \{ \begin{array}{ccc} x'' &=&E_1(t,y,x',y'),\\ y''&=&F_1(t,y,x',y'). 
+\end{array} \right.
+\end{equation}
+The invariance of (\ref{ch6:e2}) under $X_2$ implies
+\[X_2^{[2]}(x''-E_1)|_{(\ref{ch6:e2})}=0,\;\;X_2^{[2]}(y''-F_1)|_{(\ref{ch6:e2})}=0,\]
+i.e.
+\[\frac{\partial E_1}{\partial y}=0,\;\;\frac{\partial F_1}{\partial y}=0,\] 
+which result in
+\[E_1=E_2(t,x',y'),\;\;F_1=F_2(t,x',y').\]
+Hence
+\begin{equation}
+\label{ch6:e3}
+\left \{ \begin{array}{ccc} x'' &=&E_2(t,x',y'), \\ y''&=&F_2(t,x',y'). 
+\end{array} \right.
+\end{equation}
+The invariance of (\ref{ch6:e3}) under $X_3$ is equivalent to
+\[X_3^{[2]}(x''-E_2)|_{(\ref{ch6:e3})}=0,\;\;X_3^{[2]}(y''-F_2)|_{(\ref{ch6:e3})}=0,\]
+where
+\[X_3^{[2]}=X_3+f'\frac{\partial}{\partial x'}+g'\frac{\partial}{\partial y'}
++f''\frac{\partial}{\partial x''}+g''\frac{\partial}{\partial y''}\;\cdot\]
+The invariance of (\ref{ch6:e3}) under $X_3$ then yields
+\[f'\frac{\partial E_2}{\partial x'}+g'\frac{\partial E_2}{\partial y'}=f'',\;\;
+f'\frac{\partial F_2}{\partial x'}+g'\frac{\partial F_2}{\partial y'}=g''.\]
+Since $f'k'-g'h'\ne 0$, we may assume without loss of generality that 
+$f'\ne 0.$  Whence
+\[E_2=\frac{f''}{f'}x'+\frac{1}{f'}E_3(t,g'x'-f'y'),\;\;
+F_2=\frac{g''}{f'}x'+\frac{1}{f'}F_3(t,g'x'-f'y')\]
+and
+\begin{equation}
+\label{ch6:e4}
+\left \{ \begin{array}{ccc}
+x'' & = & \displaystyle{\frac{f''}{f'}x'+\frac{1}{f'}E_3(t,g'x'-f'y')},\\
+y'' & = & \displaystyle{\frac{g''}{f'}x'+\frac{1}{f'}F_3(t,g'x'-f'y')}.
+\end{array}\right.
+\end{equation}
+The invariance of (\ref{ch6:e4}) under $X_4$ is equivalent to 
+\[
+X_4^{[2]}(x''-\frac{f''}{f'}x'-\frac{1}{f'}E_3)|_{(\ref{ch6:e4})}=0,\;\;
+X_4^{[2]}(y''-\frac{g''}{f'}x'-\frac{1}{f'}F_3)|_{(\ref{ch6:e4})}=0,\]
+where
+\[X_4^{[2]}=X_4+h'\frac{\partial}{\partial x'}+k'\frac{\partial}{\partial y'}
++h''\frac{\partial}{\partial x''}+k''\frac{\partial}{\partial y''}\;\cdot\]
+Thus
+\[E_3=\frac{h''f'-f''h'}{g'h'-f'k'}(g'x'-f'y')+f'A(t),\]
+\[F_3=\frac{k''f'-g''h'}{g'h'-f'k'}(g'x'-f'y')+f'B(t),\]
+where $A(t)$ and $B(t)$ are arbitrary functions. Finally we obtain
+the system
+\[ \left \{  \begin{array}{ccc}
+x^{''}&=& \frac{\left |\begin{array}{cc} f''& h''\\g'& k'\end{array}\right |}
+{\left |\begin{array}{cc} f'& h'\\ g'& k'\end{array}\right |}x'+
+\frac{\left |\begin{array}{cc} f''& h''\\ f'& h'\end{array}\right |}
+{\left |\begin{array}{cc} f'& h'\\ g'& k'\end{array}\right |}y'+ A(t),\\
+ & & \\
+y^{''} &=& \frac{\left |\begin{array}{cc} g''& k''\\g'& k'\end{array}\right |}
+{\left |\begin{array}{cc} f'& h'\\ g'& k'\end{array}\right |}x'+
+\frac{\left |\begin{array}{cc} g''& k''\\ f'& h'\end{array}\right |}
+{\left |\begin{array}{cc} f'& h'\\ g'& k'\end{array}\right |}y'+ B(t), 
+\end{array} \right.\]
+where $A(t)$ and $B(t)$ are arbitrary functions. It can be  easily checked
+that $(f,g)$ and $(h,k)$ are two particular solutions of the 
+homogeneous system  associated with the above system.
+Using the same method as above, we can prove that there is no system of 
+two second--order odes admitting the second realization. This completes
+the proof of the theorem.
+
+{\bf Remark. }  If a system admits a four--dimensional Abelian Lie
+algebra, the transformation which reduces it to its linear form
+is just the change of coordinates which brings this Lie algebra 
+to the realization (\ref{ch6:eq8}).  This change of variables 
+is obtained by solving first--order linear partial differential equations only.
+\section{Representations of the Lie algebra $L_{4,2}$ 
+and \\
+linearization}
+We consider the Lie algebra  $L_{4,2}$ with commutators
+\begin{equation}
+[X_i,X_j]=0,\;\;\;[X_i,X_4]=X_i,\;\;i,j=1,2,3. \label{ch6:eq10}
+\end{equation}
+In Patera and Winternitz (1977), this algebra 
+corresponds to $A_{4,5}^{1,1}$.
+We aim at constructing realizations of this algebra in (1+2)--dimensional
+space. We proceed as in the preceding section. Let
+$r^{*}=\mbox{rank }[X_1,X_2,X_3,X_4]$. Clearly $1\le r^{*}\le 3$. Whence
+the following cases emerge.
+
+{\bf (i)} $r^{*}=3.$
+
+This implies that at most three of the operators $X_1,\ldots,X_4$ are
+unconnected. Since renaming the operators $X_1,X_2,X_3$ does not affect
+the structure of the Lie algebra, the following two subcases should be
+considered:
+
+{\bf (a)} $X_1,\;X_2,\;X_3$ are unconnected,
+
+{\bf (b)} $X_1,\;X_2,\;X_4$ are unconnected and $X_1,\;X_2,\;X_3$ are
+connected.
+
+The second subcase leads to an inconsistency (which is that $X_1,\ldots ,X_4$
+are linearly dependent). In the first subcase, there is a change of variables
+$T=T(t,x,y),\;\;X=X(t,x,y),\;\;Y=Y(t,x,y)$ in which the operators have
+the forms
+\begin{eqnarray*}
+X_1 & = &\frac{\partial}{\partial T},\;\;X_2=\frac{\partial}{\partial X},\;\; 
+X_3=\frac{\partial}{\partial Y},\\
+X_4 & = & \xi (T,X,Y)\frac{\partial}{\partial T}+\eta (T,X,Y)\frac{\partial}
+{\partial X}+\mu (T,X,Y)\frac{\partial}{\partial Y}\,\cdot
+\end{eqnarray*}
+The commutation relations $[X_i,X_4]=X_i,\;i=1,2,3$, imply
+\[\xi=T+C_1,\;\;\eta=X+C_2,\;\;\mu=Y+C_3.\]
+Hence
+\[X_4=(T+C_1)\frac{\partial}{\partial T}+ (X+C_2)\frac{\partial}{\partial X}
++(Y+C_3)\frac{\partial}{\partial Y}\;\cdot\]
+Now perform the change of coordinates
+\[\bar T=T+C_1,\;\;\bar X=X+C_2,\;\;\bar Y=Y+C_3.\]
+The operators become
+\[
+X_1 =\frac{\partial}{\partial \bar T},\;\;X_2=\frac{\partial}{\partial \bar X},\;\; 
+X_3=\frac{\partial}{\partial \bar Y},\;\;
+X_4 = \bar T \frac{\partial}{\partial \bar T}+\bar X \frac{\partial}
+{\partial \bar X}+\bar Y\frac{\partial}{\partial \bar Y}\;\cdot
+\]
+Dropping the bars and using lower case variables we obtain the realization
+\begin{equation}
+\label{ch6:eq11'}
+X_1 = \frac{\partial}{\partial t},\;\;X_2=\frac{\partial}{\partial x},\;\; 
+X_3=\frac{\partial}{\partial y},\;\;
+X_4 = t\frac{\partial}{\partial t}+ x\frac{\partial}
+{\partial x}+y\frac{\partial}{\partial y}\;\cdot
+\end{equation}
+{\bf (ii)} $r^{*}=2.$
+
+This means at most two of the operators $X_1,\ldots,X_4$ are unconnected. Since
+renaming the operators $X_1,\;X_2,\;X_3$ does not affect the structure of
+the algebra, the following subcases should be considered:
+
+{\bf (a)} $X_1,\;X_2$  are unconnected,
+
+{\bf (b)} $X_1,\;X_4$ are unconnected and two arbitrary  operators of
+$X_1,\;X_2,\;X_3$ are connected.
+
+The second subcase leads to an inconsistency (which is  $r^{*}=1$). In the
+first subcase, there is a change of variables $T=T(t,x,y),\;X=X(t,x,y),\;
+Y=Y(t,x,y)$ in which the operators become
+\begin{eqnarray*}
+X_1 &=& \frac{\partial}{\partial T},\;\; X_2=\frac{\partial}{\partial X},\;\;
+X_3=\xi (T,X,Y)\frac{\partial}{\partial T}+\eta (T,X,Y)\frac{\partial}
+{\partial X},\\
+X_4 &= & a(T,X,Y)\frac{\partial}{\partial T}+b(T,X,Y)\frac{\partial}
+{\partial X}\;\cdot
+\end{eqnarray*}
+The commutation relations $[X_1,X_3]=0$ and $[X_2,X_3]=0$ imply that $\xi=\xi (Y)$
+and $\eta =\eta (Y)$.
+From the equations $[X_i,X_4]=X_i,\;\;i=1,\;2,\;3$, we deduce that
+\[a=T+\alpha (Y) \mbox{ and } b=X+\beta (Y).\]
+Now make the change
+\[\bar T=T+\alpha (Y),\;\;\bar X=X+\beta (Y),\;\; \bar Y=Y.\]
+In the new variables, the operators become
+\[X_1=\frac{\partial}{\partial \bar T},\;\;X_2=\frac{\partial}{\partial \bar X},
+\;\;X_3=\xi (\bar Y)\frac{\partial}{\partial \bar T}+\eta (\bar Y)
+\frac{\partial}{\partial \bar X},\;\;X_4=\bar T\frac{\partial}{\partial \bar T}
++\bar X\frac{\partial}{\partial \bar X}\,\cdot\]
+Omitting the bars, renaming the variables and using lower case variables, we  
+obtain the representation
+\begin{equation}
+\label{ch6:eq11}
+X_1 = \frac{\partial}{\partial x},\;\;X_2=\frac{\partial}{\partial y},\;\; 
+X_3=\xi (t) \frac{\partial}{\partial x}+\eta (t)\frac{\partial}{\partial y},\;\;
+X_4 = x\frac{\partial}{\partial x}+ y\frac{\partial}
+{\partial y},
+\end{equation}
+where $(\xi^{'}(t),\eta^{'}(t))\ne 0$ to ensure that the operators are
+linearly independent.
+
+{\bf (iii)} $r^{*}=1.$
+
+In this case, the four operators are connected. Thus there is
+a change of variables $T=T(t,x,y),\;X=X(t,,y),\;Y=Y(t,x,y)$ in which the
+operators become
+\[X_1=\frac{\partial}{\partial T},
+\;\;X_i=\xi_{i}(T,X,Y)\frac{\partial}{\partial T},\;i=2,\;3,\;4,\]
+where the set of functions $\{1,\xi_i\}$ is linearly independent to ensure
+the independency of the operators. Now $[X_1,X_2]=0,\;[X_2,X_3]=0$ imply
+that $\xi_2=\xi_2(X,Y),\;\;\xi_3=\xi_3(X,Y)$. Futhermore, $[X_i,X_4]=X_i,\; 
+i=1,2,3$ imply  $\xi_4=T+a(X,Y)$. Make the change of variables
+\[\bar T=T+a(X,Y),\;\bar X=\xi_2(X,Y),\; \bar Y=\xi_3 (X,Y).\]
+The invertibility of this changes of variables is guaranteed by the fact that
+the set of functions $\{1,\xi_2,\xi_3\}$ is linearly independent. In the new
+coordinates, the operators read
+\[X_1=\frac{\partial}{\partial \bar T},\;\;
+X_2=\bar X \frac{\partial}{\partial \bar T},\;\;
+X_3=\bar Y \frac{\partial}{\partial \bar T},\;\;
+X_4=\bar T\frac{\partial}{\partial \bar T}\;\cdot\]
+Leaving out the bars, renaming the variables and using lower case variables, we
+obtain the realization
+\begin{equation}
+\label{ch6:eq13}
+X_1=\frac{\partial}{\partial  x},\;\;
+X_2=t \frac{\partial}{\partial x},\;\;
+X_3=y \frac{\partial}{\partial x},\;\;
+X_4=x \frac{\partial}{\partial x}\;\cdot
+\end{equation}
+Finally we have proved the following theorem.
+\begin{theo}
+\label{ch6:theo3}
+\begin{em}
+In (1+2)--dimensional space, the Lie algebra $L_{4,2}$ has three classes
+of repsesentations:
+\begin{eqnarray}
+\mbox{{\bf (i)}  } & & X_1 = \frac{\partial}{\partial t},\;\;X_2=\frac{\partial}{\partial x},\;\; 
+X_3=\frac{\partial}{\partial y},\;\;
+X_4 = t\frac{\partial}{\partial t}+ x\frac{\partial}
+{\partial x}+y\frac{\partial}{\partial y}, \label{ch6:eq14}\\
+\mbox {{\bf (ii)}  } & & X_1 = \frac{\partial}{\partial x},\;
+X_2=\frac{\partial}{\partial y},\; 
+X_3=f(t)\frac{\partial}{\partial x}+g(t)\frac{\partial}{\partial y},\;
+X_4 = x\frac{\partial}{\partial x}+y\frac{\partial}{\partial y}, \label{ch6:eq15}\\
+ & & \mbox{where $(f'(t),g'(t))\ne 0$,}\nonumber\\
+\mbox{{\bf (iii)}  } & & X_1=\frac{\partial}{\partial  x},\;\;
+X_2=t \frac{\partial}{\partial x},\;\;
+X_3=y \frac{\partial}{\partial x},\;\;
+X_4=x \frac{\partial}{\partial x}\;\cdot \label{ch6:eq16}
+\end{eqnarray}
+\end{em}
+\end{theo}
+An immediate application of this theorem is the following one.
+\begin{theo}
+\label{ch6:theo4}
+\begin{em}
+A system of two second--order odes is linearizable via a point transformation
+if and only if it admits $L_{4,2}$.
+\end{em}
+\end{theo}
+{\bf Proof.} The necessity is straightfoward since any linearizable 
+system of two second--order odes  put in the first canonical 
+form (cf. Chapter 5, Theorem 5.1) admits $L_{4,2}$. For the proof of sufficiency, we need
+to show that realizations given in Theorem \ref{ch6:theo3} yield linear equations.
+The first and third realizations give the two--dimensional free particle
+equation $x''=0,\;\;y''=0$. The second one gives the linear system of
+second--order odes
+\[\left \{ \begin{array}{cc}
+x''= &\left (\displaystyle{\frac{f''}{f'}+\frac{g'}{f'}A(t)} \right ) x'-A(t)y',\\
+  & \\
+y''= &\left (\displaystyle{\frac{g''}{f'}+\frac{g'}{f'}B(t)} \right ) x'-B(t)y',
+\end{array} \right.\]
+where $A(t)$ and $B(t)$ are two arbitrary functions and where we have assumed
+without loss of generality that $f'\ne 0$. Note that  $(f,g)$ 
+is a particular solution of the above system.
+
+{\bf Remark. }  If a system admits a four--dimensional Lie
+algebra with the commutators $[X_i,X_j]=0,\;\;[X_i,X_4]=X_i,\;\;i,j=1,2,3$, 
+the transformation which reduces it to its linear form
+is just the change of coordinates which brings this Lie algebra to one of 
+the realizations (\ref{ch6:eq14}), (\ref{ch6:eq15}), (\ref{ch6:eq16}). 
+This change of variables is obtained by solving first--order 
+linear partial differential equations only.
+
+The proof of Theorem \ref{ch6:theo4} gives rise to the following one.
+\begin{theo}
+\label{ch6:theo5}
+\begin{em}
+A system of two second--order odes is reducible to the free particle equation 
+\[x''=0,\;\;y''=0\] if and only if it admits a four--dimensional Lie algebra
+with commutators 
+\[[X_i,X_j]=0,\;\;[X_i,X_4]=X_i,\;\;i,j=1,2,3\] 
+and
+\[\mbox{rank }[X_1,X_2,X_3,X_4]\in \{1,3\}.\]
+\end{em}
+\end{theo}
+\section{Linearization of systems of $n>2$ second-order odes}
+Here we extend Theorems \ref{ch6:theo2} and \ref{ch6:theo4} to systems of
+$n > 2$ second--order odes.
+\begin{theo}
+\label{ch6:theo6}
+\begin{em}
+A system of $n> 2$ second--order odes is reducible by means of a point 
+transformation to a linear system if and only if its symmetry Lie algebra
+contains a $2n$--dimensional subalgebra which is similar to one of the
+following. 
+
+(i) $L_{2n,1}:\;\displaystyle{X_i=\frac{\partial}{\partial x_i},\;
+X_{n+i}=f_{ij}(t)\frac{\partial}{\partial x_j}},\;i=1,\ldots ,n,$ \\
+where $\mbox{det}[f_{ij}'(t)]\ne 0.$ 
+
+(ii) $L_{2n,2}:\;\displaystyle{X_i=\frac{\partial}{\partial x_i},\;
+X_{n+j}=f_{jk}(t)\frac{\partial}{\partial x_j},\;i=1,\ldots ,n,\;
+j=1,\ldots,n-1;\; X_{2n}=x_k\frac{\partial}{\partial x_k}},$ \\
+where $\mbox{rank}[f_{jk}'(t)]=n-1.$ 
+\end{em}
+\end{theo}
+{\bf Proof.}
+
+(i) The necessity follows from the fact  that any linearizable system 
+put in the
+first canonical form (cf. Chapter 5, Theorem 5.1) admits $L_{2n,1}$. For the sufficiency, if we
+impose the operators of $L_{2n,1}$ on a system of $n$ second--order odes, we
+obtain
+\[ x_{k}''=-\frac{ \left |
+\begin{array}{llll}
+f_{11}' & \ldots & f_{1n}' & f_{1k}''\\
+\vdots &         & \vdots  & \vdots \\    
+f_{n1}' & \ldots  & f_{nn}' & f_{nk}''\\
+x_1'   & \ldots  & x_n'    &  0  
+\end{array} \right |}{|f_{ij}'|} +A_k(t),\]
+where $k=1,\dots ,n$ and the $A_k$s are arbitrary functions.
+
+(ii) The proof here is similar to (i).
+
+\section{Applications}
+It is quite clear from the preceding theorems and discussions that the
+Henon--Heiles and Kepler problems are not linearizable via point
+transformations. This is also true for a large class of newtonian systems
+investigated in the literature (see, e.g., Hietarinta 1987 and references
+therein).
+It is interesting to note that none of the nonlinear cases in Sen (1987) and
+Damianou and Sophocleous (1999) are linearizable via point transformations.
+This means that the forces need to be time and/or velocity dependent for
+linearization to be possible. In the following examples of systems of
+second--order odes, we illustrate the foregoing theorems by using velocity
+dependence for the forces.
+
+{\bf (a) } Consider the system
+\begin{equation}
+\label{ch6:eq17}
+\left \{ \begin{array}{ccc}
+x'' & = & y'^{2},\\
+y'' & = & 0.
+\end{array} \right.
+\end{equation}
+Using Lie's  algorithm (Chapter 1), we can obtain all the symmetries
+of (\ref{ch6:eq17}). We consider operators
+\begin{equation}
+\label{ch6:eq18}
+X_1=\frac{\partial}{\partial x},\;\;X_2=\frac{\partial}{\partial t},
+\;\;X_3=y\frac{\partial}{\partial x},\;\;X_4=y\frac{\partial}{\partial t}
+\end{equation}
+which  satisfy
+\[ [X_i,X_j]=0,\;\;i,j=1,\;2,\;3,\;4.\]
+Hence we infer from Theorem \ref{ch6:theo2} that (\ref{ch6:eq17}) is linearizable via
+a point transformation. In order to find this point transformation, we must
+look for a change of variables which maps (\ref{ch6:eq18}) to the realization
+(\ref{ch6:eq8}). An example of such change of variables is provided by
+\[ T=y,\;\;X=x,\;\;,Y=t.\]
+In this new variables,
+\begin{equation}
+\label{ch6:eq19}
+X_1=\frac{\partial}{\partial X},\;\;X_2=\frac{\partial}{\partial Y},
+\;\;X_3=T\frac{\partial}{\partial X},\;\;X_4=T\frac{\partial}{\partial Y},
+\end{equation}
+and
+\begin{equation}
+\label{ch6:eq20}
+\left \{ \begin{array}{ccc}
+\displaystyle{\frac{d^2X}{dT^2}} & = & 1,\\
+& & \\
+\displaystyle{\frac{d^2Y}{dT^2}} & = & 0.
+\end{array} \right.
+\end{equation}
+{\bf (b)} Consider the system
+\begin{equation}
+\label{ch6:eq21}
+\left \{ \begin{array}{ccc}
+x'' &=& x'^{2}+y'^{2},\\
+y'' &=& 2x'y'.
+\end{array} \right.
+\end{equation}
+From Lie's algorithm  described in Chapter 1, we can obtain all 
+the symmetries of (\ref{ch6:eq21}). We consider
+\begin{equation}
+\label{ch6:eq22}
+X_1=\frac{\partial}{\partial t},\;\;X_2=\mbox{e}^{-(x+y)}\frac{\partial}
+{\partial t},\;\;X_3=\mbox{e}^{-(x-y)}\frac{\partial}{\partial t},
+\;\;X_4=t\frac{\partial}{\partial t}\cdot
+\end{equation}
+It can easily be checked that
+\[[X_i,X_j]=0,\;\;[X_i,X_4]=X_i,\;\;i,j=1,2,3\]
+and
+\[\mbox{rank }[X_1,X_2,X_3,X_4]=1.\]
+Thus according to Theorem \ref{ch6:theo4} and Theorem \ref{ch6:theo5}, Equation 
+(\ref{ch6:eq21}) is linearizable and reducible to the free particle equation
+via  a point transformation. Since $r^{*}=1$, this point transformation
+must map (\ref{ch6:eq22}) to the realization (\ref{ch6:eq16}). Therefore it
+satisfies the system:
+\begin{eqnarray*}
+\frac{\partial T}{\partial t} &=&0,\;\;
+\frac{\partial X}{\partial t} =1,\;\;
+\frac{\partial Y}{\partial t} =0,\\
+\mbox{e}^{-(x+y)}\frac{\partial T}{\partial t} &=& 0,\;\;
+\mbox{e}^{-(x+y)}\frac{\partial X}{\partial t} =T,\;\;
+\mbox{e}^{-(x+y)}\frac{\partial Y}{\partial t}= 0,\\
+\mbox{e}^{-(x-y)}\frac{\partial T}{\partial t} &= &0,\;\;
+\mbox{e}^{-(x-y)}\frac{\partial X}{\partial t} =Y,\;\;
+\mbox{e}^{-(x-y)}\frac{\partial Y}{\partial t} =0,\\
+t\frac{\partial T}{\partial t} &=&0,\;\;
+t\frac{\partial X}{\partial t} =X,\;\;
+t\frac{\partial Y}{\partial t} =0.
+\end{eqnarray*}
+The solution of this system is given by
+\[T=\mbox{e}^{-(x+y)},\;\;X=t,\;\;Y=\mbox{e}^{-(x-y)}.\]
+In the new coordinate system, (\ref{ch6:eq21}) becomes
+\begin{equation}
+\label{ch6:eq23}
+\left \{ \begin{array}{ccc}
+\displaystyle{\frac{d^2X}{dT^2}} & = & 0, \\
+& &\\
+\displaystyle{\frac{d^2Y}{dT^2}} &= & 0.
+\end{array} \right.
+\end{equation}
+\section{Conclusion}
+We have given representations of $L_{4,1}$ and $L_{4,2}$ in 
+$(1+2)$--dimensional  space. Applications have been made to 
+the linearization of systems of second--order odes. We have
+emphasised also the connection between the linearizability of a system of 
+second--order odes  and the algebraic structure of its symmetry Lie 
+algebra. In addition, we gave a natural extension of our linearization criteria
+via symmetry Lie algebras to $n$ ($n > 2$) second--order odes.
+
+%\end{document}
+

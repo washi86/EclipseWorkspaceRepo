@@ -1,0 +1,106 @@
+%\documentclass[12pt]{article}
+%\pagestyle{empty}
+%%\usepackage{lscape}
+%\setlength{\parindent}{0mm}
+%\setlength{\parskip}{14pt}
+%\renewcommand{\baselinestretch}{1.5}
+%\setlength{\topmargin}{0pt}
+%\setlength{\headheight}{0pt}
+%\setlength{\headsep}{0pt}
+%%\setlength{\footheight}{0pt}
+%\setlength{\footskip}{45pt}
+%\setlength{\textwidth}{430pt}
+%\setlength{\textheight}{660pt}
+%\setlength{\oddsidemargin}{10pt}
+
+%\begin{document}
+\thispagestyle{empty}
+\begin{center}
+
+{\Large \bf NUMERICAL SOLUTIONS OF THE 2-D NAVIER-STOKES EQUATIONS}
+
+\end{center}
+
+
+\begin{center}
+by
+\end{center}
+
+\begin{center}
+ {\Large Marvin Washington} 
+\end{center}
+
+
+\begin{center}
+A Thesis
+\end{center}
+
+\begin{center}
+Submitted to the Division of Graduate Studies\\
+Jackson State University\\
+ In Partial Fulfillment of the Requirenments for the Degree
+\end{center}
+
+\begin{center}
+MASTER OF SCIENCE
+\end{center}
+
+\begin{center}
+May 2011
+\end{center}
+
+
+\begin{center}
+Major Subject: Mathematics
+\end{center}
+\newpage
+\thispagestyle{empty}
+ 
+ \begin{center}
+
+{\Large \bf NUMERICAL SOLUTIONS OF THE 2-D NAVIER-STOKES EQUATIONS}
+
+\end{center}
+
+\begin{center}
+A Thesis\\ by\\  {\Large Marvin Washington} 
+\end{center}
+
+Approved:
+
+\begin{tabular}{ccc}
+           &\hspace{1in}&         \\
+\line(1,0){2.5in}& &\line(1,0){2.5in}\\ 
+Committee Chairperson&  &Committee Member,Advisor\\
+Shaungzhang Tu, PhD&  &C\'elestin Wafo Soh, PhD \\
+                               & & \\
+\line(1,0){2.5in}& &\line(1,0){2.5in}   \\                   
+Committee Member&  &Dean, Divison of Graduate Studies\\
+Marvin D. Watts, PhD&  &Dorris R.Robinson-Gardner, PhD 
+\end{tabular}  
+  
+\begin{center}
+May 2011
+\end{center}
+ 
+ 
+ 
+\newpage
+\thispagestyle{empty}
+\section*{\begin{center} ABSTRACT \end{center}}  
+
+Navier-Stokes Equations are nonlinear partial differential equations governing the dynamics of fluids. They arise in several areas of practical importance such as meteorology, aerodynamics, geophysics, and animation in movies or video games. They comprise two set of equations encoding conservation of linear momentum and mass. These equations must be supplemented with appropriate constitutive relations and boundary conditions. The former provides a relation between stress and rate of shear (strain). They allow the classification of fluids into Newtonian and non-Newtonian fluids. Newtonian fluids are characterized by a linear relation between stress and strain whereas non-Newtonian fluids violate such a relation. This thesis, will deal primarily with Newtonian fluids which are incompressible i.e. their density (mass per unit volume) is constant. Boundary conditions such as the no-slip boundary conditions (Dirichlet boundary conditions), Neumann boundary conditions, and periodic boundary conditions will be employed. The existence, uniqueness, and regularity of solutions of the Navier-Stokes equations under appropriate boundary conditions and data are well-known in 2-D.
+\newpage
+\thispagestyle{empty}
+In 3-D there are still unsolved problems related to existence, uniqueness, and regularity of solutions of Navier-Stokes Equations. The main concern in this thesis will be the numerical solution of the 2-D Navier-Stokes Equations under various assumptions on the boundary conditions and the geometry. The finite difference method will be used in all the numerical schemes and the validity of the numerical techniques used will be checked by simulating some classical flows. The work will be organized as follows. There will be six chapters. In the first chapter, a rigorous derivation of the Navier-Stokes equations is provided. Also, boundary conditions and the equation satisfied by pressure are discussed.  In chapter two, the discretization of the 2-D Navier-Stokes Equations by finite-differencing is dealt with. In particular, methods for enforcing boundary conditions and the incompressibility conditions are elaborated on. Concerning the later, Chorin's Projection Method is described in detail.  In chapter three, the implementation of the numerical scheme described in the previous chapter is supplied. In chapter four, flow visualization techniques are discussed and implemented. In chapter five, some classical flows are examined. In the final chapter, the work is summarized.
+
+\newpage
+\thispagestyle{empty}
+\section*{\begin{center}  DEDICATION \end{center}}
+\vspace{1cm}
+\begin{center}{\em To my Family and my Friends}\end{center}
+\newpage
+
+
+
+%\end{document}

@@ -1,0 +1,817 @@
+%\documentclass[12pt]{report}
+%\usepackage{lscape}
+%\setlength{\parindent}{0mm}
+%\setlength{\parskip}{6pt}
+%\renewcommand{\baselinestretch}{1.5}
+%\setlength{\topmargin}{0pt}
+%\setlength{\headheight}{0pt}
+%\setlength{\headsep}{0pt}
+%\setlength{\footheight}{0pt}
+%\setlength{\footskip}{45pt}
+%\setlength{\textwidth}{430pt}
+%\setlength{\textheight}{660pt}
+%\setlength{\oddsidemargin}{10pt}
+%\newcommand{\RR}{\mathrm{I\!R\!}}
+%\newcommand{\T}[1]{\begin{tabular}{|l|} \hline #1\\ \hline \end{tabular}}
+%\newcommand{\E}{\mbox{e}}
+% \newcommand{\LL}{{\cal L}}
+%\newtheorem{prop}{Proposition}[chapter]
+%\newtheorem{theo}{Theorem}[chapter]
+%\newtheorem{defi}{Definition}[chapter]
+%\newtheorem{coro}{Corollary}[chapter]
+%\begin{document}
+
+\chapter{Canonical Forms for Systems of two Second--Order Ordinary
+Differential Equations admitting  Symmetry Lie Algebras}
+
+We obtain nonsimilar classes of realizations for 
+three-- and four--dimensional real Lie algebras in the space of vector fields in
+three variables. This is applied to the classification  and integration of
+systems of two second--order ordinary differential equations (odes)
+admitting  four--dimensional symmetry Lie algebras. Thus we obtain an
+analogue of Lie's method of integrating  scalar second--order odes
+admitting two--dimensional symmetry Lie algebras. We have reported some
+of the problems discussed here in Wafo Soh and Mahomed (1999g).
+\section{Introduction}
+
+The theory of Lie groups and algebras originated from Lie's early works 
+related to the integration of scalar odes (Lie 1891, Lie and Scheffers 1891).
+In the
+study of invertible transformations leaving a given differential equation
+invariant, Lie noticed that those forming a one--parameter group can be
+described equivalently by using the vector tangent to the orbits of the
+group. He called this vector the {\em symbol} of the group and {\em
+symmetry} of the underlying equation. He showed that the set of symmetries
+of a differential equation forms an {\em infinitesimal group} (Lie algebra
+in the modern terminology (Jacobson 1955, Belinfante {\em et al.} 1966))
+and that the integrability of
+the equation depends upon the properties of this {\em infinitesimal
+group}. He showed that  a scalar $n$th--order ode admitting an
+$n$--dimensional solvable Lie algebra of symmetries is solvable by
+quadratures. Since two--dimensional Lie algebras are solvable, Lie gave an
+algorithm for integrating second--order  odes having two--dimensional Lie
+algebras of symmetries. Further, he explicitly classified in the complex domain
+scalar  second--order odes having symmetries. The classification in the
+real domain was given recently in Mahomed and Leach (1989).
+
+Since systems of two second--order odes occur frequently in applications
+(Classical and Quantum Mechanics, General Relativity,\ldots), it is worth
+developing a classification scheme similar to Lie's for such systems.
+Lie (see Lie and Engel 1893, Chapter 7) gave the complete classification of complex primitive  Lie
+algebras in terms of vector fields in $(1+2)$--dimensional space: he obtained
+$8$ nonsimilar classes. For complex imprimitive Lie algebras, he sketched the
+method to follow in three steps and he implemented only the first two steps.
+
+In this chapter, we investigate realizations of real three-- and
+four--dimensional Lie algebras in terms of vector fields in
+$(1+2)$--dimensional space. Furthermore, we classify all systems of
+two second--order odes admitting four--dimensional symmetry Lie algebras
+and we show  how to integrate the underlying equations. 
+
+\section{Realizations of three-- and four--dimensional real Lie algebras in terms of vector
+fields in $(1+2)$--dimensional space}
+
+When we calculate the symmetries
+of a given differential equation, we find the generators explicitly in the
+form of vector fields (or first--order linear operators) and we only
+afterwards compute the commutators to get the structure constants of the
+particular Lie algebra we have found. But we could also proceed backwards,
+that is, start from a given Lie algebra with a set of structure constants
+and ask which vector  fields in at most three variables satisfy the given
+set of commutator relations with none of the vector fields vanishing. We
+thus ask for possible  {\em realizations} or {\em representations} of our
+Lie algebra. Two realizations of the same Lie algebra will be considered
+equivalent or similar if there exists an invertible transformation mapping
+one of the realization to the other.
+
+In this section we are concerned  with finding all nonsimilar representations
+of three-- and
+four--dimensional real Lie algebras in $(1+2)$--dimensional space. We
+adopt the Mubarakzyanov (1963) classification scheme of  real low--dimensional
+Lie algebras reported in Patera and Winternitz (1977) and
+we also exploit the enumeration of subalgebras of these Lie algebras given
+in the same paper. We shall use $\LL $ as a placeholder for relevant Lie
+algebra/s $\LL _{i,j}^{a,b,R}$ (the $j$th algebra of dimension $i$ with
+the superscripts $a,b$, if any, indicating  the parameters on which the
+algebra
+depends; also superscripts $R$, if any, indicating the algebra
+realizations). Following Lie, we use the shorthand 
+\[l=\frac{\partial}{\partial t},\;\;p=\frac{\partial}{\partial x},
+\;\;q=\frac{\partial}{\partial y}\;\cdot\]
+Finally the elements of a basis of a
+given Lie algebra are named $X_i$, where $i$ is lesser than or equal to
+the dimension of the underlying algebra. 
+
+\subsection{Realizations of three--dimensional real Lie algebras} 
+
+We now focus attention on the realizations of real three--dimensional Lie
+algebras. For each algebra we write down only the nonzero commutation
+relations.
+ 
+\T{{\bf $\LL _{3,1}$ (the abelian three--dimensional Lie algebra).}}
+ 
+Let $r=\mbox{rank}[X_1,X_2,X_3]$. We then consider the following cases.
+
+{\bf (i)} $r=3$.
+
+One can find coordinates in which
+\[X_1=l,\;\;X_2=p,\;\;X_3=q.\]
+{\bf (ii)} $r=2$.
+
+There is a coordinate
+system in which \[X_1=l,\;\; X_2=p,\;\; X_3=a(t,x,y)X_1+b(t,x,y)X_2.\]
+Since $[X_1,X_3]=0$ and $[X_2,X_3]=0$, $a=a(y),\;b=b(y)$. Renaming the
+variables, we obtain the representation
+\[X_1=p,\;\;X_2=q,\;\;X_3=b(t)p+a(t)q.\]
+{\bf (ii)} $r=1$
+
+There are
+coordinates in which \[X_1=p\;\; X_2=a(t,x,y)p,\;\;X_3=c(t,x,y)p.\]
+Now $[X_1,X_2]=0$ and $[X_1,X_3]=0$ imply that $a=a(t,y)$, $b=b(t,y)$. Further
+make the change of variables \[\bar t=a(t,y),\;\;\bar x=x,\;\; \bar
+y=b(t,y).\] Thus \[X_1=\bar p,\;\;X_2=\bar t \bar p,\;\;X_3=\bar y \bar
+p.\] Dropping the bars we obtain the representation
+\[X_1=p,\;\;X_2=tp,\;\;X_3=yp.\]
+\T{{\bf $\LL _{3,2}$: $[X_1,X_2]=X_2.$}}
+
+By assuming the connectedness and then the unconnectedness of $X_1$ and
+$X_2$, we arrive at the following cases.
+
+{\bf(i)} $X_1=-yq$, $X_2=q.$
+
+Let \[X_3=a(t,x,y)l+b(t,x,y)p+c(t,x,y)p.\] Then $[X_1,X_3]=0$ and $[X_2,X_3]=0$
+imply that $a=a(t,x),\;b=b(t,x)\mbox{ and } c=0$, i.e.
+$X_3=a(t,x)l+b(t,x)p$. There exists a change of variables \[\bar t=\bar t
+(t,x),\;\;\bar x=\bar x (t,x),\; \bar y=y, \] in which \[X_1=-\bar y \bar
+q,\;\; X_2=\bar q,\;\;X_3=\bar p.\] Leaving out the bars, we obtain the
+realization \[X_1=-yq,\;\;X_2=q,\;\;X_3=p.\]
+{\bf (ii)} $X_1=-xp-yq$,$X_2=q.$
+
+The commutators $[X_1,X_3]=0$ and $[X_2,X_3]=0$ imply that
+$a=a(t),\;b=b(t)x,\;c=c(t)x$, i.e.
+\[X_3=a(t)l+b(t)xp+c(t)xq.\]
+If $a(t)\ne
+0$, make the change \[\bar t=\int dt/a ,\;\;\bar x= \alpha
+(t)x,\;\;\bar y= \beta (t)y,\] where $\alpha$ and $\beta$ are solutions of
+the equations \[a(t)\alpha '+b(t)\alpha=0,\;\;a(t)\beta '+c(t)\beta.\]
+Omitting the bars, we obtain \[X_1=-xp-yq,\;\;X_2=cq,\;\;X_3=l,\] where
+$c$ is a nonzero constant. Then replace $X_2$ by $(1/c) X_2$. Thus we
+obtain the realization \[X_1=-xp-yq,\;\;X_2=q,\;\;X_3=l.\] If $a=0$ we
+obtain the representation \[X_1=-xp-yq,\;\;X_2=q,\;\; X_3=b(t)xp+c(t)xq,\]
+where $ (b(t),c(t))\ne (0,0).$
+
+\T{{\bf $\LL _{3,3}$: $[X_2,X_3]=X_1$ (Weyl's algebra).}} 
+
+The vector spaces $<X_1,X_2>$ and $<X_1,X_3>$ are two--dimensional abelian
+subalgebras of
+$\LL _{3,3}$. Since the operations
+\[ X_2 \longrightarrow X_3,\;\; X_3
+\longrightarrow -X_2\]
+do not affect the structure of the algebra, the
+following cases are relevant.\\ {\bf (i)} $X_1=l$, $X_2=p.$ \\ Let
+$X_3=a(t,x,y)l+b(t,x,y)p+c(t,x,y)q$. Then $[X_1,X_3]=0,\;\;[X_2,X_3]=0$
+imply that \[a=x+a(y),\;\;b=b(y),\;\;c=c(y).\] If $c=0$ and $b'(y)\ne 0$,
+effect the change of variables
+\[\bar t=t,\;\; \bar x= x+a(y),\;\;\bar y=b(y).\]
+Dropping the bars, we obtain the realization
+\[X_1=l,\;\;X_2=p,\;\;X_3=xl+yp.\] If $c=0$ and $ b=\mbox{const.}$, make
+the transformation \[\bar t=t,\; \bar x=x+a(y),\;\;\bar y=y,\] and
+replace $X_3$ by $X_3-\mbox{const }X_1$. Then, dropping the bars, we
+obtain \[X_1=l,\;\;X_2=p,\;\;X_3=xl.\] If $c\ne 0$, make the change of
+variables \[\bar t=t+\alpha (y),\;\;\bar x=x+\beta (y),\;\;y=\int dy/c,\]
+where $\alpha$ and $\beta$ are solutions of the equations \[c(y)\alpha
+'(y)+a(y)-\alpha (y)=0,\;\; c(y)\beta '(y)+b(y)=0.\] Without the bars, we
+obtain \[X_1=l,\;\;X_2=p,\;\;X_3=xl+q.\] {\bf (ii)} $X_1=p$, $X_2=tp$\\
+Let $X_3=a(t,x,y)l+b(t,x,y)p+c(t,x,y)q$. Then
+$[X_1,X_3]=0,\;\;[X_2,X_3]=0$ yield \[a=-1,\;\;b=b(t,y),\;\;c=c(t,y).\]
+Perform the change of variables \[\bar t=t,\;\; \bar x=x+\alpha (t,y),\;\;
+\bar y =\beta(t,y),\] where \[\alpha_t-c(t,y)\alpha_y-b(t,y)=0,\;\;
+\beta_t-c(t,y)\beta_y=0.\]
+We find
+\[X_1=p,\;\;X_2=tp,\;\;X_3=-l.\]
+\T{{\bf $\LL _{3,4}$: $[X_1,X_3]=X_1$, $[X_2,X_3]=X_1+X_2.$}}
+
+The vector space $<X_1,X_2>$ is the only abelian subalgebra of $\LL _{3,4}$.
+Whence the cases:
+
+{\bf (i)} $X_1=l$, $X_2=p.$ 
+
+Let $X_3=a(t,x,y)l+b(t,x,y)p+c(t,x,y)q$. Then
+$[X_1,X_3]=X_1$ and $[X_2,X_3]=X_1+X_2$ imply that
+\[a=t+x+a(y),\;\;b=x+b(y),\;\;c=c(y).\]
+If $c=0$, make the reduction using
+\[\bar t=t+a(y)-b(y),\;\; \bar x=x+b(y).\] 
+Leaving out the bars, we obtain
+\[X_1=l,\;\;X_2=p,\;\;X_3=(t+x)l+xp.\]
+If $c\ne 0$, invoke the change of variables
+\[\bar t=t+\alpha (y),\;\;x=x+\beta (y),\;\; y=\int dy/c,\]
+where $\alpha$ and $\beta$ satisfy the following equations 
+\[c(y)\alpha '-\alpha-\beta+a(y)=0,\;\; c(y)\beta '-\alpha+b(y)=0.\]
+We deduce 
+\[X_1=l,\;\;X_2=p,\;\;X_3=(t+x)l+xp+q.\]
+{\bf (ii)} $X_1=p$, $X_2=tp.$\\
+Let $X_3=a(t,x,y)l+b(t,x,y)p+c(t,x,y)q$. Then
+$[X_1,X_3]=X_1$ and $[X_2,X_3]=X_1+X_2$ give
+\[a=-1,\;\;b=x+b(t,y),\;\;c=c(t,y).\]
+Effect the change of variables
+\[\bar t=t,\;\;\bar x=x+\alpha (t,y),\;\; y=\beta (t,y),\]
+where $\alpha$ and $\beta$ satisfy the equations
+\[\alpha_t-c(t,y)\alpha_y+\alpha-b(t,y)=0,\;\; \beta_t-c(t,y)\beta_y=0.\]
+Supressing the bars, we obtain \[X_1=p,\;\;X_2=tp,\;\;X_3=-l+xp.\]
+\T{{\bf $\LL _{3,5}$: $[X_1,X_3]=X_1$, $[X_2,X_3]=X_2.$}}
+
+The vector space $<X_1,X_2>$  is the only two--dimensional abelian subalgebra of
+$\LL _{3,5}$. Using the same method as before, we obtain the following
+representations: \[X_1=l,\;\;X_2=p,\;\;X_3=tl+xp,\]
+\[X_1=l,\;\;X_2=p,\;\;X_3=tl+xp+q,\] \[X_1=p,\;\;X_2=tp,\;\;X_3=xp,\]
+\[X_1=p,\;\;X_2=tp,\;\;X_3=xp+q.\]
+\T{{\bf $\LL _{3,6}^{a},\;\; a\in [-1,1)
+$: $[X_1,X_3]=X_1$, $[X_2,X_3]=aX_2.$}}
+
+After the same kind of reasoning as before we find the realizations:
+\[X_1=l,\;\;X_2=p,\;\;X_3=tl+axp\] \[X_1=l,\;\;X_2=p,\;\;X_3=tl+axp+q\]
+\[X_1=p,\;\;X_2=tp,\;\;X_3=t(1-a)l+xp\]
+\T{{\bf $\LL _{3,7}^{a},\;\; a\ge 0
+$: $[X_1,X_3]=aX_1-X_2$, $[X_2,X_3]=X_1+aX_2.$}}
+
+We get the following realizations:
+\[X_1=l,\;\; X_2=p,\;\;X_3=(at+x)l-(t-ax)p,\]
+\[X_1=l,\;\;X_2=p,\;\;X_3=(at+x)l-(t-ax)p+q,\]
+\[X_1=p,\;\;X_2=tp,\;\;X_3=-(t^2+1)l+(a-t)xp.\]
+\T{{\bf $\LL _{3,8}$:
+$[X_1,X_2]=X_1,\;\;[X_2,X_3]=X_3,\;\;[X_3,X_1]=2X_1.$}}
+
+The vector space $<X_1,X_2>$ is
+the only two--dimensional subalgebra of $\LL _{3,8}$. By assuming the
+connectedness and then the unconnectedness of $X_1$ and $X_2$, we arrive
+at the following cases:
+
+{\bf (i)} $X_1=q$, $X_2=yq.$
+
+Suppose
+$X_3=a(t,x,y)l+b(t,x,y)p+c(t,x,y)q$. Then $[X_2,X_3]=X_3$ and
+$[X_3,X_1]=2X_1$ result in \[a=0,\;\;b=0,\;c=-y^2.\] Whence the
+realization \[X_1=q,\;\;X_2=yq,\;\;X_3=-y^2q.\] {\bf (ii)} $X_1=q$,
+$X_2=xp+yq.$\\ Let $X_3=a(t,x,y)l+b(t,x,y)p+c(t,x,y)q$. Then
+$[X_2,X_3]=X_3$ and $[X_3,X_1]=2X_1$ imply that
+\[a=a(t)x,\;\;b=b(t)x^2-2xy,c=c(t)x^2-y^2.\] Hence the representation
+\[X_1=q,\;\;X_2=yq,\;\;X_3=a(t)xl+\left (b(t)x^2-2xy\right)p +\left (
+c(t)x^2-y^2 \right )q,\] where $a,\;b,\; c$ are arbitrary functions. By
+considering the cases $a\ne 0$ and $a=0$, we determine, after suitable changes
+of variables, the following realizations
+\[X_1=l,\;X_2=tl+xp,\;X_3=-t^2l-2xtp+xq,\]
+\[X_1=l+p,\;X_2=tl+xp,\;X_3=-t^2l-x^2p,\]
+\[X_1=-tp,\;X_2=\frac{1}{2}(-tl+xp),\;X_3=-xl.\]
+\T{{\bf $ \LL _{3,9}$:
+$[X_1,X_2]=X_3,\;\;[X_3,X_1]=X_2,\;\;[X_2,X_3]=X_1.$}}
+
+Note that if
+$X_1,\;\;X_2$ and $X_3$ are connected, there is no real representation of
+$\LL _{3,9}$. Henceforth, we assume that $X_1,\;X_2\mbox{ and}\;X_3$ are
+not connected. There is a change of variables in which $X_1=l$. Now let
+\[X_2=a(t,x,y)l+b(t,x,y)p+c(t,x,y)q\] and \[X_3=\alpha (t,x,y)l+\beta
+(t,x,y)p+\gamma (t,x,y)q.\] Then
+$[X_1,X_2]=X_3,\;\;[X_1,X_2]=X_2$ and $[X_2,X_3]=X_1$  give rise to 
+\begin{eqnarray*} a=A_1(x,y)\cos t+A_2(x,y)\sin t, & &\alpha=A_2(x,y)\cos
+t-A_1(x,y)\sin t ,\\ b=B_1(x,y)\cos t+B_2(x,y)\sin t, &
+&\beta=B_2(x,y)\cos t-B_1(x,y)\sin t ,\\ c=A_1(x,y)\cos t+A_2(x,y)\sin t,
+& &\gamma=C_2(x,y)\cos t-C_1(x,y)\sin t , \end{eqnarray*} where
+$A_i,\;B_i,C_i;\;\;i=1,2$  satisfy the system \begin{equation} \label{ch7:eq1}
+\left \{ \begin{array}{lll} B_1A_{2,x}-B_2A_{1,x}+C_1A_{2,y}-C_2A_{1,y}
+&=& 1+A_1^2+A_2^2,\\ B_1B_{2,x}-B_2B_{1,x}+C_1B_{2,y}-C_2B_{1,y} &=&
+A_1B_1+A_2B_2,\\ C_1C_{2,y}-C_2C_{1,y}+B_1C_{2,y}-B_2C_{1,y} &=&
+1+A_1C_1+A_2C_2. \end{array} \right. \end{equation} Consider the change 
+\[\bar x=\bar x(x,y),\;\;\bar y= \bar y(x,y),\;\;\bar
+t=t+\lambda (x,y).\] In this coordinate system, \begin{eqnarray*} X_1
+&=&\bar l, \\ X_2 &=& (\bar A_1\cos \bar t +\bar A_2\sin \bar t)\bar l
+        +(\bar B_1\cos \bar t +\bar B_2\sin \bar t)\bar p   
+        +(\bar C_1\cos \bar t +\bar C_2\sin \bar t)\bar q,\\   
+X_3 &=& (\bar A_2\cos \bar t -\bar A_1\sin \bar t)\bar l
+        +(\bar B_2\cos \bar t -\bar B_1\sin \bar t)\bar p   
+        +(\bar C_2\cos \bar t -\bar C_1\sin \bar t)\bar q,   
+\end{eqnarray*}        
+where
+\begin{eqnarray*}
+\bar A_1 &=& A_1\cos \lambda-A_2\sin \lambda+\lambda_x(B_1\cos
+\lambda-B_2\sin \lambda+\lambda_y(C_1 \cos \lambda-C_2\sin \lambda),\\
+\bar A_2 &=& A_1\sin \lambda+A_2\cos \lambda+\lambda_x(B_1\sin
+\lambda+B_2\cos \lambda+\lambda_y(C_1 \sin \lambda+C_2\cos \lambda),\\
+\bar B_1 &=& \bar x_x(B_1\cos \lambda-B_2\sin \lambda)+\bar x_y(C_1\cos
+\lambda-C_2\sin \lambda),\\ \bar B_2 &=& \bar x_x(B_1\sin \lambda+B_2\cos
+\lambda) +\bar x_y(C_1\sin \lambda+C_2\cos \lambda),\\ \bar C_1 &=& \bar
+y_x(B_1\cos \lambda-B_2\sin \lambda)+\bar y_y(C_1\cos \lambda-C_2\sin
+\lambda),\\ \bar C_2 &=& \bar y_x(B_1\sin \lambda+B_2\cos \lambda) +\bar
+y_y(C_1\sin \lambda+C_2\cos \lambda). \end{eqnarray*} Now we show that we
+can assume that $B_2=C_1=0$.\\ If $B_1C_2-B_2C_1\ne 0$, by choosing $\bar
+x$ and $\bar y $ as solutions of the following equations \begin{eqnarray*}
+\bar x_x (B_1\sin \lambda+B_2\cos \lambda)+\bar x_y (C_1\sin \lambda+
+C_2\cos \lambda) &=& 0, \\ \bar y_x (B_1\cos \lambda-B_2\sin \lambda)+\bar
+y_y (C_1\cos \lambda- C_2\sin \lambda) &=& 0, \end{eqnarray*} we have that
+$\bar B_2=0=\bar C_1$.\\ If $B_1C_2-B_2C_1=0$. Then for $(B_1,B_2)=(0,0)$,
+we choose $\bar x=x,\;\bar y=y$ and $\lambda$ a solution of \[C_1\cos
+\lambda+C_2\sin \lambda=0.\] Note that in this case $(C_1,C_2)\ne (0,0)$
+otherwise the operators would be connected and this is excluded. Now if
+$(B_1,B_2)\ne (0,0)$, we choose $\bar x=x$, $\lambda$ a solution of
+\[B_1\sin \lambda+B_1 \cos \lambda=0\] and $\bar y$ a solution of \[\bar y_x
+(B_1\cos \lambda-B_2\sin \lambda)+\bar y_y (C_1\cos \lambda- C_2\sin
+\lambda) = 0.\] Henceforth we assume that $B_2=C_1=0$. Thus the system
+(\ref{ch7:eq1}) reduces to \[\left \{ \begin{array}{lll} B_1A_{2,x}-C_2A_{1,y}
+&=& 1+A_1^2+A_2^2,\\ -C_2B_{1,y} &=& A_1B_1, \\ B_1C_{2,y} &=& A_2C_2.
+\end{array} \right. \] If $B_1\ne 0$, make the change of variables \[\bar
+t=t+\pi/4,\;\;\bar x=x,\;\; \bar y=\bar y (x,y),\] where $\bar y$ is a
+solution of $ B_1\bar y_x+C_2\bar y_y=0.$ Hence $\bar C_2=0$. Thus we can
+asssume that $B_1=0$ or $C_2=0$. Both cases lead to realizations
+equivalent to the following one:
+\[X_1=l,\;\; X_2=x(\cos t) l-(1+x^2)(\sin t)
+p,\;\;X_3=-x(\sin t) l-(1+x^2)(\cos t) p.\]
+Now perform the change of
+variables \[\bar t= \tan t,\;\;\bar x= \frac{x}{\cos t},\;\; \bar y=y.\]
+Omitting the bars, we obtain the representation
+\[X_1=(1+t^2)l+xtp,\;\;X_2=xl-tp,\;\;X_3=-xtl-(1+x^2)p.\] Note that the
+same realization was obtained in Mahomed and Leach (1989), where the
+authors were looking for representations in $(1+1)$--dimensional space.
+The results obtained so far are summarised in Table 7.1.  
+
+\subsection{Realizations of four--dimensional real Lie algebras}
+
+According to the classification of Mubarakzyanov (1963), there are
+$30$ real four--dimensional Lie algebras. As far as representation (and to
+some extent odes) is concerned, some of these algebras (namely those
+depending on  parameters) may be treated simultaneously. All
+four--dimensional  real Lie algebras contain three--dimensional
+subalgebras. Since we already have represented real three--dimensional Lie
+algebras in the previous subsection, we can build representations of
+four--dimensional Lie algebras on them. We shall not present details of the
+calculations for all the cases. We shall explicitly work out
+representations for few cases and all the representations  will be
+summarised in  Table 7.2.
+
+\T{{\bf $\LL_{4,1}$: the four--dimensional abelian Lie algebra.}}
+
+The algebra $\LL_{4,1}$ contains $\LL_{3,1}$. Since permuting $X_1,\;X_2,\;X_3$
+and $X_4$ does not  affect the structure of $\LL_{4,1}$, the following
+cases are to be distinguished:
+
+{\bf (i) } $X_1=l,\;\;X_2=p,\;\;X_3=q.$
+
+Let $X_4=a(t,x,y)l+b(t,x,y)p+c(t,x,y)q$. Then  $[X_i,X_4]=0,\;i=1,2,3$
+imply that $a=\mbox{const.},\;b=\mbox{const.},\;c=\mbox{const}$. This
+condradicts the fact that $X_1,\;X_2,\;X_3$ and $X_4$  form a basis of
+$\LL_{4,1}$.
+
+{\bf (ii)} $X_1=p,\;\;X_2=q,\;\;X_3=f(t)p+g(t)q$.
+
+The relations $[X_1,X_4]=0$ and $[X_2,X_4]=0$ imply that $a=a(t),\;b=b(t),\;c=c(t)$. Now
+$[X_3,X_4]=0$ implies that $a(t)f'(t)=0,\;\;a(t)g'(t)=0$. If $a\ne 0 $
+then $f=\mbox{const.}$ and $g=\mbox{const}$. However, this would imply that 
+$X_1,\; X_2$ and $X_3$ are linearly dependent. Thus $a=0$. Whence the
+realization \[X_1=p,\;\;X_2=q,\;\;X_3=f(t)p+g(t)q,\;\;X_4=b(t)p+c(t)q,\]
+where $f'(t)c'(t)-g'(t)b'(t)\ne 0$ ensures that $X_1,\;X_2,\;X_3,\;X_4$
+are linearly independent.
+
+{\bf (iii)} $X_1=p,\;\;X_2=tp,\;\;X_3=yp.$
+
+$[X_i,X_4]=0,\;i=1,2,3$ imply that $a=0,\;b=(t,y),\;c=0$. Hence the
+realization \[X_1=p,\;\;X_2=tp,\;\;X_3=yp,\;\;X_4=b(t,y)p,\] where $b\ne
+\mbox{const.}t+\mbox{const.}y+\mbox{const.}$
+
+See Chapter 6 for another approach.
+
+\T{{\bf ${\cal L }_{4,2}$: $[X_1,X_2]=X_2.$}}
+
+The algebra $\LL_{4,2}$ contains $\LL_{3,1}$ with basis
+$\left \{X_1,\;X_3,\;X_4 \right \}$ or $\left \{X_2,\;X_3,\;X_4 \right
+\}$. Hence we must consider the following cases.
+
+{\bf (i)} $X_1=l,\;\;X_3=p,\;\;X_4=q.$
+
+Let $X_2=a(t,x,y)l+b(t,x,y)p+c(t,x,y)q$. Then
+$[X_2,X_3]=0=[X_2,X_4]$ and $[X_1,X_2]=X_2$ imply that $
+a=a_0\E^t,\;b=b_0\E^t,\; c=c_0\E^t$, where $a_0,\;b_0,\;c_0$ are
+constants. Now perform the transformation
+\[ \bar t=
+\E^t,\;\;\bar x =x,\;\; \bar y=y.\]
+Dropping the bars, we obtain
+\[X_1=tl,\;\;X_2=a_0t^2l+b_0t+c_0tq,\;\;X_3=p,\;\;X_4=q.\] This
+realization may be further simplified  by considering the cases
+$(b_0,c_0)=(0,0)$ and $(b_0,c_0)\ne (0,0)$.
+
+{\bf (ii)} $X_1=p,\;\;X_3=q,\;\;X_4=f(t)p+g(t)q.$
+
+Here $[X_2,X_3]=0 $  and
+$[X_1,X_2]=X_2$ imply that $ a=a(t)\E^x,\;b=b(t)\E^x,\;c=c(t)\E^x$. Also
+$[X_2,X_4]=0$ gives rise to \[\left \{ \begin{array}{lll} a(t)f(t) & =
+& 0, \\ a(t)f'(t)-f(t)b(t) & = & 0,\\ a(t)g'(t)-f(t)c(t) & = & 0.
+\end{array} \right.\] If $a=0$ then $f=0$. If $a\ne 0$ then $f=0$ and
+$g=\mbox{const}$. But this is inconsistent with the fact that $X_3$ and
+$X_4$ are independent. Hence
+\[X_1=p,\;\;X_2=b(t)\E^xp+c(t)\E^xq,\;\;X_3=q,\;\; X_4=g(t)q,\] where
+$g'(t)\ne 0$ since $X_3$ and $X_4$ must be linearly independent. Now,
+perform the transformation \[\bar t= g(t),\;\;\bar x=x, \;\;\bar
+y=y.\] Thus we obtain the realization \[X_1=p,\;\;X_2=\eta (t)\E^xp+\mu
+(t) \E^xq,\;\; X_3=q,\;\;X_4=tq.\]
+{\bf (iii)}
+$X_1=p,\;\;X_2=tp,\;\;X_4=yp.$
+
+This case leads to an inconsistency.
+
+{\bf (iv)} $X_2=l,\;\;X_3=p,\;\;X_4=q.$
+
+Let $X_4=a(t,x,y)l+b(t,x,y)p+c(t,x,y)q$. Then $[X_1,X_3]=0=[X_1,X_4]$ imply
+that $a=a(t),\;b=b(t),\;c=c(t)$. Now $[X_1,X_2]=X_2$ implies
+$a=-t+a_0,\;b=b_0,\; c=c_0$. Replacing $X_1$ by
+$X_1-a_0X_2-b_0X_3-c_0X_4$, we obtain the realization
+\[X_1=-tl,\;\;X_2=l,\;\;X_3=p,\;\;X_4=q.\] {\bf (v)}
+$X_2=p,\;\;X_3=q,\;\;X_4=f(t)p+g(t)q.$\\ Now $[X_1,X_3]=0$ and $[X_1,X_2]$
+imply that $ a=a(t),\;b=-x+b(t),\;c=c(t)$. The relation $[X_1,X_4]=0$
+constrains
+$a,\;f,\;g$ by \[\left \{ \begin{array}{lll} a(t)f'(t)+f(t) & = & 0,\\
+a(t)g'(t) & =& 0. \end{array} \right. \] If $a=0$ then $f=0$. Make the
+change of variables \[\bar t=t,\;\;\bar x =-x+b(t),\;\; \bar y=y.\]
+Omitting the bars, we obtain the realization \[X_1=-xp+\mu
+(t)q,\;\;X_2=p,\;\;X_3=q,\;\;X_4=tq.\] If $a\ne 0$, a suitable change of
+variables ($\bar t=\int dt/a,\;\bar x=x,\; \bar y =y$) leads to $a=1$.
+Hence $f=f_0\E^{-t},\;\;g=g_0$, where $f_0\ne 0$. Perform the change 
+\[ \bar t= \E^{-t},\;\;\bar x=x+\alpha (t),\;\; \bar y=y+\beta
+(t),\] where  $\alpha$ satisfies $\alpha '(t)+\alpha(t)+b(t)=0$ and
+$\beta$ satisfies $\beta '(t)+c(t)=0$. Then replace $X_4$ by
+$(X_4-g_0X_3)/f_0$. Dropping the bars, we find
+\[X_1=-tl-xp,\;\;X_2=p,\;\;X_3=q,\;\;X_4=tp.\]
+{\bf (vi)}
+$X_2=p,\;\;X_3=tp,\;\;X_4=yp.$
+
+We have that $[X_1,X_3]=0=[X_1,X_4]$ and
+$[X_1,X_2]=X_2$ imply  $a=-t,\;\;b=-x+b(t,y),\;\;c=-y$. Now, invoke the
+change of variables \[\bar t=t,\;\;\bar x=x+\alpha (t,y),\;\;\bar y=y,\]
+where  $\alpha$ satisfies $-t\alpha_t-y\alpha_y+\alpha+b=0$. Dropping the
+bars, we obtain the realization
+\[X_1=-tl-xp-yq,\;\;X_2=p,\;\;X_3=tp,\;\;X_4=yp.\]
+\T{{\bf $\LL_{4,3}$:
+$[X_1,X_2]=X_2,\;\;[X_3,X_4]=X_4.$}}
+
+Permuting the pairs $(X_1,X_2)$ and
+$(X_3,X_4)$ do not affect the structure of $\LL_{4,3}$. Therefore the
+following cases arise:
+
+{\bf (i)} $X_1=-yq,\;\;X_2=q.$
+
+Let $X_3=a(t,x,y)l+b(t,x,y)p+ c(t,x,y)q$. Then $[X_2,X_3]=0 $ and $[X_1,X_3]$
+imply that $X_1=a(t,x)l+b(t,x)p$. Similarly, $X_4=\xi (t,x)l+\eta (t,x) p
+$. Hence $X_3$ and $X_4$ depend only on $t$ and $x$. Since
+$[X_3,X_4]=X_4$, we deduce that $X_3=-xp $ and $X_4=p$ or $X_3=-tl-xp$ and
+$X_4=p$. Whence the representations \[
+X_1=-yq,\;\;X_3=q,\;\;X_3=-xp,\;\;X_4=p\] and
+\[X_1=-yq,\;\;X_2=q,\;\;X_3=-tl-xp,\;\;X_4=p.\]
+{\bf (ii)} $X_1=-xp-yq,\;\;X_2=q.$
+
+Here $[X_1,X_3]=0$ and $[X_2,X_3]=0$ imply that $
+a=a(t),\;b=b(t)x,\;\;c=c(t)x$. Hence $X_3=a(t)l+b(t)xp+c(t)xq$. Similarly,
+$X_4=\xi (t)l+\eta (t)xp+\mu (t)xq$ and  $[X_3,X_4]=X_4$ imply \[\left \{
+\begin{array}{lll} a\xi '-a'\xi & = & \xi,\\ a\eta '-a'\xi & = & \eta, \\
+a\mu '+b\mu  -\xi c'-\eta c & = & \mu . \end{array} \right. \] If $ a=0$
+then $\xi=0\;\mbox{and}\;\eta =0$. Thus  $X_3=xp+c(t)xq$, $X_4=\mu (t)xq$.
+Make the transformation \[\bar t= t,\;\; \bar x= \mu (t)x,\;\;\bar y
+=y-c(t)x.\]
+We find
+\[X_1=-xp-yq,\;\;X_2=q,\;\;X_3=xp,\;\;X_4=xq.\] If $a\ne 0$, then 
+make the change of variables \[\bar t =\int dt/a,\;\;\bar x = \alpha
+(t)x,\;\;\bar y=y+\beta (t)x,\] where  $\alpha$ satisfies $ a\alpha
+'+b\alpha=0$ and $\beta$ the equation $a\beta+b\beta+c=0$. We may assume that
+$a=1$ and $b=0=c$. Hence $\xi=\xi_0 \E^t,\;\;
+\eta=\eta_0\E^t,\;\;\mu=\mu_0\E^t$. Whence the realization
+\[X_1=-xp-yq,\;\; X_2=q,\;\;X_3=l,\;\;X_4=\E^t(\xi_0 l+\eta_0 xp+\mu_0
+xq),\] where $\xi_0,\;\eta_0,\;\mu_0$ are constants. This  realization can
+be further simplified  by considering the cases $(\eta_0,\mu_0)=(0,0)$ and
+$(\eta_0,\mu_0)\ne (0,0)$.
+
+We proceed the same way as above for the remaining four--dimensional
+Lie algebras. The results are summarised in Table 7.2.
+
+\section{Canonical forms and reduction of systems of two second--order
+odes having four--dimensional symmetry Lie algebras}
+
+The Lie algorithm for calculating 
+the symmetry vectors of a given differential equation is well--known
+and is described in Chapter 1.
+Assume now that the symmetry vectors (of some
+unknown equation) are given without recourse to that equation. Can one recover the equation?  This  
+question can be understood as a sort of inverse problem in symmetry 
+analysis and is sometimes referred to as {\em group--theoretic modelling}.
+
+In this section we aim at classifying systems of two second--order odes
+admitting exactly or maximally four--dimensional symmetry Lie algebras. We
+also discuss the integrability of such systems. 
+
+\subsection{Canonical forms} 
+
+Here we present the details
+of calculations for one case only. The other cases can be dealt with
+in a similar manner. Let us begin with the following theorem which was proved in
+Chapter 6.
+
+\begin{theo}
+\label{ch7:th1}
+\begin{em}
+A system of two second--order odes is linearizable via a
+point transformation if and only if it admits $\LL_{4,1}$ or
+$\LL_{4,15}^{1,1}$.
+\end{em}
+\end{theo}
+Consider the algebra $\LL_{4,2}^1$ : \[
+X_1=-t\frac{\partial}{\partial t}- x\frac{\partial}{\partial x}
+-y\frac{\partial}{\partial y} , \; X_2= \frac{\partial}{\partial x},\;
+X_3=t\frac{\partial}{\partial x},\;  X_4=y\frac{\partial}{\partial x}\;\cdot \]
+Let us also investigate a system admitting $\LL_{4,2}^1$: \begin{equation}
+\label{ch7:c1} \left \{ \begin{array}{lll} \ddot x &= & f(t,x,y,\dot x,\dot
+y),\\ \ddot y &= & g(t,x,y,\dot x,\dot y). \end{array} \right.
+\end{equation} Following the Lie algorithm, (\ref{ch7:c1})
+is invariant under $X_2$ if and only if \[X_2^{[2]}(\ddot
+x-f)|_{(\ref{ch7:c1})}=0,\; X_2^{[2]}(\ddot y-g)|_{(\ref{ch7:c1})}=0, \] i.e.
+\[f_x=0,\;g_x=0.\] Hence $f=f(t,y,\dot x,\dot y),\; g=g(t,y,\dot x,\dot
+y)$ and the system (\ref{ch7:c1}) becomes
+
+\begin{equation}
+\label{ch7:c2}
+\left \{ \begin{array}{lll}
+\ddot x &= & f(t,y,\dot x,\dot y),\\
+\ddot y &= & g(t,y,\dot x,\dot y).
+\end{array} \right.
+\end{equation}
+
+Eqs. (\ref{ch7:c2}) are invariant under
+$X_3$ if and only if
+\[X_3^{[2]}(\ddot x-f)|_{(\ref{ch7:c2})}=0,\; 
+X_3^{[2]}(\ddot y-g)|_{(\ref{ch7:c2})}=0 \]
+and
+\[f_{\dot x}=0,\;g_{\dot x}=0.\]
+
+Hence $f=f(t,y,\dot y),\;g=g(t,y,\dot y)$ and the system (\ref{ch7:c2})
+reduces to
+\begin{equation} \label{ch7:c3} \left \{ \begin{array}{lll} \ddot x &= &
+f(t,y,\dot y),\\ \ddot y &= & g(t,y,\dot y). \end{array} \right.
+\end{equation} Similarly, invariance under $X_4$ leads to  $g=0$ and we
+obtain the system \begin{equation} \label{ch7:c4} \left \{ \begin{array}{lll}
+\ddot x &= & f(t,y,\dot y),\\ \ddot y &= & 0. \end{array} \right.
+\end{equation} Finally, invariance under $X_1$ requires that
+\[f=-f_t-yf_y,\] i.e.,  $f=t^{-1}F(y/t,\dot y)$. Thus the system which
+admits $\LL_{4,2}^1$ is \begin{equation} \label{ch7:c5} \left \{
+\begin{array}{lll} \ddot x &= &t^{-1} f(y/t,\dot y),\\ \ddot y &= & 0.
+\end{array} \right. \end{equation} Other cases are treated in a like manner
+and
+the results are listed in Table 7.3. Note that certain  algebras
+or realizations do not appear in this table simply because either they
+are not admitted by any equation ($\LL_{4,10}$ for instance) or the
+equations which admit them have more than four symmetries ($\LL_{4,19}^8$,
+$\LL_{4,20}^{0,1}$ for example).
+
+\subsection{Integrability}
+
+{\bf \em  (a) First Approach}
+
+Assume that we want to integrate or reduce a system of two second--order odes
+admitting maximally a four--dimensional symmetry Lie algebra.
+How does the knowledge of the symmetries help us in the solution of
+this problem?
+If we assume that the four--dimensional Lie algebra in question is
+solvable, then we can try successive reduction as in the case of scalar
+equations. But immediately we face a major problem: a vector field in
+three variables has a basis of first--order invariants formed by four elements.
+Hence in performing reduction of order there will be ambiguity in
+the choice of the  new variables as invariants.
+Indeed there are four possibilities. This fact emphasizes a difference
+between scalar and systems of odes. In oder to avoid the situation we have
+mentioned, we  may proceed
+as follows. First we reduce the system to one of the canonical forms given in 
+Table 7.3. If we can solve the system in its canonical form, 
+we proceed backwards to recover the solution of the initial system. Note that
+the transformation bringing the system to its canonical
+form is just the transformation which maps its symmetry Lie algebra to one
+of the realizations listed in Table 7.2.  Thus the problem of 
+integrating systems admitting four-dimensional Lie algebras is reduced to
+that of integrating canonical forms. By analyzing the canonical forms
+obtained, the following result  can be stated.
+\begin{prop}
+\label{ch7:p1}
+\begin{em}
+If a system of two odes admits maximally  a four--dimensional symmetry
+Lie algebra, then this algebra  has one or two functionally independant
+first--order differential invariants. Furthermore, the underlying equation,
+in terms of the invariants, can either be integrated by quadratures or its
+integration depends on that of a first--order scalar ode.
+\end{em}
+\end{prop}
+As illustration, we deal with two examples. 
+Consider for instance the system
+\begin{equation}
+\label{ch7:z1}
+\ddot x=\dot x^2f(\dot x/\dot y),\;\ddot y=\dot x^2g(\dot x/\dot y)
+\end{equation}
+which admits $\LL_{4,2}^2$ with basis
+\[X_1=-tl,\;X_2=l,\;X_3=p,\;X_4=q.\]
+Note that $\LL_{3,1}^1=<X_2,X_3,X_4>$ is a subalgebra of $\LL_{4,2}^2$ 
+. The first--order differential invariants of
+$\LL_{3,1}^1$ are 
+\[u=\dot x,\; v=\dot y.\]
+In the variables $t,\;u,\;v$, the system becomes
+\begin{equation}
+\label{ch7:z2}
+\dot u=u^2f(u/v),\;\dot v=u^2g(u/v).
+\end{equation}
+This system inherits the symmetries
+\[X_1=-t\frac{\partial}{\partial t}+u\frac{\partial}{\partial u } +
+v\frac{\partial}{\partial v},\;\; X_2=\frac{\partial}{\partial t}.\]
+Note also that
+\[\frac{du}{dv}=\frac{f(u/v)}{g(u/v)}\]
+and $u/v$ is an invariant of $X_1$. This suggests the change of variable
+$w=u/v$:
+\[\frac{dw}{dv}=\frac{1}{v}\left (\frac{f(w)}{g(w)}-w \right ).\]
+Finally, we have reduced the initial system to 
+\begin{equation}
+\label{ch7:z3}
+\left \{ \begin{array}{lll}
+\displaystyle{\frac{dv}{dt}} &=&v^2w^2g(w)\\
+\displaystyle{\frac{dw}{dv}} &= &
+\displaystyle{\frac{1}{v}\left (\frac{f(w)}{g(w)}-w \right )}.
+\end{array} \right.
+\end{equation}
+System (\ref{ch7:z3}) is obviously solvable by quadratures. This example
+should  not mislead one into thinking that any system admitting a four--dimensional
+Lie algebra is solvable by quadratures. Let us next investigate a case
+where the integration of the system depends on that of a first--order scalar
+ode. Consider the system
+\begin{equation}
+\label{ch7:z4}
+\ddot x=xf(t,\dot x/x),\;\ddot y=x\dot yf(t,\dot x/x)
+\end{equation}
+which admits $\LL_{4,3}^2$.
+In (\ref{ch7:z4}a), perform the change of variable
+\[u=\dot x/x.\]
+It becomes
+\begin{equation}
+\label{ch7:z5}
+\dot u=f(t,u)-u^2.
+\end{equation}
+The integration of (\ref{ch7:z4}) obviously depends  on that of
+(\ref{ch7:z5}).
+
+{\bf Remarks.} Few important remarks are now in order.
+
+(i) For functions occuring in Table 7.3, the omitted arguments are just the
+previous ones.
+
+(ii) The canonical  forms in Table 7.3 are not necessarily the simplest ones.
+There can be changes of variables that cast them into simpler forms.
+
+(iii) The realization $\LL_{4,2}^7$ gives rise to Riccati equations solvable
+by quadratures.
+
+(iv) Some systems appearing in Table 7.3 are uncoupled. This  fact
+gives insight into uncoupling systems of two second--order odes possessing
+four--dimensional Lie algebras.
+
+{\bf \em  (a) Second Approach}
+
+In the first approach, we pointed out the failure of the traditional successive
+reduction of order when it is applied to systems. Here we use a
+constructive theorem due to Einsenhart (1933) to overcome this problem.
+
+\begin{defi}
+\begin{em}
+A vector field in $n$ variables $X=\xi^i (x)\partial/\partial x^i$ is a
+symmetry of a  first--order linear homogeneous partial differential equation
+(pde) $Af\equiv a^i (x)\partial f/\partial x^i =0$ if there exists
+$\lambda (x)$ such that $[X,A]=\lambda (x)A$.
+\end{em}
+\end{defi}
+
+\begin{theo}[Eisenhart 1933]
+\label{ch7:eins33}
+\begin{em}
+If a first--order linear homogeneous pde in $n$ variables $Af=0$
+admits a solvable symmetry algebra
+$L_{n-1}$ for which the generators and $A$ are unconnected, the integration
+of the equation reduces to quadratures.
+\end{em}
+\end{theo}
+
+{\bf Proof.}  Let $X_1,\;X_2,\ldots,\; X_{n-1}$ be the symbols of $L_{n-1}$,
+chosen  such that the first $r$ symbols for any $r$ from $1$ up to at most
+$n-2$ generate a subalgebra which is an ideal $L_r$ of the Lie algebra
+$L_{r+1}$ spanned by the
+first $r+1$ symbols. This choice is possible because $L_{n-1}$ is
+solvable (see Chapter 1). Now, if $Af=0$ is the equation, then
+\begin{equation}
+\label{ch7:pr1}
+Af=0,\quad X_1f=0,\ldots,\quad X_{n-2}f=0
+\end{equation}
+form a complete system which admits $X_{n-1}$. Thus, if $u$ is a solution of
+(\ref{ch7:pr1}) different from a constant, so is $X_{n-1}u$. If $X_{n-1}u$ were
+zero, $X_1,\ldots, X_{n-1}$ and $A$ would be connected. Hence
+$X_{n-1}u=\varphi (u)$, since any two solutions of (\ref{ch7:pr1}) are functions
+of one another (for, $\mbox{rank} [A,\; X_1,\ldots, \;X_{n-2}]=n-1$). If we
+put $u_1=\int du/\varphi (u)$, we find that $u_1$ is a solution of
+(\ref{ch7:pr1}) and that $X_{n-1}u_1=1$. This last equation and (\ref{ch7:pr1}), in
+which $f$ is replaced by $u_1$, is compatible ($[X_a,X_b]u_1=0,\;\;
+[X_a,A]u_1=0,\;\;a,b=1,\ldots,\;n-1$). Thus it can be solved for
+the derivatives of $u_1$. Therefore, $u_1$ is  obtainable by a single
+quadrature.
+
+If we use the coordinates $x^{'1}=u_1,\;x^{'2}=x^2,\ldots,\;x^{'n}=x^n$, then
+in the new coordinate system, the equations (omitting the primes)
+\begin{equation}
+\label{ch7:pr2}
+Af=0,\quad,X_1f=0,\ldots,X_{n-3}f=0
+\end{equation}
+do not involve derivatives with respect to $x^1$. Hence, we may treat these
+equations as a set in $n-1$ variables, with $x^1$ entering possibly as  a
+parameter. Since $X_1,\ldots,\;X_{n-3}$ are the symbols of the ideal
+$L_{n-3}$ of $L_{n-2}$, we may apply the same process to find  $u_2$,
+which is independent of $u_1$ previouly found since it involves variables
+other than $x^1$. The $x^1$ turns out to be $u_1$ in the present coordinate
+system.
+By repeating this process, we obtain by $n-1$ quadratures, $n-1$ independent
+solutions of $Af=0$, that is, the complete solution.
+
+{\bf Remark.} Note that in the proof of Theorem \ref{ch7:eins33}, symmetries are
+used to reduce the number of independent variables.
+
+\begin{coro}
+\label{ch7:int}
+\begin{em}
+A system of $n$ second--order odes $\ddot x^i=f^i (t,x,\dot x),\;i=1,\ldots,n$,
+which admits a $2n$--dimensional solvable symmetry algebra $L_{2n}$
+for which the first prologation of its symbols and $A=\partial /\partial t+
+\dot x^i\partial/\partial x^i+
+f^i (t,x,\dot x)\partial /\partial \dot x^i$ are unconnected, is solvable by
+quadratures.
+\end{em}
+\end{coro}
+
+{\bf Proof.} Write the system of second--order odes as a first--order linear
+homogeneous pde and use Theorem \ref{ch7:eins33}.
+
+{\bf Remarks.} In Corollary \ref{ch7:int}, the unconnectedness is redundant when
+$n=1$. Indeed, in this case we obtain  Lie's classical result. However, for
+$n \ge 2 $ the unconnectedness is vital: as we have seen above,
+although $\LL_{4,3}^2$ is solvable, the resulting system is not integrable by
+quadratures. When the hypotheses of Corollary \ref{ch7:int} are satisfied, the
+second approach is preferable since it does not require the use
+of canonical variables. Notwithstanding, the second approach can be used to integrate
+canonical forms for which the integration might not be straightforward. From
+this standpoint, the two approaches are complementary. Finally, in the
+second approach, symmetries are used to reduce the number of dependent
+variables  since when the system of second--order odes is cast as a
+first--order linear homogeneous pde, its dependent variables become independent
+variables of the resulting pde (see also the  remark  after the proof
+of Theorem \ref{ch7:eins33}).
+
+\section{Conclusion}
+We have obtained nonsimilar realizations of three-- and four--dimensional
+real Lie algebras in $(1+2)$--dimensional space. This has been applied to
+the classification of all systems of two second--order odes admitting
+four--dimensional symmetry Lie algebras. Moreover, we have shown via
+examples how this classification can be used for integrating systems of
+two second--order odes admitting four--dimensional symmetry Lie algebras.
+Note that the classification of systems with $5$ symmetries can be
+achieved by combining our results with the following theorem.
+\begin{theo}[Egorov's theorem, see Petrov 1966]
+\label{ch7:th2}
+\begin{em}
+Every five--dimensional real
+Lie algebra contains a four--dimensional real subalgebra.
+\end{em}
+\end{theo}
+A question that needs attention is the study of symmetry breaking for
+systems of  two second--order odes: it is well--known (see
+Mahomed and Leach 1989)
+that a scalar second--order ode can admit $0,\;1,\;2,\;3$ or $8$
+point symmetries.
+A system of two second-order linear odes admits $5,\;6,\;7,\;8$ or $15$
+point symmetries (Wafo Soh and Mahomed 1999e, see Chapter 5).
+We conjecture that a system of two second--order odes can admit
+$0,\;1,\;2,\;3,\;4,\;5,\;6,\;7,\;8$ or $15$ point symmetries. This conjecture
+is motivated by the results obtained in Chapter 5. Indeed nonlinear des are
+in general less symmetric than the linear ones.
+\input{table1}
+\input{table1b}
+\input{table2}
+\input{table3}
+\input{table4}
+\input{table5}
+\input{table6}
+
+%\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
