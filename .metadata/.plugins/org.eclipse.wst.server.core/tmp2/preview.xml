@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<server port="8080">
-  <module context="SampleDynamicWeb" name="SampleDynamicWeb" path="C:/Users/Admin/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp2/SampleDynamicWeb" type="j2ee"/>
-</server>

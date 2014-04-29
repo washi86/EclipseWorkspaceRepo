@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<server port="8080">
-  <module name="WebsiteTest" path="C:/Users/Admin/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/WebsiteTest" type="static"/>
-  <module context="test" name="test" path="C:/Users/Admin/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/test" type="static"/>
-</server>
