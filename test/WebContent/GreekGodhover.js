@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('.GreekGods').hover(function(){
+	$('#zeus').hover(function(){
 		alert('welcome');
 	});
 });
