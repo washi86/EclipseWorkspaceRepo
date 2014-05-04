@@ -1,0 +1,38 @@
+*
+{
+    color: red;
+}
+html { 
+  background: url(immortals.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.Mytho
+{
+    margin-bottom: 0px;    
+}
+
+.GreekGods
+{
+    width: 200px;
+    height: 768px;
+    float: left;
+}
+
+.GreekGodImg
+{
+    width: 200px;
+    height: 768px;
+    float: left;    
+}
+
+.GreekGodBio
+{
+    width: 966px;
+    height: 768px;
+}
+
